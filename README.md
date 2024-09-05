@@ -4,13 +4,13 @@ This is mna-diagnostics-center (Digital Diagnostics Lab) website repository.
 Run the frontend in dev mood:
 
 ```bash
-yarn create vite
+yarn run dev
 ```
 
 Run the backend in dev mood:
 
 ```bash
-yarn create vite
+yarn
 ```
 
 **Client/Frontend**
