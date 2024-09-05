@@ -2,9 +2,8 @@ import jwt from "jsonwebtoken";
 import Doctor from "../models/DoctorSchema.js";
 import User from "../models/UserSchema.js";
 
-//===authenticate===
+// authenticate
 export const authenticate = async (req, res, next) => {
-  // get token from headers
   const authToken = req.headers.authorization;
 
   // check token is exists
@@ -32,7 +31,6 @@ export const authenticate = async (req, res, next) => {
   }
 };
 
-//
 export const restrict = (roles) => async (req, res, next) => {
   const userId = req.userId;
 
