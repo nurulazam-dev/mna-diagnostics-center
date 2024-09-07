@@ -1,11 +1,8 @@
+import "./App.css";
+import Layout from "./layout/Layout";
+
 function App() {
-  return (
-    <>
-      <h5 className="text-primaryColor text-5xl font-semibold text-center">
-        Private Hospital website
-      </h5>
-    </>
-  );
+  return <Layout />;
 }
 
 export default App;
