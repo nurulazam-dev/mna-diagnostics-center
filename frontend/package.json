@@ -19,6 +19,7 @@
     "react-spinners": "^0.14.1",
     "react-toastify": "^10.0.5",
     "sort-by": "^1.2.0",
+    "stripe": "^16.10.0",
     "swiper": "^11.1.12"
   },
   "devDependencies": {
