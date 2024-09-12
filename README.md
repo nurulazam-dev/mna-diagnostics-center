@@ -22,4 +22,4 @@ yarn start
 
 ### Use Library & Framework in Server/Backend
 
-`express`,`mongodb`,`mongoose`,`cors`,`jsonwebtoken`,`cookie-parser`,`dotenv`,`bcryptjs`,`stripe`,
+`express`, `mongodb`, `mongoose`, `cors`, `jsonwebtoken`, `cookie-parser`, `dotenv`, `bcryptjs`, `stripe`,
