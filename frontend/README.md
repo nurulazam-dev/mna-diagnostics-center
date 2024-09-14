@@ -1,8 +1,15 @@
-# React + Vite
+# MNA Diagnostics Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is mna-diagnostics-center (Digital Diagnostics Lab) website repository.
 
-Currently, two official plugins are available:
+- Run the frontend in dev mood:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+yarn run dev
+```
+
+### Use Library & Framework in Client/Frontend
+
+`React`, `React Router Dom`, `Tailwind CSS`, `react-router-dom`, `react-icons`, `react-spinners`, `react-toastify`, `swiper`, `Google fonts`, `stripe`,
+
+- cloudinary use for upload images (in client side)
