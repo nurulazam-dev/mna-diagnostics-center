@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import aboutCardImg from "../../assets/images/about-card.png";
-import aboutImg from "../../assets/images/about.png";
+import aboutCardImg from "../../assets/images/others/about-card.png";
+import aboutImg from "../../assets/images/others/about.png";
 
 function About() {
   return (

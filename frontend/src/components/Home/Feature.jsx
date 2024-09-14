@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import avatarIcon from "../../assets/images/avatar-icon.png";
-import featureImg from "../../assets/images/feature-img.png";
-import videoIcon from "../../assets/images/video-icon.png";
+import avatarIcon from "../../assets/images/icons/avatar-icon.png";
+import videoIcon from "../../assets/images/icons/video-icon.png";
+import featureImg from "../../assets/images/others/feature-img.png";
 
 const Feature = () => {
   return (

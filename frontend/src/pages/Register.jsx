@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import HashLoader from "react-spinners/HashLoader";
 import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
-import registerImg from "../assets/images/signup.gif";
+import registerImg from "../assets/images/others/register.gif";
 import { BASE_URL } from "../config.js";
 import uploadImageToCloudinary from "../utils/uploadCloudinary.js";
 

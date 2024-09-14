@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import starIcon from "../../../assets/images/Star.png";
+import starIcon from "../../../assets/images/icons/Star.png";
 
 const DoctorCard = ({ doctor }) => {
   const { name, specialization, avgRating, totalRating, photo, experiences } =

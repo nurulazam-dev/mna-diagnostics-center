@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import starIcon from "../../assets/images/Star.png";
+import starIcon from "../../assets/images/icons/Star.png";
 import DoctorAbout from "../../components/DoctorDetails/DoctorAbout";
 import Feedback from "../../components/DoctorDetails/Feedback";
 import SidePanel from "../../components/DoctorDetails/SidePanel";

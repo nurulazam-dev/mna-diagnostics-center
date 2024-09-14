@@ -1,6 +1,6 @@
-import heroImg01 from "../../assets/images/hero-img01.png";
-import heroImg02 from "../../assets/images/hero-img02.png";
-import heroImg03 from "../../assets/images/hero-img03.png";
+import heroImg01 from "../../assets/images/doctors/doctor-img01.png";
+import heroImg02 from "../../assets/images/doctors/doctor-img02.png";
+import heroImg03 from "../../assets/images/doctors/doctor-img03.png";
 
 function Hero() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import starIcon from "../../assets/images/Star.png";
+import starIcon from "../../assets/images/icons/Star.png";
 import DoctorAbout from "../../components/DoctorDetails/DoctorAbout";
 import Error from "../../components/Shared/Error";
 import Loading from "../../components/Shared/Loading";

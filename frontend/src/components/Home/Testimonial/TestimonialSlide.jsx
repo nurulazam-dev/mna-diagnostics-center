@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import patientImg from "../../../assets/images/patient-avatar.png";
+import patientImg from "../../../assets/images/icons/patient-avatar.png";
 
 const TestimonialSlide = () => {
   const slideData = [
@@ -12,6 +12,7 @@ const TestimonialSlide = () => {
     { id: "slideData003" },
     { id: "slideData004" },
     { id: "slideData005" },
+    { id: "slideData006" },
   ];
 
   return (
@@ -41,10 +42,10 @@ const TestimonialSlide = () => {
           <SwiperSlide key={slide.id}>
             <div className="py-[30px] px-5 rounded-3">
               <div className="flex items-center gap-[13px]">
-                <img src={patientImg} alt="" />
+                <img src={patientImg} alt="" className="w-[70px]" />
                 <div>
                   <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
-                    Nurul Azam
+                    MD Nurul Azam
                   </h4>
                   <div className="flex items-center gap-[2px]">
                     <HiStar className="text-yellowColor w-[18px] h-5" />
