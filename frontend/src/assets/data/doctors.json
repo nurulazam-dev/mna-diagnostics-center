@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Dr. Ayesha Khan",
+    "name": "Dr. Nurul Azam",
     "specialization": "Cardiology",
     "avgRating": 4.8,
     "totalRating": 150,
@@ -11,17 +11,17 @@
   },
   {
     "id": 2,
-    "name": "Dr. Aniruddha Sen",
+    "name": "Dr. Ayesha Khan",
     "specialization": "Neurology",
     "avgRating": 4.6,
     "totalRating": 200,
     "photo": "aniruddha_sen.jpg",
     "totalPatients": 950,
-    "hospital": "NeuroMed Hospital"
+    "hospital": "Neuro Medical Hospital"
   },
   {
     "id": 3,
-    "name": "Dr. Priya Das",
+    "name": "Dr. Ariyan Khan",
     "specialization": "Pediatrics",
     "avgRating": 4.9,
     "totalRating": 180,
