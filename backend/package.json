@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is mna-diagnostics-center (Digital Diagnostics Lab) website",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -20,6 +21,6 @@
     "mongodb": "^6.8.0",
     "mongoose": "^8.6.1",
     "nodemon": "^3.1.4",
-    "stripe": "^16.9.0"
+    "stripe": "^16.11.0"
   }
 }

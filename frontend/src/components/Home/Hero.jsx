@@ -1,10 +1,8 @@
-import heroImg01 from "../../assets/images/doctors/doctor-img01.png";
-import heroImg02 from "../../assets/images/doctors/doctor-img02.png";
-import heroImg03 from "../../assets/images/doctors/doctor-img03.png";
+import heroImg01 from "../../assets/images/others/about.png";
 
 function Hero() {
   return (
-    <section className="hero_section pt-[60px] 2xl:h-[800px]">
+    <section className="hero_section pt-[30px] 2xl:h-[800px]">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center gap-[90px] justify-between">
           {/* ======hero content====== */}
@@ -55,14 +53,8 @@ function Hero() {
             </div>
           </div>
           {/* ======hero content====== */}
-          <div className="flex gap-[30px] justify-end">
-            <div>
-              <img src={heroImg01} alt="" className="w-full" />
-            </div>
-            <div className="mt-[30px]">
-              <img src={heroImg02} alt="" className="w-full mb-[30px]" />
-              <img src={heroImg03} alt="" className="w-full mb-[30px]" />
-            </div>
+          <div>
+            <img src={heroImg01} alt="" className="w-full" />
           </div>
         </div>
       </div>

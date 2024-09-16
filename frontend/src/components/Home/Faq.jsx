@@ -6,7 +6,7 @@ const Faq = () => {
     <section>
       <div className="container">
         <div className="flex justify-between gap-[50px] lg:gap-0">
-          <div className="w-1/2 hidden md:block ">
+          <div className="w-1/2 hidden md:block">
             <img src={faqImg} alt="" />
           </div>
           <div className="w-full md:w-1/2">
