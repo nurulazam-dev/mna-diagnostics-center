@@ -12,4 +12,4 @@ yarn run dev
 
 `React`, `React Router Dom`, `Tailwind CSS`, `react-router-dom`, `react-icons`, `react-spinners`, `react-toastify`, `swiper`, `Google fonts`, `stripe`,
 
-- cloudinary use for upload images (in client side)
+- Cloudinary use for upload images (in client side)
