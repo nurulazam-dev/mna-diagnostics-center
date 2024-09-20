@@ -1,8 +1,10 @@
+import brandLogo from "../assets/images/brand-logo/mna-diagnostics-center.png";
+
 const CheckoutSuccess = () => {
   return (
     <div className="bg-gray-100 h-screen">
       <div className="bg-white p-6 md:mx-auto">
-        <svg>{/* svg img */}</svg>
+        <img src={brandLogo} alt="" />
         <div className="text-center">
           <h3 className="md:text-2xl text-base text-gray-900 font-semibold text-center">
             Payment Done

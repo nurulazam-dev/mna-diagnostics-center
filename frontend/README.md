@@ -4,6 +4,8 @@ This is mna-diagnostics-center (Digital Diagnostics Lab) website repository.
 
 ### Live link (v1):
 
+https://mna-diagnostics-center.onrender.com
+
 - Run the frontend in dev mood:
 
 ```bash
