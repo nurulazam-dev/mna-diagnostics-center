@@ -15,3 +15,8 @@ yarn run dev
 `React`, `React Router Dom`, `Tailwind CSS`, `react-router-dom`, `react-icons`, `react-spinners`, `react-toastify`, `swiper`, `Google fonts`, `stripe`,
 
 - Cloudinary use for upload images (in client side)
+
+### Deploy in (Render)
+
+- Frontend deploy with \_Static-sites(when deploy only frontend)
+- Backend deploy with \_Web-services

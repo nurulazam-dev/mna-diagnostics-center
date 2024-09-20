@@ -8,6 +8,12 @@ This is mna-diagnostics-center (Digital Diagnostics Lab) website repository.
 yarn run dev
 ```
 
+- Build command:
+
+```bash
+yarn run build
+```
+
 - Run the backend in dev mood:
 
 ```bash
