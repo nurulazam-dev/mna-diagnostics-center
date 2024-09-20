@@ -32,6 +32,7 @@ const Register = () => {
 
     // Use cloudinary to upload images
     const data = await uploadImageToCloudinary(file);
+    console.log(data);
 
     setPreviewURL(data.url);
     setSelectFile(data.url);
