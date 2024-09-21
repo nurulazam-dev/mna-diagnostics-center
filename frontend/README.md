@@ -18,7 +18,7 @@ yarn run dev
 
 - Cloudinary use for upload images (in client side)
 
-### Deploy in (Render)
+### Deploy in Render.
 
-- Frontend deploy with \_Static-sites(when deploy only frontend)
-- Backend deploy with \_Web-services
+- Frontend deploy with \_Static-sites.
+- Backend deploy with \_Web-services.
