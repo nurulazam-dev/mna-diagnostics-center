@@ -1,66 +1,59 @@
 [
   {
-    "id": 1,
     "name": "Dr. Nurul Azam",
     "specialization": "Cardiology",
     "avgRating": 4.8,
     "totalRating": 150,
-    "photo": "ayesha_khan.jpg",
+    "photo": "https://i.ibb.co.com/z7BDv5B/2.png",
     "totalPatients": 1200,
     "hospital": "City Heart Clinic"
   },
   {
-    "id": 2,
     "name": "Dr. Ayesha Khan",
     "specialization": "Neurology",
     "avgRating": 4.6,
     "totalRating": 200,
-    "photo": "aniruddha_sen.jpg",
+    "photo": "https://i.ibb.co.com/QMY0WZm/mna.png",
     "totalPatients": 950,
     "hospital": "Neuro Medical Hospital"
   },
   {
-    "id": 3,
     "name": "Dr. Ariyan Khan",
     "specialization": "Pediatrics",
     "avgRating": 4.9,
     "totalRating": 180,
-    "photo": "priya_das.jpg",
+    "photo": "https://i.ibb.co.com/QMY0WZm/mna.png",
     "totalPatients": 700,
     "hospital": "Happy Kids Hospital"
   },
   {
-    "id": 4,
     "name": "Dr. Suresh Patel",
     "specialization": "Orthopedics",
     "avgRating": 4.7,
     "totalRating": 140,
-    "photo": "suresh_patel.jpg",
+    "photo": "https://i.ibb.co.com/z7BDv5B/2.png",
     "totalPatients": 850,
     "hospital": "Bone Care Clinic"
   },
   {
-    "id": 5,
     "name": "Dr. Amrita Nair",
     "specialization": "Gynecology",
     "avgRating": 4.8,
     "totalRating": 220,
-    "photo": "amrita_nair.jpg",
+    "photo": "https://i.ibb.co.com/z7BDv5B/2.png",
     "totalPatients": 1100,
     "hospital": "Women's Wellness Center"
   },
   {
-    "id": 6,
     "name": "Dr. Rakesh Rao",
     "specialization": "Dermatology",
     "avgRating": 4.5,
     "totalRating": 190,
-    "photo": "rakesh_rao.jpg",
+    "photo": "https://i.ibb.co.com/QMY0WZm/mna.png",
     "totalPatients": 500,
     "hospital": "Skin & Hair Clinic"
   },
   {
-    "id": 7,
     "name": "Dr. Farah Ali",
     "specialization": "Oncology",
     "avgRating": 4.9,
@@ -70,7 +63,6 @@
     "hospital": "Cancer Care Hospital"
   },
   {
-    "id": 8,
     "name": "Dr. Vikram Singh",
     "specialization": "General Surgery",
     "avgRating": 4.6,
@@ -80,7 +72,6 @@
     "hospital": "City Multispecialty Hospital"
   },
   {
-    "id": 9,
     "name": "Dr. Anjali Mehta",
     "specialization": "Endocrinology",
     "avgRating": 4.7,
@@ -90,7 +81,6 @@
     "hospital": "Hormone Health Center"
   },
   {
-    "id": 10,
     "name": "Dr. Manish Gupta",
     "specialization": "Pulmonology",
     "avgRating": 4.5,
@@ -100,7 +90,6 @@
     "hospital": "Breathe Easy Clinic"
   },
   {
-    "id": 11,
     "name": "Dr. Sneha Roy",
     "specialization": "Psychiatry",
     "avgRating": 4.9,
@@ -110,7 +99,6 @@
     "hospital": "MindCare Hospital"
   },
   {
-    "id": 12,
     "name": "Dr. Arvind Kapoor",
     "specialization": "Gastroenterology",
     "avgRating": 4.6,
@@ -120,7 +108,6 @@
     "hospital": "Digestive Health Center"
   },
   {
-    "id": 13,
     "name": "Dr. Rina Banerjee",
     "specialization": "Ophthalmology",
     "avgRating": 4.8,
@@ -130,7 +117,6 @@
     "hospital": "VisionCare Eye Hospital"
   },
   {
-    "id": 14,
     "name": "Dr. Shantanu Mukherjee",
     "specialization": "Urology",
     "avgRating": 4.7,
@@ -140,7 +126,6 @@
     "hospital": "Kidney Health Clinic"
   },
   {
-    "id": 15,
     "name": "Dr. Neha Sharma",
     "specialization": "Rheumatology",
     "avgRating": 4.9,
