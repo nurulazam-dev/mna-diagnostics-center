@@ -27,6 +27,8 @@ const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const { user, role, token } = useContext(authContext);
+  // const { user, role } = useContext(authContext);
+  console.log(user, role);
 
   const handleStickyHeader = () => {
     window.addEventListener("scroll", () => {
@@ -81,20 +83,24 @@ const Header = () => {
           {/* ========nav right========= */}
           <div className="flex items-center gap-4">
             {token && user ? (
-              <div>
+              <div className="">
                 <Link
                   to={`${
-                    role == "doctor" ? "/doctor/profile/me" : "/user/profile/me"
+                    role == "doctor"
+                      ? "/doctors/profile/me"
+                      : "/users/profile/me"
                   }`}
                 >
-                  <figure className="w-[35px] h-[35px] rounded-full cursor-pointer">
-                    <img
-                      src={user?.photo}
-                      alt=""
-                      className="w-full rounded-full"
-                    />
-                  </figure>
-                  <h2>{user?.name} </h2>
+                  <div className="flex justify-between items-center">
+                    <h2 className="mr-2">{user?.name} </h2>
+                    <figure className="w-[45px] h-[45px] rounded-full cursor-pointer">
+                      <img
+                        src={user?.photo}
+                        alt=""
+                        className="w-full rounded-full"
+                      />
+                    </figure>
+                  </div>
                 </Link>
               </div>
             ) : (
