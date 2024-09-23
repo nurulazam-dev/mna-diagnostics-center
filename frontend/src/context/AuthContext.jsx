@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 // import {createContext, useContext,useEffect,useReducer} from 'react';
 import { createContext, useEffect, useReducer } from "react";
