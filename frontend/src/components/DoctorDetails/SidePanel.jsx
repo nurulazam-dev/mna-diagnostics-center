@@ -4,6 +4,8 @@ import convertTime from "../../utils/convertTime";
 
 /* eslint-disable react/prop-types */
 const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
+  console.log(ticketPrice, timeSlots);
+
   const bookingHandler = async () => {
     try {
       const res = await fetch(
