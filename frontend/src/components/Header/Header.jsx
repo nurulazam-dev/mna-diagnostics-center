@@ -7,19 +7,23 @@ import { authContext } from "../../context/AuthContext.jsx";
 const navLinks = [
   {
     path: "/home",
-    display: "Home",
+    display: "HOME",
   },
   {
     path: "/doctors",
-    display: "Find a Doctor",
+    display: "DOCTORS",
   },
   {
     path: "/services",
-    display: "Services",
+    display: "SERVICES",
+  },
+  {
+    path: "/about",
+    display: "ABOUT US",
   },
   {
     path: "/contact",
-    display: "Contact",
+    display: "CONTACT",
   },
 ];
 
@@ -50,12 +54,14 @@ const Header = () => {
   const toggleMenu = () => menuRef.current.classList.toggle("show_menu");
 
   return (
-    <header className="header flex items-center" ref={headerRef}>
+    <header className="flex bg-green-600 h-[60px] items-center" ref={headerRef}>
       <div className="container">
         <div className="flex items-center justify-between">
           {/* ========Logo========= */}
           <div className="">
-            <img src={logo} alt="" className="w-[65px]" />
+            <NavLink to="/">
+              <img src={logo} alt="" className="w-[65px]" />
+            </NavLink>
           </div>
 
           {/* ========menu========= */}
@@ -67,8 +73,8 @@ const Header = () => {
                     to={link.path}
                     className={(navClass) =>
                       navClass.isActive
-                        ? "text-primaryColor text-[16px] leader-7 font-[600]"
-                        : "text-textColor text-[16px] leader-7 font-[500] hover:text-primaryColor"
+                        ? "text-black text-[16px] leader-7 font-bold"
+                        : "text-white text-[16px] leader-7 font-bold hover:text-black"
                     }
                   >
                     {link.display}
@@ -90,7 +96,9 @@ const Header = () => {
                   }`}
                 >
                   <div className="flex justify-between items-center">
-                    <h2 className="mr-2">{user?.name} </h2>
+                    <h2 className="mr-2 text-black text-[16px] font-bold">
+                      {user?.name}{" "}
+                    </h2>
                     <figure className="w-[45px] h-[45px] rounded-full cursor-pointer">
                       <img
                         src={user?.photo}
