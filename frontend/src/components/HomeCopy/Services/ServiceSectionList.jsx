@@ -13,7 +13,7 @@ const ServiceSectionList = () => {
       </div>
       <Link to="/services" className="flex justify-center">
         <button className="btn bg-green-600 rounded-none flex items-center hover:bg-slate-600">
-          All Services{" "}
+          See All Services{" "}
           <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
         </button>
       </Link>
