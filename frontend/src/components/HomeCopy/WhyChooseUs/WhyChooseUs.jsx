@@ -2,15 +2,14 @@ import ChooseList from "./ChooseList";
 
 const WhyChooseUs = () => {
   return (
-    <section>
-      <div className="container">
-        <div className="xl:w-[470px] mx-auto">
-          <h2 className="heading text-center">Why Choose US?</h2>
-        </div>
-        {/* ===Choose-List component=== */}
-        <ChooseList />
-      </div>
-    </section>
+    <div className="bg-green-600 container py-6 text-white">
+      <h2 className="text-[44px] leading-[54px] font-[700] text-center">
+        Why Choose US?
+      </h2>
+
+      {/* ===Choose-List component=== */}
+      <ChooseList />
+    </div>
   );
 };
 
