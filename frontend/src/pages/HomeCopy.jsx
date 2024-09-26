@@ -1,11 +1,11 @@
 import HeroSection from "../components/HomeCopy/HeroSection";
-import ServiceSectionList from "../components/HomeCopy/Services/ServiceSectionList";
+import OurServices from "../components/HomeCopy/Services/OurServices";
 
 const HomeCopy = () => {
   return (
     <>
       <HeroSection />
-      <ServiceSectionList />
+      <OurServices />
     </>
   );
 };
