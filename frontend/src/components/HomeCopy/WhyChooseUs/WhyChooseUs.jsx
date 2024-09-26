@@ -1,3 +1,5 @@
+import ChooseList from "./ChooseList";
+
 const WhyChooseUs = () => {
   return (
     <section>
@@ -6,7 +8,7 @@ const WhyChooseUs = () => {
           <h2 className="heading text-center">Why Choose US?</h2>
         </div>
         {/* ===Choose-List component=== */}
-        {/* <ChooseList /> */}
+        <ChooseList />
       </div>
     </section>
   );
