@@ -1,3 +1,6 @@
+import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 const AdsBanner = () => {
   return (
     <section className="container bg-green-500 py-6 text-white">
@@ -11,9 +14,12 @@ const AdsBanner = () => {
             smile.
           </p>
         </div>
-        <div>
-          <button className="customBtn bg-white">Book an Appointment</button>
-        </div>
+        <Link to="/doctors">
+          <button className="customBtn bg-white flex items-center justify-center">
+            Book an Appointment{" "}
+            <MdArrowOutward className="group-hover:text-green-700 w-6 h-6 ml-2" />
+          </button>
+        </Link>
       </div>
     </section>
   );
