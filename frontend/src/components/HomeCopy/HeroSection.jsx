@@ -12,13 +12,11 @@ const HeroSection = () => {
                 Your New Smile Start Here
               </h1>
               <p className="text_para">Check out our services & facilities</p>
-              <div className="flex">
-                <button className="btn hover:bg-slate-700 hover:border-none mr-4">
+              <div className="flex mt-4">
+                <button className="customBtn bg-green-600 text-white mr-4">
                   Request an Appointment
                 </button>
-                <button className="btn hover:bg-slate-700 hover:border-none">
-                  Read More
-                </button>
+                <button className="customBtn">Read More...</button>
               </div>
             </div>
           </div>

@@ -11,8 +11,8 @@ const ServiceSectionList = () => {
           <ServiceSectionCard service={service} index={index} key={index} />
         ))}
       </div>
-      <Link to="/services" className="flex justify-center">
-        <button className="btn bg-green-600 rounded-none flex items-center hover:bg-slate-600">
+      <Link to="/services" className="flex justify-center ">
+        <button className="customBtn bg-green-600 flex items-center text-white mt-8">
           See All Services{" "}
           <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
         </button>

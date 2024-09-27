@@ -2,14 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   section {
     @apply py-[75px];
   }
-}
+} */
 @layer components {
   .container {
     @apply max-w-full w-[1440px] px-5 mx-auto;
+  }
+  .customBtn {
+    @apply border border-green-700 text-green-700 font-[500] px-[26px] py-[11px] rounded-md hover:bg-violet-700  hover:text-white;
   }
   .btn {
     @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
@@ -24,9 +27,6 @@
     @apply bg-[url('./assets/images/home/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[70px] leading-[100px];
     /* @apply bg-violet-600 w-full h-[70px] leading-[100px]; */
   }
-  .hero_section {
-    @apply bg-[url('./assets/images/home/hero-bg.png')] bg-no-repeat bg-center bg-cover;
-  }
   .form_label {
     @apply text-[16px] font-semibold leading-7 text-textColor mb-2;
   }
@@ -39,9 +39,9 @@
   .container {
     @apply w-full;
   }
-  section {
+  /* section {
     @apply py-[35px];
-  }
+  } */
 }
 @media only screen and (max-width: 768px) {
   .heading {

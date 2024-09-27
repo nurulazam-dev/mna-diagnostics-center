@@ -11,7 +11,7 @@ const ContactSection = () => {
         </p>
         <div className="lg:flex justify-between block w-full items-center">
           <div className="lg:flex hidden justify-center lg:w-5/12 lg:px-4">
-            <img src={contactImg} alt="" className="" />
+            <img src={contactImg} alt="" />
           </div>
           <div className="lg:w-7/12">
             <form action="#" className="space-y-8">
@@ -49,10 +49,7 @@ const ContactSection = () => {
                   className="form_input mt-1"
                 />
               </div>
-              <button
-                type="submit"
-                className=" bg-primaryColor text-white text-[18px] rounded-lg px-6 py-2 hover:bg-slate-700 hover:border-none"
-              >
+              <button type="submit" className=" customBtn">
                 Submit
               </button>
             </form>
