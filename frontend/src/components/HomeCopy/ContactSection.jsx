@@ -2,10 +2,10 @@ import contactImg from "../../assets/images/home/contactImg.svg";
 
 const ContactSection = () => {
   return (
-    <section className="pt-2">
+    <section className="my-6">
       <div className="px-4 mx-auto">
         <h2 className="heading text-center">Contact Us</h2>
-        <p className="mb-8 lg:mb-10 font-light text-center text_para">
+        <p className="mb-4 lg:mb-7 font-light text-center text_para">
           Got a technical issue? Want to send feedback about a beta feature? Let
           us know.
         </p>
@@ -14,7 +14,7 @@ const ContactSection = () => {
             <img src={contactImg} alt="" />
           </div>
           <div className="lg:w-7/12">
-            <form action="#" className="space-y-8">
+            <form action="#" className="space-y-3">
               <div>
                 <label htmlFor="email" className="form_label">
                   Your Email
@@ -42,14 +42,14 @@ const ContactSection = () => {
                   Your Message
                 </label>
                 <textarea
-                  rows="6"
+                  rows="3"
                   type="text"
                   id="message"
                   placeholder="Leave a comment..."
                   className="form_input mt-1"
                 />
               </div>
-              <button type="submit" className=" customBtn">
+              <button type="submit" className=" customBtn w-full">
                 Submit
               </button>
             </form>

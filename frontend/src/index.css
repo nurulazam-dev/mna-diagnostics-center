@@ -50,4 +50,7 @@
   .text_para {
     @apply text-[16px] leading-7 mt-3;
   }
+  .customBtn {
+    @apply font-[400] px-[16px] py-[10px];
+  }
 }

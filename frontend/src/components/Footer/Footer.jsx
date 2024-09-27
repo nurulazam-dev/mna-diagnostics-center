@@ -49,25 +49,29 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="pb-16 pt-10">
+    <footer className="py-4 bg-green-500">
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           {/* ===first column=== */}
-          <div className="">
-            <img src={logo} alt="" className="w-28" />
-            <p className="text-[16px] leading-7 font-[400] text-textColor mt-4">
-              Copyright © {year} developed by MNA all right reserved.
-            </p>
-            <div className="flex items-center gap-3 mt-4">
-              {socialLink.map((link, index) => (
-                <Link
-                  to={link.path}
-                  key={index}
-                  className="w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primaryColor hover:border-none"
-                >
-                  {link.icon}
-                </Link>
-              ))}
+          <div className="flex lg:block justify-evenly items-center">
+            <div>
+              <img src={logo} alt="" className="lg:w-28 w-[82px]" />
+            </div>
+            <div className="">
+              <div className="flex justify-center lg:justify-start items-center gap-3 lg:mt-4 mt-1">
+                {socialLink.map((link, index) => (
+                  <Link
+                    to={link.path}
+                    key={index}
+                    className="lg:w-9 w-7 h-7 lg:h-9 border border-solid border-black rounded-full flex items-center justify-center group hover:bg-white hover:border-none"
+                  >
+                    {link.icon}
+                  </Link>
+                ))}
+              </div>
+              <p className="text-[11px] lg:text-[16px] font-[400] text-textColor lg:mt-4">
+                Copyright © {year} developed by MNA all right reserved.
+              </p>
             </div>
           </div>
           {/* ===first column end=== */}
@@ -78,7 +82,7 @@ const Footer = () => {
             </h2>
             <ul>
               {quickLinks01.map((item, index) => (
-                <li key={index} className="mb-4">
+                <li key={index}>
                   <Link
                     to={item.path}
                     className="text-[16px] leading-7 font-[400] text-textColor"
@@ -97,7 +101,7 @@ const Footer = () => {
             </h2>
             <ul>
               {quickLinks02.map((item, index) => (
-                <li key={index} className="mb-4">
+                <li key={index}>
                   <Link
                     to={item.path}
                     className="text-[16px] leading-7 font-[400] text-textColor"
@@ -116,7 +120,7 @@ const Footer = () => {
             </h2>
             <ul>
               {quickLinks03.map((item, index) => (
-                <li key={index} className="mb-4">
+                <li key={index}>
                   <Link
                     to={item.path}
                     className="text-[16px] leading-7 font-[400] text-textColor"

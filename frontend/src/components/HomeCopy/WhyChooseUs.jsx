@@ -3,14 +3,17 @@ import { chooseData } from "../../assets/data/chooseListData";
 const WhyChooseUs = () => {
   return (
     <section className="bg-green-500 container py-6 text-white">
-      <h2 className="text-[44px] leading-[54px] font-[700] text-center">
+      <h2 className="lg:text-[44px] text-[35px] leading-[54px] font-[700] text-center">
         Why Choose US?
       </h2>
 
       <div className="container mt-[15px] lg:mt-[35px]">
         <div className="grid grid-cols-1 mg:grid-cols-3 lg:grid-cols-4 gap-[2px] lg:gap-[3px] lg:mx-2">
           {chooseData.map((data, index) => (
-            <div key={index}>
+            <div
+              key={index}
+              className="border rounded lg:border-none mb-3 lg:mb-0 px-2"
+            >
               <div className="flex justify-center">
                 <img src={data?.img} alt="" className="h-[120px] w-[120px]" />
               </div>
