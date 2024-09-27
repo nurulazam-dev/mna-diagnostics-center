@@ -2,7 +2,7 @@ import ServiceSectionList from "./ServiceSectionList";
 
 const OurServices = () => {
   return (
-    <section>
+    <section className="my-5 pb-3">
       <div className="container">
         <div className="xl:w-[470px] mx-auto">
           <h2 className="heading text-center">Our Services</h2>
