@@ -3,7 +3,7 @@ import img2 from "../images/home/chooseUs/doctors.svg";
 import img4 from "../images/home/chooseUs/payment.svg";
 import img3 from "../images/home/chooseUs/schedule.svg";
 
-export const blogData = [
+export const latestNewsData = [
   {
     id: 1,
     title: "Easy Booking",
