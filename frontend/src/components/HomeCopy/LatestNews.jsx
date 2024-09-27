@@ -24,7 +24,7 @@ const LatestNews = () => {
                   </p>
 
                   <Link to="/about">
-                    <button className="flex items-center text-violet-700 mt-2">
+                    <button className="flex items-center text-green-700 hover:text-violet-700 mt-2">
                       Read more{" "}
                       <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
                     </button>
