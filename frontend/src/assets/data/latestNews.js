@@ -6,7 +6,7 @@ export const latestNewsData = [
     title: "Understanding Hypertension: Causes and Treatment",
     desc: "Hypertension is a chronic condition that can lead to severe health issues. Learn the causes, symptoms, and effective treatment methods.",
     post_date: "2024-09-25",
-    writer_name: "Dr. Sarah Ahmed",
+    writer: "Dr. Sarah Ahmed",
     img: blogImg1,
   },
   {
@@ -14,7 +14,7 @@ export const latestNewsData = [
     title: "Managing Diabetes: Key Tips and Solutions",
     desc: "Diabetes management involves regular monitoring of blood sugar levels. Here are the essential tips and treatments for controlling diabetes effectively.",
     post_date: "2024-09-23",
-    writer_name: "Dr. John Smith",
+    writer: "Dr. John Smith",
     img: blogImg1,
   },
   {
@@ -22,7 +22,7 @@ export const latestNewsData = [
     title: "Asthma Control: Best Practices for Living Well",
     desc: "Asthma can be managed through proper medication and lifestyle changes. Discover solutions to improve your quality of life with asthma.",
     post_date: "2024-09-21",
-    writer_name: "Dr. Priya Patel",
+    writer: "Dr. Priya Patel",
     img: blogImg1,
   },
   {
@@ -30,7 +30,7 @@ export const latestNewsData = [
     title: "Heart Disease Prevention: Tips for a Healthy Heart",
     desc: "Heart disease is preventable with a healthy diet and regular exercise. Read more about lifestyle changes and treatments for heart health.",
     post_date: "2024-09-19",
-    writer_name: "Dr. William Harris",
+    writer: "Dr. William Harris",
     img: blogImg1,
   },
   {
@@ -38,7 +38,7 @@ export const latestNewsData = [
     title: "Treating Migraine: Solutions for Chronic Headaches",
     desc: "Migraines can disrupt daily life, but with the right approach, they can be controlled. Learn about effective treatments and prevention strategies.",
     post_date: "2024-09-17",
-    writer_name: "Dr. Emily Zhao",
+    writer: "Dr. Emily Zhao",
     img: blogImg1,
   },
   {
@@ -46,7 +46,7 @@ export const latestNewsData = [
     title: "Skin Cancer Awareness: Early Detection and Treatment",
     desc: "Skin cancer is treatable when detected early. Discover the signs, prevention tips, and latest treatment options for skin cancer.",
     post_date: "2024-09-15",
-    writer_name: "Dr. Michael Ross",
+    writer: "Dr. Michael Ross",
     img: blogImg1,
   },
   {
@@ -54,7 +54,7 @@ export const latestNewsData = [
     title: "Chronic Back Pain: Causes and Treatment Options",
     desc: "Chronic back pain affects millions, but there are many treatment options available. Find out how to alleviate pain and improve your mobility.",
     post_date: "2024-09-13",
-    writer_name: "Dr. Laura Green",
+    writer: "Dr. Laura Green",
     img: blogImg1,
   },
   {
@@ -62,7 +62,7 @@ export const latestNewsData = [
     title: "Allergy Relief: How to Manage Seasonal Allergies",
     desc: "Seasonal allergies can be frustrating, but with proper treatment, symptoms can be minimized. Learn the best practices for allergy relief.",
     post_date: "2024-09-10",
-    writer_name: "Dr. Anil Verma",
+    writer: "Dr. Anil Verma",
     img: blogImg1,
   },
   {
@@ -70,7 +70,7 @@ export const latestNewsData = [
     title: "Obesity and Weight Loss: Solutions for a Healthier You",
     desc: "Obesity can lead to many health issues, but weight loss can improve your overall well-being. Explore the most effective weight loss strategies.",
     post_date: "2024-09-08",
-    writer_name: "Dr. Rachel Cooper",
+    writer: "Dr. Rachel Cooper",
     img: blogImg1,
   },
   {
@@ -78,7 +78,7 @@ export const latestNewsData = [
     title: "Coping with Anxiety: Treatment and Solutions",
     desc: "Anxiety disorders can be debilitating, but treatment is available. Read about the most effective solutions to manage and reduce anxiety.",
     post_date: "2024-09-05",
-    writer_name: "Dr. Steven Clarke",
+    writer: "Dr. Steven Clarke",
     img: blogImg1,
   },
 ];
