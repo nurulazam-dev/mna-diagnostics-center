@@ -1,8 +1,9 @@
+import { BsSend } from "react-icons/bs";
 import contactImg from "../../assets/images/home/contactImg.svg";
 
 const ContactSection = () => {
   return (
-    <section className="my-6">
+    <section className="my-6 w-full md:w-[95%] lg:w-[90%] mx-auto">
       <div className="px-4 mx-auto">
         <h2 className="heading text-center">Contact Us</h2>
         <p className="mb-4 lg:mb-7 font-light text-center text_para">
@@ -16,41 +17,36 @@ const ContactSection = () => {
           <div className="lg:w-7/12">
             <form action="#" className="space-y-3">
               <div>
-                <label htmlFor="email" className="form_label">
-                  Your Email
-                </label>
                 <input
                   type="email"
                   id="email"
-                  placeholder="example@gmail.com"
+                  placeholder="Your Email Address"
                   className="form_input mt-1"
                 />
               </div>
               <div>
-                <label htmlFor="subject" className="form_label">
-                  Subject
-                </label>
                 <input
                   type="text"
                   id="subject"
-                  placeholder="Let us know how we can help you"
+                  placeholder="Subject"
                   className="form_input mt-1"
                 />
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="message" className="form_label">
-                  Your Message
-                </label>
                 <textarea
                   rows="3"
                   type="text"
                   id="message"
-                  placeholder="Leave a comment..."
+                  placeholder="Your Message"
                   className="form_input mt-1"
                 />
               </div>
-              <button type="submit" className=" customBtn w-full">
-                Submit
+              <button
+                type="submit"
+                className="customBtn text-[18px] lg:w-2/5 w-full font-bold flex justify-center items-center"
+              >
+                Submit{" "}
+                <BsSend className="group-hover:text-green-700 w-5 h-5 ml-2" />
               </button>
             </form>
           </div>

@@ -4,7 +4,7 @@ const ServiceSectionCard = ({ service }) => {
   const { name, desc, textColor, serviceImg } = service;
 
   return (
-    <div className="border rounded">
+    <div className="border rounded shadow-md">
       <img src={serviceImg} alt="" />
       <div className="pt-[5px] pb-[20px] px-3 lg:px-5 ">
         <h2
