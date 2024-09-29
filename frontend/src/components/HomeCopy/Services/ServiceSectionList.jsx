@@ -5,9 +5,9 @@ import ServiceSectionCard from "./ServiceSectionCard";
 
 const ServiceSectionList = () => {
   return (
-    <div className="container mt-[30px] lg:mt-[55px]">
+    <div className="container mt-[20px] lg:mt-[25px]">
       <div className="grid grid-cols-1 mg:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-[30px]">
-        {services.map((service, index) => (
+        {services.slice(0, 4).map((service, index) => (
           <ServiceSectionCard service={service} index={index} key={index} />
         ))}
       </div>
