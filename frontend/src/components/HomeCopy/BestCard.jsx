@@ -6,18 +6,19 @@ const BestCard = () => {
   const cardData = [
     {
       id: 1,
-      title: "Opening Hours",
-      desc: "Every day, every time. 24/7",
+      title: "Our Location ",
+      desc: "Raozan, Chattogram, BD.",
       bgColor: "from-white to-green-500",
-      icon: clock,
+      icon: location,
     },
     {
       id: 2,
-      title: "Our Location ",
-      desc: "Raozan, Chattogram, BD.",
+      title: "Opening Hours",
+      desc: "24/7 Every day, every time.",
       bgColor: "from-violet-200 to-green-200",
-      icon: location,
+      icon: clock,
     },
+
     {
       id: 3,
       title: "Contact Us Now",
@@ -34,7 +35,7 @@ const BestCard = () => {
             className={`flex justify-between px-4 items-center bg-gradient-to-r ${data.bgColor} rounded py-2`}
             key={id}
           >
-            <img src={data.icon} alt="" />
+            <img src={data.icon} alt={data?.title} />
             <div className="">
               <h3 className="text-[25px] font-bold">{data?.title}</h3>
               <p>{data?.desc}</p>
