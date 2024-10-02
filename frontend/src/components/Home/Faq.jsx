@@ -1,4 +1,4 @@
-import faqImg from "../../assets/images/others/faq-img.png";
+import faqImg from "../../assets/images/home/faq-img.png";
 import FaqList from "./Faq/FaqList";
 
 const Faq = () => {

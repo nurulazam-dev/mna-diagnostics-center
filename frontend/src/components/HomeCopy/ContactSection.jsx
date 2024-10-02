@@ -1,12 +1,13 @@
 import { BsSend } from "react-icons/bs";
-import contactImg from "../../assets/images/home/contactImg.svg";
+// import contactImg from "../../assets/images/home/contactImg.svg";
+import contactImg from "../../assets/images/home/contact.gif";
 
 const ContactSection = () => {
   return (
     <section className="my-6 w-full md:w-[95%] lg:w-[90%] mx-auto">
       <div className="px-4 mx-auto">
         <h2 className="heading text-center">Contact Us</h2>
-        <p className="mb-4 lg:mb-7 font-light text-center text_para">
+        <p className="mb-4 lg:mb-0 font-light text-center text_para">
           Got a technical issue? Want to send feedback about a beta feature? Let
           us know.
         </p>

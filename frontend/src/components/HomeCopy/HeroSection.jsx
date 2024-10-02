@@ -1,7 +1,7 @@
 // import heroImg01 from "../../assets/images/others/feature-img.png";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import heroImg01 from "../../assets/images/home/hero/heroImg.png";
+import heroImg01 from "../../assets/images/home/heroImg.png";
 
 const HeroSection = () => {
   return (
