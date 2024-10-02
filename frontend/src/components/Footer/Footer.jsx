@@ -49,12 +49,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="py-4 bg-green-500">
+    <footer className="pt-4 bg-green-600 text-white">
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
           {/* ===1st column=== */}
           <div>
-            <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
+            <h2 className="text-[20px] leading-[30px] font-[700] lg:mb-6 mb-3 text-headingColor">
               Quick Links
             </h2>
             <ul>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400]"
                   >
                     {item.display}
                   </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
           {/* ===1st column end=== */}
           {/* ===2nd column=== */}
           <div>
-            <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
+            <h2 className="text-[20px] leading-[30px] font-[700] lg:mb-6 mb-3 text-headingColor">
               I want to:
             </h2>
             <ul>
@@ -81,7 +81,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400]"
                   >
                     {item.display}
                   </Link>
@@ -92,7 +92,7 @@ const Footer = () => {
           {/* ===2nd column end=== */}
           {/* ===3rd column=== */}
           <div>
-            <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
+            <h2 className="text-[20px] leading-[30px] font-[700] lg:mb-6 mb-3 text-headingColor">
               Support
             </h2>
             <ul>
@@ -100,7 +100,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className="text-[16px] leading-7 font-[400] text-textColor"
+                    className="text-[16px] leading-7 font-[400]"
                   >
                     {item.display}
                   </Link>
@@ -111,7 +111,7 @@ const Footer = () => {
           {/* ===3rd column end=== */}
 
           {/* ===last column=== */}
-          <div className="">
+          <div className="lg:mb-0 mb-3">
             <div className="lg:block flex justify-center items-center">
               <img src={logo} alt="" className="lg:w-28 w-[82px]" />
             </div>
@@ -127,13 +127,13 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <p className="text-[10px] lg:text-[16px] font-[400] text-textColor lg:mt-4 lg:text-left text-center">
-                Copyright © {year} developed by MNA all right reserved.
-              </p>
             </div>
           </div>
           {/* ===last column end=== */}
         </div>
+      </div>
+      <div className="bg-slate-800 text-yellow-500 text-[10px] md:text-[12px] lg:text-[14px] font-[400] text-center py-3">
+        Copyright © {year} developed by MNA all right reserved.
       </div>
     </footer>
   );

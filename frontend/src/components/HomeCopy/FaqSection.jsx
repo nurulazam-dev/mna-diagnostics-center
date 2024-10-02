@@ -28,7 +28,7 @@ const FaqSection = () => {
                 </h2>
                 <button
                   onClick={() => setActive(faq.id)}
-                  className="cursor-pointer text-red-700 font-bold"
+                  className="cursor-pointer text-red-700 font-bold border border-blue-700 w-7 h-7"
                 >
                   {active === faq.id ? "X" : "|||"}
                 </button>
