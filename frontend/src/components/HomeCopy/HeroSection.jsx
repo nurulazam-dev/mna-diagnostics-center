@@ -11,7 +11,7 @@ const HeroSection = () => {
           <div className="lg:w-[570px]">
             <div className="lg:text-[40px] md:text-[32px] text-[28px] font-[800] leading-[22px] lg:leading-[30px] md:leading-[70px]">
               <h1>Welcome to</h1>
-              <h1 className="text-violet-700 font-mono mt-2">
+              <h1 className="text-violet-700 font-mono mt-3">
                 MNA Diagnostics Center
               </h1>
             </div>
