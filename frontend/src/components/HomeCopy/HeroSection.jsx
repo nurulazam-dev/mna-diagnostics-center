@@ -1,4 +1,6 @@
 // import heroImg01 from "../../assets/images/others/feature-img.png";
+import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import heroImg01 from "../../assets/images/home/hero/heroImg.png";
 
 const HeroSection = () => {
@@ -7,7 +9,7 @@ const HeroSection = () => {
       <div className="lg:flex justify-center items-center">
         <div>
           <div className="lg:w-[570px]">
-            <div className="lg:text-[40px] text-[28px] font-[800] leading-[22px] lg:leading-[30px]  md:text-[60px] md:leading-[70px]">
+            <div className="lg:text-[40px] md:text-[32px] text-[28px] font-[800] leading-[22px] lg:leading-[30px] md:leading-[70px]">
               <h1>Welcome to</h1>
               <h1 className="text-violet-700 font-mono mt-2">
                 MNA Diagnostics Center
@@ -26,11 +28,20 @@ const HeroSection = () => {
               partner every step of the way, ensuring your well-being with
               precision and care.
             </p>
-            <div className="flex my-4 lg:mb-0">
-              <button className="customBtn bg-green-600 text-white mr-4">
-                Request an Appointment
-              </button>
-              <button className="customBtn">Read More...</button>
+            <div className="lg:flex md:flex my-4 lg:mb-0">
+              <Link to="/services" className="flex justify-center mr-5">
+                <button className="customBtn bg-green-600 flex items-center text-white">
+                  Request an Appointment{" "}
+                  <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
+                </button>
+              </Link>
+
+              <Link to="/about" className="flex justify-center ">
+                <button className="customBtn flex items-center">
+                  Read More...{" "}
+                  <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
