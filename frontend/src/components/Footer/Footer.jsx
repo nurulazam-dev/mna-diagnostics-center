@@ -52,30 +52,7 @@ const Footer = () => {
     <footer className="py-4 bg-green-500">
       <div className="container">
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
-          {/* ===first column=== */}
-          <div className="flex lg:block justify-evenly items-center">
-            <div>
-              <img src={logo} alt="" className="lg:w-28 w-[82px]" />
-            </div>
-            <div className="">
-              <div className="flex justify-center lg:justify-start items-center gap-3 lg:mt-4 mt-1">
-                {socialLink.map((link, index) => (
-                  <Link
-                    to={link.path}
-                    key={index}
-                    className="lg:w-9 w-7 h-7 lg:h-9 border border-solid border-black rounded-full flex items-center justify-center group hover:bg-white hover:border-none"
-                  >
-                    {link.icon}
-                  </Link>
-                ))}
-              </div>
-              <p className="text-[11px] lg:text-[16px] font-[400] text-textColor lg:mt-4">
-                Copyright © {year} developed by MNA all right reserved.
-              </p>
-            </div>
-          </div>
-          {/* ===first column end=== */}
-          {/* ===2nd column=== */}
+          {/* ===1st column=== */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
               Quick Links
@@ -93,8 +70,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          {/* ===2nd column end=== */}
-          {/* ===3rd column=== */}
+          {/* ===1st column end=== */}
+          {/* ===2nd column=== */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
               I want to:
@@ -112,8 +89,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          {/* ===3rd column end=== */}
-          {/* ===4th column=== */}
+          {/* ===2nd column end=== */}
+          {/* ===3rd column=== */}
           <div>
             <h2 className="text-[20px] leading-[30px] font-[700] mb-6 text-headingColor">
               Support
@@ -131,7 +108,31 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          {/* ===4th column end=== */}
+          {/* ===3rd column end=== */}
+
+          {/* ===last column=== */}
+          <div className="">
+            <div className="lg:block flex justify-center items-center">
+              <img src={logo} alt="" className="lg:w-28 w-[82px]" />
+            </div>
+            <div className="">
+              <div className="flex justify-center lg:justify-start items-center gap-3 lg:mt-4 mt-1">
+                {socialLink.map((link, index) => (
+                  <Link
+                    to={link.path}
+                    key={index}
+                    className="lg:w-9 w-7 h-7 lg:h-9 border border-solid border-black rounded-full flex items-center justify-center group hover:bg-white hover:border-none"
+                  >
+                    {link.icon}
+                  </Link>
+                ))}
+              </div>
+              <p className="text-[10px] lg:text-[16px] font-[400] text-textColor lg:mt-4 lg:text-left text-center">
+                Copyright © {year} developed by MNA all right reserved.
+              </p>
+            </div>
+          </div>
+          {/* ===last column end=== */}
         </div>
       </div>
     </footer>
