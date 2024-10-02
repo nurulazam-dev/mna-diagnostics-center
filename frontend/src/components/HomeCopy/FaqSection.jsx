@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { faqs } from "../../assets/data/faqs";
-import faqImg from "../../assets/images/others/faq-img.png";
+import faqImg from "../../assets/images/home/faq-img.png";
 
 const FaqSection = () => {
   const [active, setActive] = useState(1);
@@ -10,7 +10,7 @@ const FaqSection = () => {
       <h1 className="heading text-center">Frequently Asked Questions</h1>
       <div className="flex items-center justify-center ">
         {/* Image Section */}
-        <div className="hidden lg:block md:block lg:w-1/2 w-full">
+        <div className="hidden lg:block md:block lg:w-2/5 w-full">
           <img
             src={faqImg}
             alt="Diagnostics Center"
@@ -19,7 +19,7 @@ const FaqSection = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="lg:w-1/2 w-full space-y-4">
+        <div className="lg:w-3/5 w-full space-y-4">
           {faqs.map((faq) => (
             <div key={faq.id} className="bg-white shadow-md p-4 rounded-lg">
               <div className="flex items-center justify-between text-[15px] lg:text-[18px]">
