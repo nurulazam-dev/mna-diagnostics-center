@@ -36,7 +36,7 @@ const HeroSection = () => {
                 </button>
               </Link>
 
-              <Link to="/about" className="flex justify-center ">
+              <Link to="/about" className="flex justify-center mt-4 lg:mt-0">
                 <button className="customBtn flex items-center">
                   Read More...{" "}
                   <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />

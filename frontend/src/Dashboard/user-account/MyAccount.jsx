@@ -1,14 +1,12 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Error from "../../components/Shared/Error";
 import Loading from "../../components/Shared/Loading";
 import { BASE_URL } from "../../config";
-import { authContext } from "../../context/AuthContext";
 import useGetProfile from "../../hooks/useFetchData";
 import MyBookings from "./MyBookings";
 import Profile from "./Profile";
 
 const MyAccount = () => {
-  const { dispatch } = useContext(authContext);
   const [tab, setTab] = useState("bookings");
 
   const {
@@ -18,10 +16,6 @@ const MyAccount = () => {
   } = useGetProfile(`${BASE_URL}/users/profile/me`);
 
   console.log(userData);
-
-  const handleLogout = () => {
-    dispatch({ type: "LOGOUT" });
-  };
 
   return (
     <section>
@@ -60,12 +54,6 @@ const MyAccount = () => {
               </div>
 
               <div className="mt-[50px] md:mt-[100px]">
-                <button
-                  onClick={handleLogout}
-                  className="text-[16px] text-white leading-7 rounded-md w-full bg-[#181A1E] p-3"
-                >
-                  Logout
-                </button>
                 <button className="text-[16px] leading-7 rounded-md w-full bg-red-600 mt-4 text-white p-3">
                   Delete Account
                 </button>

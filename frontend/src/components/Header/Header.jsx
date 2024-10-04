@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef } from "react";
 import { BiMenu } from "react-icons/bi";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/brand-logo/mna-diagnostics-center.png";
 import { authContext } from "../../context/AuthContext.jsx";
 
@@ -30,7 +30,9 @@ const navLinks = [
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
-  const { user, role, token } = useContext(authContext);
+  const { user, role, token, dispatch } = useContext(authContext);
+
+  const navigate = useNavigate();
 
   const handleStickyHeader = () => {
     window.addEventListener("scroll", () => {
@@ -52,6 +54,11 @@ const Header = () => {
   });
 
   const toggleMenu = () => menuRef.current.classList.toggle("show_menu");
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+    navigate("/");
+  };
 
   return (
     <header className="flex bg-green-600 h-[60px] items-center" ref={headerRef}>
@@ -87,7 +94,7 @@ const Header = () => {
           {/* ========nav right========= */}
           <div className="flex items-center gap-4">
             {token && user ? (
-              <div className="">
+              <div className="flex items-center">
                 <Link
                   to={`${
                     role == "doctor"
@@ -99,7 +106,7 @@ const Header = () => {
                     <h2 className="mr-2 text-black text-[16px] font-bold">
                       {user?.name}{" "}
                     </h2>
-                    <figure className="w-[45px] h-[45px] rounded-full cursor-pointer">
+                    <figure className="w-[45px] h-[45px] rounded-full cursor-pointer lg:block md:block hidden">
                       <img
                         src={user?.photo}
                         alt=""
@@ -108,17 +115,23 @@ const Header = () => {
                     </figure>
                   </div>
                 </Link>
+                <button
+                  onClick={handleLogout}
+                  className="bg-red-600 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none ml-2"
+                >
+                  Logout
+                </button>
               </div>
             ) : (
               <Link to="/login">
-                <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none">
+                <button className="bg-violet-700 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none">
                   Login
                 </button>
               </Link>
             )}
 
             <span className="md:hidden" onClick={toggleMenu}>
-              <BiMenu className="w-6 h-6 cursor-pointer" />
+              <BiMenu className="w-8 h-8 cursor-pointer" />
             </span>
           </div>
         </div>
