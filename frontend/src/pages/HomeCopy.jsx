@@ -1,4 +1,5 @@
 import AdsBanner from "../components/HomeCopy/AdsBanner";
+import Awards from "../components/HomeCopy/Awards";
 import BestCard from "../components/HomeCopy/BestCard";
 import ContactSection from "../components/HomeCopy/ContactSection";
 import FaqSection from "../components/HomeCopy/FaqSection";
@@ -16,6 +17,7 @@ const HomeCopy = () => {
       <OurServices />
       <AdsBanner />
       <FaqSection />
+      <Awards />
       <LatestNews />
       <ContactSection />
     </>
