@@ -12,13 +12,13 @@ export const awards = [
   {
     id: "02",
     name: "Healthcare Hero Award",
-    time: "30 January, 2022",
+    time: "30 June, 2022",
     photo: awardImg02,
   },
   {
     id: "03",
     name: "Top Specialist of the Year",
-    time: "10 December, 2015",
+    time: "10 January, 2015",
     photo: awardImg03,
   },
 ];
