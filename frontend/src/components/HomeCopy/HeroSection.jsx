@@ -1,11 +1,16 @@
-// import heroImg01 from "../../assets/images/others/feature-img.png";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import heroBg from "../../assets/images/home/heroBg.png";
 import heroImg01 from "../../assets/images/home/heroImg.png";
 
 const HeroSection = () => {
   return (
-    <section className="container pt-[15px] 2xl:h-[800px] lg:px-10">
+    <section
+      className="container pt-[15px] 2xl:h-[800px] lg:px-10"
+      style={{
+        background: `url(${heroBg})`,
+      }}
+    >
       <div className="lg:flex justify-center items-center">
         <div>
           <div className="lg:w-[570px]">
@@ -24,9 +29,7 @@ const HeroSection = () => {
             </p>
             <p className="text_para">
               We are dedicated to providing personalized healthcare solutions
-              designed to meet your unique needs. Trust us to be your health
-              partner every step of the way, ensuring your well-being with
-              precision and care.
+              designed to meet your unique needs.
             </p>
             <div className="lg:flex md:flex my-4 lg:mb-0">
               <Link to="/services" className="flex justify-center mr-5">
@@ -47,7 +50,7 @@ const HeroSection = () => {
         </div>
 
         <div>
-          <img src={heroImg01} alt="" />
+          <img src={heroImg01} alt="" className="h-full" />
         </div>
       </div>
     </section>
