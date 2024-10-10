@@ -3,10 +3,9 @@ import { awards } from "../../assets/data/awards";
 const Awards = () => {
   return (
     <section className="p-4 lg:p-12">
-      <h1 className="heading text-center">Winning Awards</h1>
-      {/* main div */}
+      <h1 className="heading mb-1">Winning Awards</h1>
+      <div className="h-1 w-[15%] bg-gradient-to-r from-violet-200 to-green-200"></div>
       <div className="lg:flex justify-center mt-3">
-        {/* card */}
         {awards.map((award) => (
           <div
             key={award.id}

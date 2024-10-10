@@ -6,7 +6,7 @@ const FaqSection = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section className="p-4 lg:p-12">
+    <section className="p-4 lg:pb-0 lg:p-12">
       <h1 className="heading text-center">Frequently Asked Questions</h1>
       <div className="flex items-center justify-center ">
         {/* Image Section */}
