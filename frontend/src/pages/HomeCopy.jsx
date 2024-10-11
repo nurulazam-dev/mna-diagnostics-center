@@ -13,9 +13,9 @@ const HomeCopy = () => {
   return (
     <>
       <HeroSection />
-      <Awards />
-      <OurServices />
       <BestCard />
+      <OurServices />
+      <Awards />
       <AdsBanner />
       <VirtualTreatment />
       <WhyChooseUs />

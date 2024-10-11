@@ -3,18 +3,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import patientImg from "../../../assets/images/icons/patient-avatar.png";
+import { testimonials } from "../../../assets/data/testimonialData";
 
 const TestimonialSlide = () => {
-  const slideData = [
-    { id: "slideData001" },
-    { id: "slideData002" },
-    { id: "slideData003" },
-    { id: "slideData004" },
-    { id: "slideData005" },
-    { id: "slideData006" },
-  ];
-
   return (
     <div className="mt-[30px] lg:mt-[55px]">
       <Swiper
@@ -38,14 +29,18 @@ const TestimonialSlide = () => {
         }}
       >
         {/* ==slides== */}
-        {slideData.map((slide) => (
-          <SwiperSlide key={slide.id}>
+        {testimonials.map((testimonial) => (
+          <SwiperSlide key={testimonial.id}>
             <div className="py-[30px] px-5 rounded-3">
               <div className="flex items-center gap-[13px]">
-                <img src={patientImg} alt="" className="w-[70px]" />
+                <img
+                  src={testimonial.image}
+                  alt=""
+                  className="w-[70px] rounded-s-2xl"
+                />
                 <div>
-                  <h4 className="text-[18px] leading-[30px] font-semibold text-headingColor">
-                    MD Nurul Azam
+                  <h4 className="text-[20px] leading-[30px] font-bold text-headingColor">
+                    {testimonial.patient}
                   </h4>
                   <div className="flex items-center gap-[2px]">
                     <HiStar className="text-yellowColor w-[18px] h-5" />
@@ -57,8 +52,7 @@ const TestimonialSlide = () => {
                 </div>
               </div>
               <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                I have taken medical services from them. They treat so well and
-                they are providing the best medical services.
+                {testimonial.description}
               </p>
             </div>
           </SwiperSlide>
