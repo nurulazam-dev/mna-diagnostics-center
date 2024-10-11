@@ -7,7 +7,7 @@ import { testimonials } from "../../../assets/data/testimonialData";
 
 const TestimonialSlide = () => {
   return (
-    <div className="mt-[30px] lg:mt-[55px]">
+    <div className="mt-[10px] lg:mt-[15px]">
       <Swiper
         modules={[Pagination]}
         spaceBetween={30}
@@ -30,8 +30,8 @@ const TestimonialSlide = () => {
       >
         {/* ==slides== */}
         {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
-            <div className="py-[30px] px-5 rounded-3">
+          <SwiperSlide key={testimonial.id} className="border rounded">
+            <div className="py-[16px] px-3">
               <div className="flex items-center gap-[13px]">
                 <img
                   src={testimonial.image}
@@ -51,8 +51,10 @@ const TestimonialSlide = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-[16px] leading-7 mt-4 text-textColor font-[400]">
-                {testimonial.description}
+              <p className="text-[14px] leading-6 mt-2 text-textColor font-[400]">
+                {testimonial.description.length < 144
+                  ? testimonial.description
+                  : testimonial.description.slice(0, 144) + "..."}
               </p>
             </div>
           </SwiperSlide>
