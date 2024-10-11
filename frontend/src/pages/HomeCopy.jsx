@@ -6,6 +6,7 @@ import FaqSection from "../components/HomeCopy/FaqSection";
 import HeroSection from "../components/HomeCopy/HeroSection";
 import LatestNews from "../components/HomeCopy/LatestNews";
 import OurServices from "../components/HomeCopy/Services/OurServices";
+import VirtualTreatment from "../components/HomeCopy/VirtualTreatment";
 import WhyChooseUs from "../components/HomeCopy/WhyChooseUs";
 
 const HomeCopy = () => {
@@ -16,6 +17,7 @@ const HomeCopy = () => {
       <WhyChooseUs />
       <OurServices />
       <AdsBanner />
+      <VirtualTreatment />
       <FaqSection />
       <Awards />
       <LatestNews />
