@@ -7,8 +7,9 @@ const VirtualTreatment = () => {
     <section className="flex flex-col lg:flex-row justify-center items-center p-6">
       {/* Text Section */}
       <div className="lg:w-1/2">
-        <h2 className="heading mb-4">Get Virtual Treatment</h2>
-        <p className="text-[14px] lg:text-[18px] font-semibold text-gray-700 mb-6">
+        <h2 className="heading">Get Virtual Treatment</h2>
+        <div className="h-[6px] w-[60%] bg-gradient-to-r from-violet-300 to-green-300"></div>
+        <p className="text-[14px] lg:text-[18px] font-semibold text-gray-700 my-6">
           At MNA Diagnostics Center, you can consult with our doctors online
           from the comfort of your home. Follow these easy steps:
         </p>

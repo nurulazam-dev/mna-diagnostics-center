@@ -13,13 +13,13 @@ const HomeCopy = () => {
   return (
     <>
       <HeroSection />
-      <BestCard />
-      <WhyChooseUs />
+      <Awards />
       <OurServices />
+      <BestCard />
       <AdsBanner />
       <VirtualTreatment />
+      <WhyChooseUs />
       <FaqSection />
-      <Awards />
       <LatestNews />
       <ContactSection />
     </>
