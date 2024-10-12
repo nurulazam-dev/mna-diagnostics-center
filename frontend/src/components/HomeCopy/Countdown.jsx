@@ -34,10 +34,10 @@ const Countdown = () => {
             <h3 className="text-5xl font-bold">30+</h3>
             <p className="mt-2 text-lg">Winning Awards</p>
           </div>
-          {/* Doctors */}
+          {/* Doctors & Staffs */}
           <div className="">
             <h3 className="text-5xl font-bold">125+</h3>
-            <p className="mt-2 text-lg">Doctors & Staff</p>
+            <p className="mt-2 text-lg">Doctors & Staffs</p>
           </div>
         </div>
       </div>
