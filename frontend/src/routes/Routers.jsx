@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "../Dashboard/doctor-account/Dashboard";
 import MyAccount from "../Dashboard/user-account/MyAccount";
+import AboutUs from "../pages/AboutUs";
 import CheckoutSuccess from "../pages/CheckoutSuccess";
 import Contact from "../pages/Contact";
 import DoctorDetails from "../pages/Doctors/DoctorDetails";
@@ -24,6 +25,7 @@ const Routers = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<AboutUs />} />
       <Route path="/doctors" element={<Doctors />} />
       <Route path="/doctors/:id" element={<DoctorDetails />} />
       <Route
