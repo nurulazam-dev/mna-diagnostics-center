@@ -1,54 +1,79 @@
+import contactImg from "../assets/images/home/contactImg.svg";
+
 const Contact = () => {
   return (
-    <section className="pt-2">
-      <div className="px-4 mx-auto max-w-screen-md">
-        <h2 className="heading text-center">Contact Us</h2>
-        <p className="mb-8 lg:mb-10 font-light text-center text_para">
-          Got a technical issue? Want to send feedback about a beta feature? Let
-          us know.
-        </p>
-        <form action="#" className="space-y-8">
-          <div>
-            <label htmlFor="email" className="form_label">
-              Your Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="example@gmail.com"
-              className="form_input mt-1"
-            />
+    <section className="bg-gray-100 py-4 lg:px-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8">
+          {/* Left Part: Image and Contact Info */}
+          <div className="w-full lg:w-2/5 mb-8 lg:mb-0">
+            {/* Image with Animation */}
+            <div className="relative overflow-hidden hover:scale-105 transition-transform duration-300 ease-in-out flex justify-center">
+              <img
+                src={contactImg}
+                alt="Contact"
+                className="max-w-sm h-full object-cover"
+              />
+            </div>
+            {/* Contact Information */}
+            <div className="mt-[2px]">
+              <h2 className="text-2xl font-bold text-gray-800">
+                Contact Information:
+              </h2>
+              <p className="mt-[3px] text-gray-600">
+                <strong>Phone:</strong> +88 01234 567890
+                <br />
+                <strong>Email:</strong> contact@mnadiagnostics.com
+                <br />
+                <strong>Fax:</strong> +88 09876 543210
+              </p>
+            </div>
           </div>
-          <div>
-            <label htmlFor="subject" className="form_label">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              placeholder="Let us know how we can help you"
-              className="form_input mt-1"
-            />
+
+          {/* Right Part: Contact Form */}
+          <div className="w-full lg:w-3/5 px-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Send Us a Message
+            </h2>
+            <form className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Subject"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700">
+                  Your Message
+                </label>
+                <textarea
+                  rows="4"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Type your message"
+                />
+              </div>
+              <div>
+                <button type="submit" className="w-full customBtn">
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="message" className="form_label">
-              Your Message
-            </label>
-            <textarea
-              rows="6"
-              type="text"
-              id="message"
-              placeholder="Leave a comment..."
-              className="form_input mt-1"
-            />
-          </div>
-          <button
-            type="submit"
-            className=" bg-primaryColor text-white text-[18px] rounded-lg px-6 py-2 hover:bg-slate-700 hover:border-none"
-          >
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </section>
   );

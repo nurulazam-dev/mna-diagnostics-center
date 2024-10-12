@@ -12,7 +12,7 @@
     @apply max-w-full w-[1440px] px-5 mx-auto;
   }
   .customBtn {
-    @apply border border-green-700 text-green-700 font-[500] px-[26px] py-[11px] rounded-md hover:bg-violet-700  hover:text-white;
+    @apply border border-green-700 text-green-700 font-[500] px-[26px] py-[11px] rounded-md hover:bg-violet-700  hover:text-white transition duration-300;
   }
   .btn {
     @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
