@@ -3,7 +3,7 @@ import CountdownBg from "../../assets/images/home/CountdownBg.png";
 const Countdown = () => {
   return (
     <section
-      className="bg-cover bg-center py-6 my-4 w-[85%] mx-auto rounded-md"
+      className="bg-cover bg-center py-6 my-4 w-[90%] mx-auto rounded-md"
       style={{
         backgroundImage: `url(${CountdownBg})`,
       }}
@@ -15,7 +15,7 @@ const Countdown = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
           {/* Year of Experiences */}
           <div className="">
-            <h3 className="text-5xl font-bold">10+</h3>
+            <h3 className="text-5xl font-bold">12+</h3>
             <p className="mt-2 text-lg">Years of Experiences</p>
           </div>
 
@@ -31,13 +31,13 @@ const Countdown = () => {
           </div>
           {/* Winning Awards */}
           <div className="">
-            <h3 className="text-5xl font-bold">15+</h3>
+            <h3 className="text-5xl font-bold">30+</h3>
             <p className="mt-2 text-lg">Winning Awards</p>
           </div>
           {/* Doctors */}
           <div className="">
-            <h3 className="text-5xl font-bold">55+</h3>
-            <p className="mt-2 text-lg">Doctors</p>
+            <h3 className="text-5xl font-bold">125+</h3>
+            <p className="mt-2 text-lg">Doctors & Staff</p>
           </div>
         </div>
       </div>
