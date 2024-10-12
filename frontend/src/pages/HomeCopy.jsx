@@ -2,6 +2,7 @@ import AdsBanner from "../components/HomeCopy/AdsBanner";
 import Awards from "../components/HomeCopy/Awards";
 import BestCard from "../components/HomeCopy/BestCard";
 import ContactSection from "../components/HomeCopy/ContactSection";
+import Countdown from "../components/HomeCopy/Countdown";
 import FaqSection from "../components/HomeCopy/FaqSection";
 import HeroSection from "../components/HomeCopy/HeroSection";
 import LatestNews from "../components/HomeCopy/LatestNews";
@@ -19,6 +20,7 @@ const HomeCopy = () => {
       <Awards />
       <AdsBanner />
       <VirtualTreatment />
+      <Countdown />
       <WhyChooseUs />
       <FaqSection />
       <LatestNews />
