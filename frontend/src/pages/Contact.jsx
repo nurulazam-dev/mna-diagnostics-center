@@ -12,7 +12,7 @@ const Contact = () => {
               <img
                 src={contactImg}
                 alt="Contact"
-                className="max-w-sm h-full object-cover"
+                className="lg:max-w-sm max-w-xs h-full object-cover"
               />
             </div>
             {/* Contact Information */}
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
 
           {/* Right Part: Contact Form */}
-          <div className="w-full lg:w-3/5 px-8">
+          <div className="w-full lg:w-3/5 lg:px-8 px-4">
             <h2 className="text-xl lg:text-3xl font-bold text-gray-800 mb-4 text-center">
               Send Us a Message
             </h2>

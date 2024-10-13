@@ -15,7 +15,7 @@ const OurLocation = () => {
             We are conveniently located to serve you better. Feel free to visit
             us for all your diagnostic needs.
           </p>
-          <Link to="/contact">
+          <Link to="/contact" className="flex justify-center lg:block">
             <button className="customBtn flex items-center">
               For More Details{" "}
               <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
