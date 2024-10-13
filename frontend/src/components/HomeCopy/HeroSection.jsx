@@ -20,17 +20,17 @@ const HeroSection = () => {
                 MNA Diagnostics Center
               </h1>
             </div>
+            <div className="text_para text-justify">
+              <p>
+                Your trusted partner in health. Book appointments with top
+                doctors and access a wide range of diagnostic services, all in
+                one place. Experience convenient, efficient, and personalized
+                care tailored to your needs. Your health, our priority. <br />{" "}
+                We are dedicated to providing personalized healthcare solutions
+                designed to meet your unique needs.
+              </p>
+            </div>
 
-            <p className="text_para">
-              Your trusted partner in health. Book appointments with top doctors
-              and access a wide range of diagnostic services, all in one place.
-              Experience convenient, efficient, and personalized care tailored
-              to your needs. Your health, our priority.
-            </p>
-            <p className="text_para">
-              We are dedicated to providing personalized healthcare solutions
-              designed to meet your unique needs.
-            </p>
             <div className="lg:flex md:flex my-4 lg:mb-0">
               <Link to="/services" className="flex justify-center mr-5">
                 <button className="customBtn bg-green-600 flex items-center text-white">

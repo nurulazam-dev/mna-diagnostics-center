@@ -25,7 +25,7 @@ const LatestNews = () => {
                   <h2 className="lg:text-[20px] text-[16px] text-violet-900 leading-6 font-[800]">
                     {news.title}
                   </h2>
-                  <p className="text-[14px] leading-6 text-textColor font-[400] mt-3">
+                  <p className="text-[14px] leading-6 text-textColor font-[400] mt-3 text-justify">
                     {news.desc}
                   </p>
 

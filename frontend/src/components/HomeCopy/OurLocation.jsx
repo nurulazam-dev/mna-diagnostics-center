@@ -11,7 +11,7 @@ const OurLocation = () => {
             MNA Diagnostics Center,
           </p>
           <p>Raozan, Chattogram.</p>
-          <p className="my-4">
+          <p className="my-4 text-justify">
             We are conveniently located to serve you better. Feel free to visit
             us for all your diagnostic needs.
           </p>

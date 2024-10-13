@@ -7,10 +7,6 @@ const ContactSection = () => {
     <section className="my-6 w-full md:w-[95%] lg:w-[90%] mx-auto">
       <div className="px-4 mx-auto">
         <h2 className="heading text-center">Contact Us</h2>
-        <p className="mb-4 lg:mb-0 font-light text-center text_para">
-          Got a technical issue? Want to send feedback about a beta feature? Let
-          us know.
-        </p>
         <div className="lg:flex justify-between block w-full items-center">
           <div className="lg:flex hidden justify-center lg:w-5/12 lg:px-4">
             <img src={contactImg} alt="" />

@@ -1,8 +1,8 @@
 const AboutDC = () => {
   return (
-    <div>
+    <div className="text-justify">
       {/* Introduction */}
-      <p className="text-lg md:text-xl text-gray-600 mb-6">
+      <p className="text-[14px] lg:text-[17px] text-gray-600 mb-6">
         Welcome to{" "}
         <span className="font-semibold text-gray-900">
           MNA Diagnostics Center
@@ -18,7 +18,7 @@ const AboutDC = () => {
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
           Our Goals & Objectives
         </h2>
-        <p className="text-lg text-gray-600">
+        <p className="text-[14px] lg:text-[17px] text-gray-600">
           At MNA Diagnostics Center, our primary goal is to offer comprehensive
           diagnostic solutions with the highest standards of accuracy and
           precision. We strive to create a seamless experience for our patients
@@ -42,7 +42,7 @@ const AboutDC = () => {
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
           Our Vision
         </h2>
-        <p className="text-lg text-gray-600">
+        <p className="text-[14px] lg:text-[17px] text-gray-600">
           Our vision is to become a trusted name in the healthcare industry by
           providing quality diagnostics services that help improve the health
           and well-being of our community. We aim to make the doctor booking
@@ -61,7 +61,7 @@ const AboutDC = () => {
             <h3 className="text-xl font-semibold text-gray-700 mb-2">
               Patient-Centered Care
             </h3>
-            <p className="text-gray-600">
+            <p className="text-[14px] lg:text-[17px] text-gray-600">
               We put the needs and well-being of our patients first, ensuring
               they receive the best possible care and attention throughout their
               diagnostic journey.
@@ -71,7 +71,7 @@ const AboutDC = () => {
             <h3 className="text-xl font-semibold text-gray-700 mb-2">
               Integrity & Accuracy
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-[14px] lg:text-[17px]">
               We adhere to strict ethical standards and guarantee the highest
               level of accuracy in our test results, ensuring patients can trust
               us with their health.
@@ -81,7 +81,7 @@ const AboutDC = () => {
             <h3 className="text-xl font-semibold text-gray-700 mb-2">
               Innovation & Technology
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-[14px] lg:text-[17px]">
               We constantly evolve by incorporating the latest advancements in
               diagnostic technology to provide cutting-edge services to our
               community.
@@ -91,7 +91,7 @@ const AboutDC = () => {
             <h3 className="text-xl font-semibold text-gray-700 mb-2">
               Compassion & Care
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-[14px] lg:text-[17px]">
               Our team is committed to providing compassionate care, ensuring
               that every patient feels respected and supported throughout their
               visit.

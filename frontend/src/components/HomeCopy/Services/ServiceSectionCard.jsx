@@ -13,7 +13,7 @@ const ServiceSectionCard = ({ service }) => {
         >
           {name}
         </h2>
-        <p className="text-[14px] leading-6 text-textColor font-[400] mt-3">
+        <p className="text-[14px] leading-6 text-textColor font-[400] mt-3 text-justify">
           {desc}
         </p>
       </div>
