@@ -1,14 +1,16 @@
+import mdImg from "../../assets/images/about/MDimg.jpg";
+
 const AboutMD = () => {
   return (
     <section className="lg:flex justify-center items-center w-full">
       {/* MD Image */}
       <div className="text-center w-full lg:w-1/3">
         <img
-          className="mx-auto rounded shadow-lg w-40 h-40 md:w-48 md:h-48 lg:h-60 lg:w-60"
-          src="https://nurulazam-dev.web.app/path-to-md-image.jpg"
+          className="mx-auto rounded shadow-lg w-36 h-40 md:w-44 md:h-48 lg:h-60 lg:w-50"
+          src={mdImg}
           alt="Managing Director"
         />
-        <h1 className="text-[18px] lg:text-[22px] font-bold text-gray-800">
+        <h1 className="text-[16px] lg:text-[18px] font-bold text-gray-800 font-serif">
           Mohammad Nurul Azam
         </h1>
         <p className="text-[15px] lg:text-[18px] text-gray-600 mb-4">
@@ -31,7 +33,7 @@ const AboutMD = () => {
             we do and are continually evolving to meet the growing demands of
             healthcare. We are dedicated to providing accurate and timely
             medical diagnostic services, empowering both doctors and patients.
-            <br /> Thank you for placing your trust in us.
+            Thank you for placing your trust in us.
           </p>
           <p className="text-lg font-semibold">- Mohammad Nurul Azam</p>
         </div>

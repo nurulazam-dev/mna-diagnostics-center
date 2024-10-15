@@ -4,7 +4,7 @@ const AboutChairman = () => {
       {/* Chairman's Image */}
       <div className="flex justify-center">
         <img
-          src="https://nurulazam-dev.web.app/chairman-image.jpg"
+          src="https://nurulazam-dev.web.app/assets/mnaHeroImg-BlpkimJB.png"
           alt="MNA Ariyan"
           className="rounded-full w-40 h-40 object-cover mb-4"
         />
