@@ -1,22 +1,25 @@
 const AboutChairman = () => {
   return (
-    <section className="py-6">
+    <section className="pb-2">
       {/* Chairman's Image */}
       <div className="flex justify-center">
         <img
           src="https://nurulazam-dev.web.app/assets/mnaHeroImg-BlpkimJB.png"
           alt="MNA Ariyan"
-          className="rounded-full w-40 h-40 object-cover mb-4"
+          className="rounded-full w-40 md:w-48 lg:w-60 object-cover"
         />
       </div>
 
       {/* Chairman's Name */}
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
-        Message from MNA Ariyan
-      </h1>
-      <h2 className="text-xl text-center text-gray-600 mb-6">
-        Chairman of MNA Diagnostics Center
-      </h2>
+      <div className="text-center text-gray-800 mb-2">
+        <h1 className="text-[16px] lg:text-[18px] font-bold font-serif">
+          MNA Ariyan
+        </h1>
+        <p className="text-[15px] lg:text-[18px] text-gray-600 font-semibold">
+          Chairman,
+          <br /> <strong>MNA Diagnostics Center</strong>
+        </p>
+      </div>
 
       {/* Chairman's Message */}
       <p className="text-gray-700 text-justify leading-relaxed mb-6">

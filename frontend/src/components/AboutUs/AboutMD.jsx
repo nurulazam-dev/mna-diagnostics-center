@@ -13,7 +13,7 @@ const AboutMD = () => {
         <h1 className="text-[16px] lg:text-[18px] font-bold text-gray-800 font-serif">
           Mohammad Nurul Azam
         </h1>
-        <p className="text-[15px] lg:text-[18px] text-gray-600 mb-4">
+        <p className="text-[15px] lg:text-[18px] text-gray-600 mb-4 font-semibold">
           Managing Director,
           <br /> <strong>MNA Diagnostics Center</strong>
         </p>
