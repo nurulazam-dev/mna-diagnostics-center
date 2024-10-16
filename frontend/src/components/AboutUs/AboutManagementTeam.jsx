@@ -3,7 +3,7 @@ import { managementTeams } from "../../assets/data/managementTeams";
 const AboutManagementTeam = () => {
   return (
     <section className="pb-2">
-      <h2 className="text-2xl font-bold text-center mb-2">
+      <h2 className="lg:text-[24px] text-[20px] text-violet-600 font-serif font-bold text-center mb-3">
         Meet Our Management Team
       </h2>
       <div className="grid gap-5 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
