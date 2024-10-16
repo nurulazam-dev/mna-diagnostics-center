@@ -3,13 +3,12 @@ import ServiceCard from "../components/Home/Services/ServiceCard";
 
 const Services = () => {
   return (
-    <section>
-      <div className="container">
-        <div className="grid grid-cols-1 mg:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-[30px]">
-          {services.map((service, index) => (
-            <ServiceCard service={service} index={index} key={index} />
-          ))}
-        </div>
+    <section className="container my-1">
+      <h1 className="heading text-center">Our Services</h1>
+      <div className="grid grid-cols-1 mg:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-[30px] my-3">
+        {services.map((service, index) => (
+          <ServiceCard service={service} index={index} key={index} />
+        ))}
       </div>
     </section>
   );
