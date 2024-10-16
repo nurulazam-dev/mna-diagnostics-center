@@ -1,125 +1,136 @@
-import MTMemberImg from "../images/about/management-team/1.png";
-import MTMember12Img from "../images/about/management-team/12.png";
-import MTMember2Img from "../images/about/management-team/2.png";
-import MTMember3Img from "../images/about/management-team/3.png";
-import MTMember4Img from "../images/about/management-team/4.png";
-import MTMember5Img from "../images/about/management-team/5.png";
-import MTMember6Img from "../images/about/management-team/6.png";
-import MTMember7Img from "../images/about/management-team/7.png";
+import ceoImg from "../images/about/management-team/ceo.png";
+import cfoImg from "../images/about/management-team/cfo.png";
+import chairmanImg from "../images/about/management-team/chairman.png";
+import cmoImg from "../images/about/management-team/cmo.png";
+import cooImg from "../images/about/management-team/coo.png";
+import diiImg from "../images/about/management-team/dii.png";
+import dmcImg from "../images/about/management-team/dmc.png";
+import doImg from "../images/about/management-team/do.png";
+import hpsImg from "../images/about/management-team/hps.png";
+import hqaImg from "../images/about/management-team/hqa.png";
+import hrImg from "../images/about/management-team/hr.png";
+import htsImg from "../images/about/management-team/hts.png";
+import maImg from "../images/about/management-team/ma.png";
+import mafImg from "../images/about/management-team/maf.png";
+import mcrImg from "../images/about/management-team/mcr.png";
+import mdImg from "../images/about/management-team/md.png";
+import mpsImg from "../images/about/management-team/mps.png";
+import msbdImg from "../images/about/management-team/msbd.png";
+import scImg from "../images/about/management-team/sc.png";
 
 export const managementTeams = [
   {
     id: "001",
-    name: "MNA Ariyan",
+    name: "M N A Ariyan",
     position: "Chairman",
-    photo: MTMember2Img,
+    photo: chairmanImg,
   },
   {
     id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    name: "Mohammad Nurul Azam",
     position: "Managing Director (MD)",
-    photo: MTMemberImg,
+    photo: mdImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "003",
+    name: "Mohammad Nurul Azam",
     position: "Chief Executive Officer (CEO)",
-    photo: MTMember3Img,
+    photo: ceoImg,
   },
   {
-    id: "002",
+    id: "004",
     name: "Dr. Mohammad Nurul Azam",
-    position: "MChief Medical Officer (CMO)",
-    photo: MTMember4Img,
+    position: "Chief Medical Officer (CMO)",
+    photo: cmoImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "005",
+    name: "Mohammad Nurul Azam",
     position: "Chief Financial Officer (CFO)",
-    photo: MTMember5Img,
+    photo: cfoImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "006",
+    name: "Mohammad Nurul Azam",
     position: "Chief Operating Officer (COO)",
-    photo: MTMember6Img,
+    photo: cooImg,
   },
   {
-    id: "002",
+    id: "007",
     name: "Dr. Mohammad Nurul Azam",
     position: "Director of Operations",
-    photo: MTMember7Img,
+    photo: doImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "008",
+    name: "Mohammad Nurul Azam",
     position: "Director of Human Resources",
-    photo: MTMemberImg,
+    photo: hrImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "009",
+    name: "Mohammad Nurul Azam",
     position: "Director of Marketing and Communications",
-    photo: MTMemberImg,
+    photo: dmcImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "010",
+    name: "Mohammad Nurul Azam",
     position: "Director of IT and Innovation",
-    photo: MTMemberImg,
+    photo: diiImg,
   },
   {
-    id: "002",
+    id: "011",
     name: "Dr. Mohammad Nurul Azam",
     position: "Head of Laboratory Services",
-    photo: MTMemberImg,
+    photo: htsImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "012",
+    name: "Mohammad Nurul Azam",
     position: "Head of Patient Services",
-    photo: MTMember12Img,
+    photo: hpsImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "013",
+    name: "Mohammad Nurul Azam",
     position: "Head of Quality Assurance",
-    photo: MTMemberImg,
+    photo: hqaImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "014",
+    name: "Mohammad Nurul Azam",
     position: "Manager of Accounts and Finance",
-    photo: MTMemberImg,
+    photo: mafImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "015",
+    name: "Mohammad Nurul Azam",
     position: "Manager of Administration",
-    photo: MTMemberImg,
+    photo: maImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "016",
+    name: "Mohammad Nurul Azam",
     position: "Manager of Sales and Business Development",
-    photo: MTMemberImg,
+    photo: msbdImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "017",
+    name: "Mohammad Nurul Azam",
     position: "Manager of Customer Relations",
-    photo: MTMemberImg,
+    photo: mcrImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "018",
+    name: "Mohammad Nurul Azam",
     position: "Manager of Procurement and Supplies",
-    photo: MTMemberImg,
+    photo: mpsImg,
   },
   {
-    id: "002",
-    name: "Dr. Mohammad Nurul Azam",
+    id: "019",
+    name: "Mohammad Nurul Azam",
     position: "Senior Consultant (Various Departments)",
-    photo: MTMemberImg,
+    photo: scImg,
   },
 ];

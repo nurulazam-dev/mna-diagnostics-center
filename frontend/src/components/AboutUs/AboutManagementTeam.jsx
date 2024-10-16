@@ -12,11 +12,7 @@ const AboutManagementTeam = () => {
             key={member.id}
             className="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transform transition hover:-translate-y-2 duration-300"
           >
-            <img
-              src={member.photo}
-              alt={member.name}
-              className="w-50 mx-auto h-48 object-cover"
-            />
+            <img src={member.photo} alt={member.name} />
             <div className="pb-2 text-center">
               <h3 className="text-[16px] lg:text-[18px] font-semibold text-gray-800">
                 {member.name}
