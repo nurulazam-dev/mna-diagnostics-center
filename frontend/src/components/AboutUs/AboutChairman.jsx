@@ -1,20 +1,38 @@
+import { Link } from "react-router-dom";
+import { socialLinks } from "../Footer/Footer";
+
 const AboutChairman = () => {
   return (
     <section className="lg:flex justify-center items-center w-full">
       {/* MD Image */}
       <div className="text-center w-full lg:w-1/3">
         <img
-          className="mx-auto rounded shadow-lg w-40 md:w-48 lg:w-60"
+          className="mx-auto rounded shadow-lg w-40 md:w-48 lg:w-60 mb-[7px]"
           src="https://nurulazam-dev.web.app/assets/mnaHeroImg-BlpkimJB.png"
           alt="MNA Ariyan-Chairman"
         />
-        <h1 className="text-[16px] lg:text-[18px] font-bold text-gray-800 font-serif">
-          MNA Ariyan
-        </h1>
-        <p className="text-[15px] lg:text-[18px] text-gray-600 mb-4 font-semibold">
-          Chairman,
-          <br /> <strong>MNA Diagnostics Center</strong>
-        </p>
+        <div className="leading-6">
+          <h1 className="text-[16px] lg:text-[18px] font-bold text-gray-800 font-serif">
+            MNA Ariyan
+          </h1>
+          <p className="text-[15px] lg:text-[18px] text-gray-600 font-semibold">
+            Chairman,
+            <br /> <strong>MNA Diagnostics Center</strong>
+          </p>
+        </div>
+        {/* Social Media Links */}
+        <div className="flex justify-center space-x-4 mt-1">
+          {socialLinks.map((link) => (
+            <Link
+              to={link.path}
+              target="_blank"
+              key={link.id}
+              className="lg:w-7 w-5 h-5 lg:h-7 border border-solid border-black rounded-full flex items-center justify-center group hover:bg-orange-400"
+            >
+              {link.icon}
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* ===Chairman's Message==== */}
@@ -37,34 +55,6 @@ const AboutChairman = () => {
           </p>
           <p className="text-lg font-semibold">- MNA Ariyan</p>
         </div>
-      </div>
-
-      {/* Social Media Links */}
-      <div className="flex justify-center space-x-4 mt-6">
-        <a
-          href="https://facebook.com/mnaariyan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-800"
-        >
-          <i className="fab fa-facebook-f text-2xl"></i>
-        </a>
-        <a
-          href="https://twitter.com/mnaariyan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:text-blue-600"
-        >
-          <i className="fab fa-twitter text-2xl"></i>
-        </a>
-        <a
-          href="https://linkedin.com/in/mnaariyan"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-700 hover:text-blue-900"
-        >
-          <i className="fab fa-linkedin-in text-2xl"></i>
-        </a>
       </div>
     </section>
   );

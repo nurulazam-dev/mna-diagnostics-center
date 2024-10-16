@@ -7,25 +7,6 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/brand-logo/mna-diagnostics-center.png";
 
-const socialLink = [
-  {
-    path: "https://www.youtube.com/mnaofficialbd",
-    icon: <AiFillYoutube className="group-hover: text-black w-4 h-5" />,
-  },
-  {
-    path: "https://github.com/mnaofficialbd",
-    icon: <AiFillGithub className="group-hover: text-black w-4 h-5" />,
-  },
-  {
-    path: "https://www.instagram.com/mnaofficialbd",
-    icon: <AiOutlineInstagram className="group-hover: text-black w-4 h-5" />,
-  },
-  {
-    path: "https://www.linkedin.com/in/mnaofficialbd",
-    icon: <RiLinkedinBoxFill className="group-hover: text-black w-4 h-5" />,
-  },
-];
-
 const quickLinks01 = [
   { path: "/home", display: "Home" },
   { path: "/", display: "About Us" },
@@ -43,6 +24,29 @@ const quickLinks02 = [
 const quickLinks03 = [
   { path: "/", display: "Donate" },
   { path: "/contact", display: "Contact Us" },
+];
+
+export const socialLinks = [
+  {
+    id: "01",
+    path: "https://www.youtube.com/mnaofficialbd",
+    icon: <AiFillYoutube className="group-hover: text-black w-4 h-5" />,
+  },
+  {
+    id: "02",
+    path: "https://github.com/mnaofficialbd",
+    icon: <AiFillGithub className="group-hover: text-black w-4 h-5" />,
+  },
+  {
+    id: "03",
+    path: "https://www.instagram.com/mnaofficialbd",
+    icon: <AiOutlineInstagram className="group-hover: text-black w-4 h-5" />,
+  },
+  {
+    id: "04",
+    path: "https://www.linkedin.com/in/mnaofficialbd",
+    icon: <RiLinkedinBoxFill className="group-hover: text-black w-4 h-5" />,
+  },
 ];
 
 const Footer = () => {
@@ -117,10 +121,10 @@ const Footer = () => {
             </div>
             <div className="">
               <div className="flex justify-center lg:justify-start items-center gap-3 lg:mt-4 mt-1">
-                {socialLink.map((link, index) => (
+                {socialLinks.map((link) => (
                   <Link
                     to={link.path}
-                    key={index}
+                    key={link.id}
                     className="lg:w-9 w-7 h-7 lg:h-9 border border-solid border-black rounded-full flex items-center justify-center group hover:bg-white hover:border-none"
                   >
                     {link.icon}
