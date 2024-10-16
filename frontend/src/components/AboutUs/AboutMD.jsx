@@ -8,7 +8,7 @@ const AboutMD = () => {
         <img
           className="mx-auto rounded shadow-lg w-36 h-40 md:w-44 md:h-48 lg:h-60 lg:w-50"
           src={mdImg}
-          alt="Managing Director"
+          alt="Mohammad Nurul Azam - M/D"
         />
         <h1 className="text-[16px] lg:text-[18px] font-bold text-gray-800 font-serif">
           Mohammad Nurul Azam
