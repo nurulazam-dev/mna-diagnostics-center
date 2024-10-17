@@ -32,7 +32,10 @@ const HeroSection = () => {
             </div>
 
             <div className="lg:flex md:flex my-4 lg:mb-0">
-              <Link to="/services" className="flex justify-center mr-5">
+              <Link
+                to="/services"
+                className="flex justify-center mr-5 animate-bounce"
+              >
                 <button className="customBtn bg-green-600 flex items-center text-white">
                   Request an Appointment{" "}
                   <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />

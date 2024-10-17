@@ -45,7 +45,7 @@ const VirtualTreatment = () => {
         <img
           src={VTImg}
           alt="Virtual Treatment"
-          className="max-h-screen max-w-[400px] lg:px-0 px-7"
+          className="max-h-screen max-w-[400px] lg:px-0 px-7 animate-pulse"
         />
       </div>
     </section>

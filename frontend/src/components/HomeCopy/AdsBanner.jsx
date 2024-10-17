@@ -14,7 +14,7 @@ const AdsBanner = () => {
             smile.
           </p>
         </div>
-        <Link to="/doctors">
+        <Link to="/doctors" className="animate-bounce">
           <button className="customBtn bg-white flex items-center justify-center">
             Book an Appointment{" "}
             <MdArrowOutward className="group-hover:text-green-700 w-6 h-6 ml-2" />
