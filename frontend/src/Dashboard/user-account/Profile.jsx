@@ -75,11 +75,14 @@ const Profile = ({ user }) => {
     }
   };
 
+  const inputClass = `w-full p-3 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[18px] leading-6 text-headingColor placeholder:text-textColor`;
   return (
     <div className="mt-10">
-      {/* ===profile form=== */}
+      {/* =======================
+             profile form
+      ========================== */}
       <form onSubmit={submitHandler}>
-        {/* name input */}
+        {/* ===name input=== */}
         <div className="mb-5">
           <input
             type="text"
@@ -87,11 +90,11 @@ const Profile = ({ user }) => {
             name="name"
             value={formData.name}
             onChange={handleInputChange}
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer"
+            className={inputClass}
             required
           />
         </div>
-        {/* email input */}
+        {/* ===email input=== */}
         <div className="mb-5">
           <input
             type="email"
@@ -99,12 +102,12 @@ const Profile = ({ user }) => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer"
+            className={inputClass}
             aria-readonly
             readOnly
           />
         </div>
-        {/* password input */}
+        {/* ===password input=== */}
         <div className="mb-5">
           <input
             type="password"
@@ -112,67 +115,85 @@ const Profile = ({ user }) => {
             name="password"
             value={formData.password}
             onChange={handleInputChange}
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer"
+            className={inputClass}
           />
         </div>
-        {/* blood_Group input */}
-        <div className="mb-5">
-          <input
-            type="text"
-            placeholder="Blood Group"
-            name="bloodGroup"
-            value={formData.bloodGroup}
-            onChange={handleInputChange}
-            className="w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer"
-            required
-          />
-        </div>
-        {/* ===selected part=== */}
-        <div className="mb-5 flex items-center justify-between">
-          {/* ===gender select part=== */}
-          <label className="font-bold text-headingColor text-[16px] leading-7">
-            Gender:
-            <select
-              name="gender"
-              value={formData.gender}
-              onChange={handleInputChange}
-              className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
-            >
-              <option value="">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </label>
-        </div>
-        {/* ===img input=== */}
-        <div className="mb-5 flex items-center gap-5">
-          {formData.photo && (
-            <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center">
-              <img
-                src={formData.photo}
-                alt=""
-                className="w-full rounded-full"
-              />
-            </figure>
-          )}
-          {/* ===upload img part=== */}
-          <div className="relative w-[130px] h-[50px]">
-            <input
-              type="file"
-              name="photo"
-              id="customFile"
-              onChange={handleFileInputChange}
-              accept=".jpg, .png, .jpeg"
-              className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
-            />
 
-            <label
-              htmlFor="customFile"
-              className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
-            >
-              {selectFile ? selectFile.name : "Upload Photo"}
+        <div className="mb-5 flex justify-center items-center w-full">
+          {/* ===Blood_Group=== */}
+          <div className="lg:flex items-center justify-between lg:w-[30%] w-full border">
+            {/* Blood group select part */}
+            <label className="font-bold text-headingColor text-[16px] leading-7">
+              Blood Group:
+              <select
+                name="bloodGroup"
+                value={formData.bloodGroup}
+                onChange={handleInputChange}
+                required
+                className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
+              >
+                <option value="">Select</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="other">Other</option>
+              </select>
             </label>
+          </div>
+          {/* ===Gender=== */}
+          <div className="lg:flex items-center justify-between lg:w-[30%] w-full border">
+            {/* ===gender select part=== */}
+            <label className="font-bold text-headingColor text-[16px] leading-7">
+              Gender:
+              <select
+                name="gender"
+                value={formData.gender}
+                onChange={handleInputChange}
+                className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
+              >
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div>
+
+          {/* ===img input=== */}
+          <div className="lg:flex items-center justify-center lg:w-[40%] w-full gap-5 border">
+            {/* ===upload img part=== */}
+            <div className="relative w-[130px] h-[50px]">
+              <input
+                type="file"
+                name="photo"
+                id="customFile"
+                onChange={handleFileInputChange}
+                accept=".jpg, .png, .jpeg"
+                className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+              />
+
+              <label
+                htmlFor="customFile"
+                className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
+              >
+                {selectFile ? selectFile.name : "Upload Photo"}
+              </label>
+            </div>
+            {/* display img part */}
+            {formData.photo && (
+              <figure className="w-[50px] h-[50px] rounded-full border-2 border-solid border-violet-600 flex items-center justify-center">
+                <img
+                  src={formData.photo}
+                  alt=""
+                  className="w-full rounded-full"
+                />
+              </figure>
+            )}
           </div>
         </div>
 
@@ -181,7 +202,7 @@ const Profile = ({ user }) => {
           <button
             disabled={loading && true}
             type="submit"
-            className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 hover:bg-slate-700 hover:border-none"
+            className="w-full customBtn"
           >
             {loading ? (
               <PulseLoader size={25} className="text-black" />
