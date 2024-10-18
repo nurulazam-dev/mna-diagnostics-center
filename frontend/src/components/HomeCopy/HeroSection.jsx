@@ -1,6 +1,7 @@
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import heroBg from "../../assets/images/home/heroBg.png";
+// import heroBg from "../../assets/images/bgImg.png";
 import heroImg01 from "../../assets/images/home/heroImg.png";
 
 const HeroSection = () => {

@@ -169,7 +169,7 @@ const Register = () => {
 
                   <label
                     htmlFor="customFile"
-                    className="absolute top-0 left-0 w-full h-full flex justify-center items-center px-[0.75rem] py-[3px] overflow-hidden bg-violet-700 text-white rounded truncate cursor-pointer font-serif"
+                    className="absolute top-0 left-0 w-full h-full flex justify-center items-center px-[0.75rem] py-[3px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded truncate cursor-pointer font-serif"
                   >
                     <MdCloudUpload className="w-8 h-8 mr-[5px]" /> Upload Photo
                   </label>

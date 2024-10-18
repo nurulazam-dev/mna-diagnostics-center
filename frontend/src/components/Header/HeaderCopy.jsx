@@ -80,6 +80,7 @@ const HeaderCopy = () => {
                 to={`${
                   role == "doctor" ? "/doctors/profile/me" : "/users/profile/me"
                 }`}
+                className="flex justify-center items-center"
               >
                 <span className="text-gray-700">{user.name}</span>
                 <figure className="w-[45px] h-[45px] rounded-full cursor-pointer lg:block md:block hidden">
@@ -90,12 +91,6 @@ const HeaderCopy = () => {
                   />
                 </figure>
               </Link>
-
-              <img
-                src={user.photo}
-                alt="User"
-                className="w-8 h-8 rounded-full"
-              />
 
               <button
                 onClick={handleLogout}

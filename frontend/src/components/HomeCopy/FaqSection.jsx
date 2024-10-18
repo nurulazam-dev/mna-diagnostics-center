@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { faqs } from "../../assets/data/faqs";
+import faqBg from "../../assets/images/bgImg.png";
 import faqImg from "../../assets/images/home/faq-img.png";
 
 const FaqSection = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section className="p-4 lg:pb-0 lg:p-12">
+    <section
+      className="p-4 lg:py-0 my-5 lg:px-10"
+      style={{
+        backgroundImage: `url(${faqBg})`,
+      }}
+    >
       <h1 className="heading text-center">Frequently Asked Questions</h1>
       <div className="flex items-center justify-center ">
         {/* Image Section */}

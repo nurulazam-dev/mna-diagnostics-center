@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
+import bgImg from "../assets/images/bgImg.png";
 import logo from "../assets/images/brand-logo/mna-diagnostics-center.png";
 import { BASE_URL } from "../config.js";
 import { authContext } from "../context/AuthContext.jsx";
@@ -59,7 +60,12 @@ const Login = () => {
 
   return (
     <section className="px-5 my-8 lg:px-0">
-      <div className="w-full max-w-[420px] mx-auto rounded-lg shadow-md md:p-10">
+      <div
+        className="w-full max-w-[420px] mx-auto rounded-lg shadow-md md:p-10"
+        style={{
+          backgroundImage: `url(${bgImg})`,
+        }}
+      >
         <div className="flex justify-center">
           <img src={logo} alt="" className="w-[120px]" />
         </div>

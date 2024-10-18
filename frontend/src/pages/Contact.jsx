@@ -1,8 +1,15 @@
+import bgImg from "../assets/images/bgImg.png";
 import contactImg from "../assets/images/home/contactImg.svg";
 
 const Contact = () => {
   return (
-    <section className="bg-gray-100 py-8 lg:px-12">
+    <section
+      className=" py-8 lg:px-12"
+      style={{
+        backgroundImage: `url(${bgImg})`,
+      }}
+    >
+      {/* <section className="bg-gray-100 py-8 lg:px-12"> */}
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8">
           {/* Left Part: Image and Contact Info */}
