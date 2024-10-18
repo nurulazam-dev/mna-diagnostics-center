@@ -70,7 +70,7 @@ const Register = () => {
 
   return (
     <section className="px-5 xl:px-0 my-8">
-      <div className="max-w-[960px] shadow-md mx-auto rounded-lg">
+      <div className="max-w-[920px] shadow-md mx-auto rounded-lg">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* img box */}
           <div className="hidden lg:block bg-violet-700 rounded-l-lg">
@@ -79,7 +79,7 @@ const Register = () => {
             </figure>
           </div>
           {/* ===register card=== */}
-          <div className="lg:p-10">
+          <div className="lg:px-10 lg:pb-2">
             <h3 className="text-[32px] text-headingColor font-serif text-center font-bold mb-3">
               Create An Account
             </h3>
