@@ -63,6 +63,11 @@ const Appointments = ({ appointments }) => {
           </tr>
         ))}
       </tbody>
+      {appointments.length == 0 && (
+        <h2 className="text-red-600 animate-pulse text-[16px] my-3">
+          Not booked any appointment.
+        </h2>
+      )}
     </table>
   );
 };

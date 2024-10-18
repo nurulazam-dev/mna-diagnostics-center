@@ -29,12 +29,12 @@ const DoctorAbout = ({ name, about, qualifications, experiences }) => {
         </h3>
 
         <ul className="pt-4 md:p-5">
-          {/* {qualifications  (
-            <p className="text-red-600 animate-pulse">
+          {qualifications.length == 0 && (
+            <h2 className="text-red-600 animate-pulse">
               Education profile isn&apos;t updated. Please update your Education
               profile.
-            </p>
-          )} */}
+            </h2>
+          )}
           {qualifications?.map((item, index) => (
             <li
               key={index}
@@ -61,12 +61,12 @@ const DoctorAbout = ({ name, about, qualifications, experiences }) => {
         <h3 className="text-[18px] leading-[30px] text-headingColor font-semibold">
           Experience
         </h3>
-        {/* {experiences  (
-            <p className="text-red-600 animate-pulse">
-              Experience profile isn&apos;t updated. Please update your experience
+        {experiences.length == 0 && (
+          <h2 className="text-red-600 animate-pulse">
+            Experience profile isn&apos;t updated. Please update your experience
             profile.
-            </p>
-          )} */}
+          </h2>
+        )}
         <ul className="grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5">
           {experiences?.map((item, index) => (
             <li key={index} className="p-4 rounded bg-[#fff9ea]">
