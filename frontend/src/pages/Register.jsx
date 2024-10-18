@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-// import HashLoader from "react-spinners/HashLoader";
 import { MdCloudUpload } from "react-icons/md";
+import { Link, useNavigate } from "react-router-dom";
 import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
 import registerImg from "../assets/images/others/register.gif";

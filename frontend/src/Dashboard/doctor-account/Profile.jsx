@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
+import { MdCloudUpload } from "react-icons/md";
 import { toast } from "react-toastify";
+import avatarImg from "../../assets/images/icons/avatar-icon.png";
 import { BASE_URL, token } from "../../config";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary";
 
@@ -188,59 +190,70 @@ const Profile = ({ doctorData }) => {
   ================================*/
 
   return (
-    <div>
-      <h2 className="text-[24px] text-headingColor font-bold leading-9 mb-10">
+    <section className="mb-10">
+      <h1 className="text-[28px] font-serif bg-green-600 text-center text-white font-bold mb-2">
         Profile Information
-      </h2>
+      </h1>
 
       <form>
-        <div className="mb-5">
-          <p className="form_label">Name*</p>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            placeholder="Full Name"
-            className="form_input"
-          />
+        {/* first line */}
+        <div className="lg:flex justify-center items-center lg:mb-5 w-full">
+          {/* name part */}
+          <div className="lg:mb-0 mb-5 lg:mr-5 lg:w-1/2">
+            <p className="form_label">Name*</p>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              placeholder="Full Name"
+              className="form_input"
+            />
+          </div>
+          {/* phone part */}
+          <div className="lg:mb-0 mb-5 lg:w-1/2">
+            <p className="form_label">Phone*</p>
+            <input
+              type="number"
+              name="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+              placeholder="Phone number"
+              className="form_input"
+            />
+          </div>
         </div>
-        <div className="mb-5">
-          <p className="form_label">Email*</p>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            placeholder="Email"
-            className="form_input"
-            readOnly
-            aria-readonly
-            disabled="true"
-          />
-        </div>
-        <div className="mb-5">
-          <p className="form_label">Phone*</p>
-          <input
-            type="number"
-            name="phone"
-            value={formData.phone}
-            onChange={handleInputChange}
-            placeholder="Phone number"
-            className="form_input"
-          />
-        </div>
-        <div className="mb-5">
-          <p className="form_label">Bio*</p>
-          <input
-            type="text"
-            name="bio"
-            value={formData.bio}
-            onChange={handleInputChange}
-            placeholder="Bio"
-            className="form_input"
-            maxLength={100}
-          />
+        {/* 2nd line */}
+        <div className="lg:flex justify-center items-center lg:mb-5 w-full">
+          {/* email part */}
+          <div className="lg:mb-0 mb-5 lg:mr-5 lg:w-1/2">
+            <p className="form_label">Email*</p>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="Email"
+              className="form_input"
+              readOnly
+              aria-readonly
+              disabled="true"
+            />
+          </div>
+
+          {/* bio part */}
+          <div className="lg:mb-0 mb-5 lg:w-1/2">
+            <p className="form_label">Bio*</p>
+            <input
+              type="text"
+              name="bio"
+              value={formData.bio}
+              onChange={handleInputChange}
+              placeholder="Bio"
+              className="form_input"
+              maxLength={100}
+            />
+          </div>
         </div>
 
         {/* ===================================
@@ -365,7 +378,7 @@ const Profile = ({ doctorData }) => {
 
           <button
             onClick={addQualification}
-            className="bg-[#000] py-2 px-5 rounded text-white h-fit cursor-pointer"
+            className="customBtn h-fit cursor-pointer bg-green-600 text-black"
           >
             Add Qualification
           </button>
@@ -441,7 +454,7 @@ const Profile = ({ doctorData }) => {
 
           <button
             onClick={addExperience}
-            className="bg-[#000] py-2 px-5 rounded text-white h-fit cursor-pointer"
+            className="customBtn h-fit cursor-pointer bg-green-600 text-black"
           >
             Add Experience
           </button>
@@ -514,7 +527,7 @@ const Profile = ({ doctorData }) => {
 
           <button
             onClick={addTimeSlot}
-            className="bg-[#000] py-2 px-5 rounded text-white h-fit cursor-pointer"
+            className="customBtn bg-green-600 text-black h-fit cursor-pointer"
           >
             Add TimeSlot
           </button>
@@ -538,18 +551,9 @@ const Profile = ({ doctorData }) => {
         {/* ===================================
                  img/file upload part
         ==================================== */}
-        <div className="mb-5 flex items-center gap-3">
-          {formData.photo && (
-            <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center">
-              <img
-                src={formData.photo}
-                alt=""
-                className="w-full rounded-full"
-              />
-            </figure>
-          )}
+        <div className="mb-2 flex items-center gap-3">
           {/* ===upload img part=== */}
-          <div className="relative w-[130px] h-[50px]">
+          <div className="relative w-[150px] h-[40px]">
             <input
               type="file"
               name="photo"
@@ -561,24 +565,36 @@ const Profile = ({ doctorData }) => {
 
             <label
               htmlFor="customFile"
-              className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
+              className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[3px] text-[15px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded font-serif truncate cursor-pointer"
             >
+              {" "}
+              <MdCloudUpload className="w-8 h-8 mr-[5px]" />
               Upload Photo
             </label>
           </div>
+          {/* ===display avatar=== */}
+          {formData.photo && (
+            <figure className="w-[50px] h-[50px] rounded-full border-2 border-solid border-violet-700 flex items-center justify-center ml-3">
+              <img
+                src={formData.photo ? formData.photo : avatarImg}
+                alt=""
+                className="w-full rounded-full"
+              />
+            </figure>
+          )}
         </div>
 
-        <div className="mt-7">
+        <div className="mt-6">
           <button
             type="submit"
             onClick={updateProfileHandler}
-            className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 hover:bg-slate-700 hover:border-none"
+            className="customBtn w-full rounded-none"
           >
             Update Profile
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 
