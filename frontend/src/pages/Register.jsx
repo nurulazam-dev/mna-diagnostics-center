@@ -192,7 +192,6 @@ const Register = () => {
                   className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 hover:bg-slate-700 hover:border-none"
                 >
                   {loading ? (
-                    // <HashLoader size={35} color="#ffffff" />
                     <PulseLoader size={35} color="#ffffff" />
                   ) : (
                     "Register"
@@ -203,7 +202,7 @@ const Register = () => {
                 Already have an account?{" "}
                 <Link
                   to="/login"
-                  className="text-[16px] leading-7 font-medium text-primaryColor"
+                  className="text-[16px] leading-7 font-medium text-violet-800"
                 >
                   Please Login
                 </Link>

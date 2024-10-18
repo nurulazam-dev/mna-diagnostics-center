@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
+import logo from "../assets/images/brand-logo/mna-diagnostics-center.png";
 import { BASE_URL } from "../config.js";
 import { authContext } from "../context/AuthContext.jsx";
-// import HashLoader from "react-spinners/HashLoader";
-import PulseLoader from "react-spinners/PulseLoader";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -58,10 +58,13 @@ const Login = () => {
   };
 
   return (
-    <section className="px-5 lg:px-0">
-      <div className="w-full max-w-[570px] mx-auto rounded-lg shadow-md md:p-10">
-        <h3 className="text-[32px] text-headingColor text-center leading-9 font-bold mb-10">
-          Hello! <span className=" text-primaryColor">Welcome</span> Back.
+    <section className="px-5 my-8 lg:px-0">
+      <div className="w-full max-w-[420px] mx-auto rounded-lg shadow-md md:p-10">
+        <div className="flex justify-center">
+          <img src={logo} alt="" className="w-[120px]" />
+        </div>
+        <h3 className="mb-2 lg:text-[32px] text-[27px] text-textColor font-bold font-serif text-center">
+          Welcome Back
         </h3>
         <form className="py-4 md:py-0" onSubmit={submitHandler}>
           {/* email input */}
@@ -72,7 +75,7 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer"
+              className="w-full p-3 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[18px] leading-6 text-headingColor placeholder:text-textColor"
               required
             />
           </div>
@@ -84,29 +87,21 @@ const Login = () => {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
-              className="w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[22px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer"
+              className="w-full p-3 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[18px] leading-6 text-headingColor placeholder:text-textColor"
               required
             />
           </div>
 
           <div className="mt-7">
-            <button
-              type="submit"
-              className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 hover:bg-slate-700 hover:border-none"
-            >
-              {loading ? (
-                // <HashLoader size={25} color="#ffffff" />
-                <PulseLoader size={25} color="#ffffff" />
-              ) : (
-                "Login"
-              )}
+            <button type="submit" className="customBtn w-full rounded-none">
+              {loading ? <PulseLoader size={25} color="#ffffff" /> : "Login"}
             </button>
           </div>
           <p className="mt-5 text-textColor text-center">
             Don&apos;t have an account?{" "}
             <Link
               to="/register"
-              className="text-[16px] leading-7 font-medium text-primaryColor"
+              className="text-[16px] leading-7 font-medium text-violet-800"
             >
               Please Register
             </Link>
