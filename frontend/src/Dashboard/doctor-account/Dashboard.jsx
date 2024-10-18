@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { CgDanger } from "react-icons/cg";
 import starIcon from "../../assets/images/icons/Star.png";
+import doctorAvatar from "../../assets/images/icons/avatar-icon.png";
 import DoctorAbout from "../../components/DoctorDetails/DoctorAbout";
 import Error from "../../components/Shared/Error";
 import Loading from "../../components/Shared/Loading";
@@ -10,14 +12,14 @@ import Profile from "./Profile";
 import Tabs from "./Tabs";
 
 const Dashboard = () => {
-  const [tab, setTab] = useState("overView");
+  const [tab, setTab] = useState("overview");
 
   const { data, loading, error } = useGetProfile(
     `${BASE_URL}/doctors/profile/me`
   );
 
   return (
-    <section>
+    <section className="py-2">
       <div className="max-w-[1170px] px-5 mx-auto">
         {loading && !error && <Loading />}
 
@@ -28,46 +30,45 @@ const Dashboard = () => {
             <Tabs tab={tab} setTab={setTab} />
             <div className="lg:col-span-2">
               {data.isApproved == "pending" && (
-                <div className="flex p-4 mb-4 text-yellow-800 bg-yellow-50 rounded-lg">
-                  <svg
-                    aria-hidden="true"
-                    className="flex-shrink-0 w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http;//www.w3.org/200/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
+                <div className="flex justify-center items-center py-3 my-4 text-white bg-red-400 rounded-lg animate-bounce">
+                  <CgDanger className="w-5 h-5" />
 
                   <span className="sr-only">Info</span>
                   <div className="ml-3 text-sm font-medium">
-                    To get approval please complete your profile. We&ap0s;ll
+                    To get approval please complete your profile. We&apos;ll
                     review manually and approve within 3days.
                   </div>
                 </div>
               )}
 
-              <div className="mt-8">
+              <div className="mt-4">
                 {tab == "overview" && (
                   <div>
-                    <div className="flex items-center gap-4 mb-10">
+                    <div className="flex items-center gap-4 mb-3">
                       <figure className="max-w-[200px] max-h-[200px]">
-                        <img src={data?.photo} alt="" className="w-full" />
+                        <img
+                          src={data?.photo ? data?.photo : doctorAvatar}
+                          alt=""
+                          className="w-full"
+                        />
                       </figure>
 
                       <div>
-                        <span className="bg-[#CCF0F3] text-irisBlueColor py-1 px-4 lg:py-2 lg:px-6 rounded font-semibold leading-4 text-[12px] lg:leading-6 lg:text-[16px]">
-                          {data.specialization}
-                        </span>
-                        <h3 className="font-bold leading-9 text-[22px] text-headingColor mt-3">
+                        <h3 className="font-bold text-[22px] text-headingColor">
                           {data.name}
                         </h3>
+                        <p className="text-textColor font-semibold text-[12px] lg:text-[14px]">
+                          {data.specialization ? (
+                            data.specialization
+                          ) : (
+                            <p className="text-red-600 animate-pulse">
+                              Specialization profile isn&apos;t updated. Please
+                              update your Specialization profile.
+                            </p>
+                          )}
+                        </p>
 
-                        <div className="flex items-center gap-[6px]">
+                        <div className="flex items-center gap-[6px] mt-[6px]">
                           <span
                             className="flex items-center gap-[6px] text-headingColor font-semibold leading-5 text-[14px] lg:leading-6 lg:text-[16px] 
                           "
@@ -81,7 +82,7 @@ const Dashboard = () => {
                             ({data.totalRating})
                           </span>
                         </div>
-                        <p className="text_para font-[15px] lg:max-w-[390px] leading-6">
+                        <p className="text_para font-[15px] lg:max-w-[390px] text-justify leading-6">
                           {data?.bio}
                         </p>
                       </div>

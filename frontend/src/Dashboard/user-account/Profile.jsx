@@ -184,8 +184,7 @@ const Profile = ({ user }) => {
             className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 hover:bg-slate-700 hover:border-none"
           >
             {loading ? (
-              // <HashLoader size={25} color="#ffffff" />
-              <PulseLoader size={25} color="#ffffff" />
+              <PulseLoader size={25} className="text-black" />
             ) : (
               "Update Profile"
             )}

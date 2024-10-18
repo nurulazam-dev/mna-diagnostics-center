@@ -194,7 +194,7 @@ const Register = () => {
                   className="customBtn w-full rounded-none"
                 >
                   {loading ? (
-                    <PulseLoader size={35} color="#ffffff" />
+                    <PulseLoader size={35} className="text-black" />
                   ) : (
                     "Register"
                   )}

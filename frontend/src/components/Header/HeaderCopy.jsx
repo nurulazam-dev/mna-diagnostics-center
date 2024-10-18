@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/brand-logo/mna-diagnostics-center.png";
+import userAvatar from "../../assets/images/icons/patient-avatar.png";
 import { authContext } from "../../context/AuthContext";
 
 const navLinks = [
@@ -85,7 +86,7 @@ const HeaderCopy = () => {
                 <span className="text-gray-700">{user.name}</span>
                 <figure className="w-[45px] h-[45px] rounded-full cursor-pointer lg:block md:block hidden">
                   <img
-                    src={user?.photo}
+                    src={user?.photo ? user.photo : userAvatar}
                     alt="user"
                     className="w-full rounded-full"
                   />

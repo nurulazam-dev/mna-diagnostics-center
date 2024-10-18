@@ -2,6 +2,9 @@
 import { BiMenu } from "react-icons/bi";
 
 const Tabs = ({ tab, setTab }) => {
+  const activeTabClass = "bg-indigo-100 text-primaryColor";
+  const inactiveTabClass = "bg-transparent text-headingColor";
+
   return (
     <div>
       <span className="lg:hidden">
@@ -11,9 +14,7 @@ const Tabs = ({ tab, setTab }) => {
         <button
           onClick={() => setTab("overview")}
           className={`${
-            tab == "overview"
-              ? "bg-indigo-100 text-primaryColor"
-              : "bg-transparent text-headingColor"
+            tab == "overview" ? activeTabClass : inactiveTabClass
           } w-full btn mt-0 rounded-md`}
         >
           Overview
@@ -21,9 +22,7 @@ const Tabs = ({ tab, setTab }) => {
         <button
           onClick={() => setTab("appointments")}
           className={`${
-            tab == "appointments"
-              ? "bg-indigo-100 text-primaryColor"
-              : "bg-transparent text-headingColor"
+            tab == "appointments" ? activeTabClass : inactiveTabClass
           } w-full btn mt-0 rounded-md`}
         >
           Appointments
@@ -31,9 +30,7 @@ const Tabs = ({ tab, setTab }) => {
         <button
           onClick={() => setTab("settings")}
           className={`${
-            tab == "settings"
-              ? "bg-indigo-100 text-primaryColor"
-              : "bg-transparent text-headingColor"
+            tab == "settings" ? activeTabClass : inactiveTabClass
           } w-full btn mt-0 rounded-md`}
         >
           Profile

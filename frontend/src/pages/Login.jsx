@@ -69,8 +69,8 @@ const Login = () => {
         <div className="flex justify-center">
           <img src={logo} alt="" className="w-[120px]" />
         </div>
-        <h3 className="mb-2 lg:text-[32px] text-[27px] text-textColor font-bold font-serif text-center">
-          Welcome Back
+        <h3 className="mb-2 lg:text-[36px] text-[27px] text-indigo-900 font-bold font-serif text-center">
+          Please Login
         </h3>
         <form className="py-4 md:py-0" onSubmit={submitHandler}>
           {/* email input */}
@@ -100,7 +100,11 @@ const Login = () => {
 
           <div className="mt-7">
             <button type="submit" className="customBtn w-full rounded-none">
-              {loading ? <PulseLoader size={25} color="#ffffff" /> : "Login"}
+              {loading ? (
+                <PulseLoader size={25} className="text-gray-950" />
+              ) : (
+                "Login"
+              )}
             </button>
           </div>
           <p className="mt-5 text-textColor text-center">
