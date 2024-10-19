@@ -199,7 +199,7 @@ const Register = () => {
                   )}
                 </button>
               </div>
-              <p className="mt-5 text-textColor text-center">
+              <p className="mt-5 text-textColor text-center font-serif lg:text-[14px] text-[12px]">
                 Already have an account?{" "}
                 <Link
                   to="/login"
