@@ -74,7 +74,7 @@ const HeaderCopy = () => {
         </nav>
 
         {/* Right: User Info or Login/Logout */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center lg:space-x-4 space-x-2">
           {token && user ? (
             <div className="flex items-center space-x-2">
               <Link
@@ -83,8 +83,8 @@ const HeaderCopy = () => {
                 }`}
                 className="flex justify-center items-center"
               >
-                <span className="text-gray-700">{user.name}</span>
-                <figure className="w-[45px] h-[45px] rounded-full cursor-pointer lg:block md:block hidden">
+                <span className="text-gray-700 mr-1">{user.name}</span>
+                <figure className="lg:w-[45px] lg:h-[45px] w-[30px] h-[40px] rounded-full cursor-pointer flex items-center">
                   <img
                     src={user?.photo ? user.photo : userAvatar}
                     alt="user"
@@ -95,16 +95,17 @@ const HeaderCopy = () => {
 
               <button
                 onClick={handleLogout}
-                className="bg-red-600 py-[6px] px-4 text-white font-[700] h-[40px] flex items-center justify-center rounded-[3px] hover:bg-green-700 hover:border-none ml-2"
+                className="bg-red-600 py-[6px] px-4 text-white font-[700] h-[40px] rounded-[3px] hover:bg-green-700 hover:border-none ml-2 hidden lg:block"
               >
                 Logout
               </button>
             </div>
           ) : (
-            <Link to="/login">
-              <button className="bg-violet-700 py-[6PX] px-4 text-white font-[700] h-[40px] flex items-center justify-center rounded-[3px] hover:bg-green-700 hover:border-none">
-                Login
-              </button>
+            <Link
+              to="/login"
+              className="bg-violet-700 py-[6PX] px-4 text-white font-[700] h-[40px] rounded-[3px] hover:bg-green-700 hover:border-none hidden lg:block"
+            >
+              <button>Login</button>
             </Link>
           )}
 
@@ -167,6 +168,22 @@ const HeaderCopy = () => {
                 </NavLink>
               </li>
             ))}
+
+            {token && user ? (
+              <button
+                onClick={handleLogout}
+                className="bg-red-600 py-[6px] px-4 text-white font-[700] h-[40px] flex items-center justify-center rounded-[3px] hover:bg-green-700 hover:border-none"
+              >
+                Logout
+              </button>
+            ) : (
+              <Link
+                to="/login"
+                className="bg-violet-700 py-[6PX] px-4 text-white font-[700] h-[40px] flex items-center justify-center rounded-[3px] hover:bg-green-700 hover:border-none"
+              >
+                <button>Login</button>
+              </Link>
+            )}
           </nav>
         </div>
       )}
