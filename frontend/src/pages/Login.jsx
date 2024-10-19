@@ -69,7 +69,7 @@ const Login = () => {
         <div className="flex justify-center">
           <img src={logo} alt="" className="w-[120px]" />
         </div>
-        <h3 className="mb-2 lg:text-[36px] text-[27px] text-indigo-900 font-bold font-serif text-center">
+        <h3 className="lg:mb-2 lg:text-[36px] text-[27px] text-indigo-900 font-bold font-serif text-center">
           Please Login
         </h3>
         <form className="py-4 md:py-0" onSubmit={submitHandler}>
