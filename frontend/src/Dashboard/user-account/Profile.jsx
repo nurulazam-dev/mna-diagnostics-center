@@ -1,14 +1,15 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
+import { MdCloudUpload } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-// import HashLoader from "react-spinners/HashLoader";
 import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
+import userAvatar from "../../assets/images/icons/patient-avatar.png";
 import { BASE_URL, token } from "../../config.js";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary.js";
 
 const Profile = ({ user }) => {
-  const [selectFile, setSelectFile] = useState(null);
+  // const [selectFile, setSelectFile] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ const Profile = ({ user }) => {
     // Use cloudinary to upload images
     const data = await uploadImageToCloudinary(file);
 
-    setSelectFile(data.url);
+    // setSelectFile(data.url);
     setFormData({ ...formData, photo: data.url });
   };
 
@@ -121,7 +122,7 @@ const Profile = ({ user }) => {
 
         <div className="mb-5 flex justify-center items-center w-full">
           {/* ===Blood_Group=== */}
-          <div className="lg:flex items-center justify-between lg:w-[30%] w-full border">
+          <div className="lg:flex items-center justify-between lg:w-[35%] w-full border">
             {/* Blood group select part */}
             <label className="font-bold text-headingColor text-[16px] leading-7">
               Blood Group:
@@ -165,7 +166,7 @@ const Profile = ({ user }) => {
           </div>
 
           {/* ===img input=== */}
-          <div className="lg:flex items-center justify-center lg:w-[40%] w-full gap-5 border">
+          <div className="lg:flex items-center lg:w-[35%] w-full gap-5 border">
             {/* ===upload img part=== */}
             <div className="relative w-[130px] h-[50px]">
               <input
@@ -179,16 +180,16 @@ const Profile = ({ user }) => {
 
               <label
                 htmlFor="customFile"
-                className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer"
+                className="absolute top-0 left-0 w-full h-full flex justify-center items-center px-[8px] py-[3px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded truncate cursor-pointer font-serif"
               >
-                {selectFile ? selectFile.name : "Upload Photo"}
+                <MdCloudUpload className="w-8 h-8 mr-[5px]" /> Upload Photo
               </label>
             </div>
             {/* display img part */}
             {formData.photo && (
-              <figure className="w-[50px] h-[50px] rounded-full border-2 border-solid border-violet-600 flex items-center justify-center">
+              <figure className="w-[48px] h-[48px] rounded-full border-2 border-solid border-violet-600 flex items-center justify-center">
                 <img
-                  src={formData.photo}
+                  src={formData.photo ? formData.photo : userAvatar}
                   alt=""
                   className="w-full rounded-full"
                 />
