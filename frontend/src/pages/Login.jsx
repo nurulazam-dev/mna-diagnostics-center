@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
 import bgImg from "../assets/images/bgImg.png";
 import logo from "../assets/images/brand-logo/mna-diagnostics-center.png";
+import Loading from "../components/Shared/Loading.jsx";
 import { BASE_URL } from "../config.js";
 import { authContext } from "../context/AuthContext.jsx";
 
@@ -100,13 +100,10 @@ const Login = () => {
 
           <div className="mt-7">
             <button type="submit" className="customBtn w-full rounded-none">
-              {loading ? (
-                <PulseLoader size={25} className="text-gray-950" />
-              ) : (
-                "Login"
-              )}
+              {loading ? <Loading /> : "Login"}
             </button>
           </div>
+
           <p className="mt-5 text-textColor text-center lg:text-[15px] text-[13px]">
             Don&apos;t have an account?{" "}
             <Link to="/register" className="text-violet-800">

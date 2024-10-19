@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { MdCloudUpload } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
-import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
 import registerImg from "../assets/images/others/register.gif";
+import Loading from "../components/Shared/Loading.jsx";
 import { BASE_URL } from "../config.js";
 import uploadImageToCloudinary from "../utils/uploadCloudinary.js";
 
@@ -78,7 +78,7 @@ const Register = () => {
             </figure>
           </div>
           {/* ===register card=== */}
-          <div className="lg:px-10 lg:pb-4 p-6">
+          <div className="lg:px-10 lg:pb-4 py-6 px-3">
             <h3 className="lg:text-[32px] text-[25px] text-headingColor font-serif text-center font-bold mb-3">
               Create An Account
             </h3>
@@ -124,13 +124,13 @@ const Register = () => {
               {/* ===selected part=== */}
               <div className="mb-2 flex items-center justify-between">
                 {/* ===role select part=== */}
-                <label className="font-bold text-headingColor text-[16px] leading-7">
+                <label className="font-bold text-headingColor lg:text-[16px] text-[14px] leading-7">
                   Are you a:
                   <select
                     name="role"
                     value={formData.role}
                     onChange={handleInputChange}
-                    className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none"
+                    className="font-semibold text-textColor lg:text-[16px] text-[14px] leading-6 px-0 lg:px-4 py-3 focus:outline-none"
                   >
                     <option value="patient">Patient</option>
                     <option value="doctor">Doctor</option>
@@ -138,13 +138,13 @@ const Register = () => {
                 </label>
 
                 {/* ===gender select part=== */}
-                <label className="font-bold text-headingColor text-[16px] leading-7">
+                <label className="font-bold text-headingColor lg:text-[16px] text-[14px] leading-7">
                   Gender:
                   <select
                     name="gender"
                     value={formData.gender}
                     onChange={handleInputChange}
-                    className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
+                    className="font-semibold text-textColor lg:text-[16px] text-[14px] leading-6 px-0 lg:px-4 py-3 focus:outline-none "
                   >
                     <option value="">Select</option>
                     <option value="male">Male</option>
@@ -192,11 +192,7 @@ const Register = () => {
                   type="submit"
                   className="customBtn w-full rounded-none"
                 >
-                  {loading ? (
-                    <PulseLoader size={35} className="text-black" />
-                  ) : (
-                    "Register"
-                  )}
+                  {loading ? <Loading /> : "Register"}
                 </button>
               </div>
               <p className="mt-5 text-textColor text-center lg:text-[15px] text-[13px]">

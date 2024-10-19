@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { useParams } from "react-router-dom";
-import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
 import { BASE_URL, token } from "../../config";
+import Loading from "../Shared/Loading";
 
 const FeedbackForm = () => {
   const [rating, setRating] = useState(0);
@@ -101,7 +101,7 @@ const FeedbackForm = () => {
         type="submit"
         onClick={handleSubmitReview}
       >
-        {loading ? <PulseLoader size={25} color="#fff" /> : "Submit Feedback"}
+        {loading ? <Loading /> : "Submit Feedback"}
       </button>
     </form>
   );

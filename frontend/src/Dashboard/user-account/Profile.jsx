@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import { MdCloudUpload } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import PulseLoader from "react-spinners/PulseLoader";
 import { toast } from "react-toastify";
 import userAvatar from "../../assets/images/icons/patient-avatar.png";
+import Loading from "../../components/Shared/Loading.jsx";
 import { BASE_URL, token } from "../../config.js";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary.js";
 
@@ -205,11 +205,7 @@ const Profile = ({ user }) => {
             type="submit"
             className="w-full customBtn"
           >
-            {loading ? (
-              <PulseLoader size={25} className="text-black" />
-            ) : (
-              "Update Profile"
-            )}
+            {loading ? <Loading /> : "Update Profile"}
           </button>
         </div>
 
