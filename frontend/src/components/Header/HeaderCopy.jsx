@@ -95,14 +95,14 @@ const HeaderCopy = () => {
 
               <button
                 onClick={handleLogout}
-                className="bg-red-600 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none ml-2"
+                className="bg-red-600 py-[6px] px-4 text-white font-[700] h-[40px] flex items-center justify-center rounded-[3px] hover:bg-green-700 hover:border-none ml-2"
               >
                 Logout
               </button>
             </div>
           ) : (
             <Link to="/login">
-              <button className="bg-violet-700 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none">
+              <button className="bg-violet-700 py-[6PX] px-4 text-white font-[700] h-[40px] flex items-center justify-center rounded-[3px] hover:bg-green-700 hover:border-none">
                 Login
               </button>
             </Link>

@@ -107,12 +107,9 @@ const Login = () => {
               )}
             </button>
           </div>
-          <p className="mt-5 text-textColor text-center lg:text-[14px] text-[12px]">
+          <p className="mt-5 text-textColor text-center lg:text-[15px] text-[13px]">
             Don&apos;t have an account?{" "}
-            <Link
-              to="/register"
-              className="text-[16px] leading-7 font-medium text-violet-800"
-            >
+            <Link to="/register" className="text-violet-800">
               Please Register
             </Link>
           </p>

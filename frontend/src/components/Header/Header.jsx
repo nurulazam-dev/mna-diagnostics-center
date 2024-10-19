@@ -117,14 +117,14 @@ const Header = () => {
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="bg-red-600 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none ml-2"
+                  className="bg-red-600 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[10px] hover:bg-slate-700 hover:border-none ml-2"
                 >
                   Logout
                 </button>
               </div>
             ) : (
               <Link to="/login">
-                <button className="bg-violet-700 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] hover:bg-slate-700 hover:border-none">
+                <button className="bg-violet-700 py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[10px] hover:bg-slate-700 hover:border-none">
                   Login
                 </button>
               </Link>
