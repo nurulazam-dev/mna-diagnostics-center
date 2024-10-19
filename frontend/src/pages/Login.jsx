@@ -61,7 +61,7 @@ const Login = () => {
   return (
     <section className="px-5 my-8 lg:px-0">
       <div
-        className="w-full max-w-[420px] mx-auto rounded-lg shadow-md md:p-10"
+        className="w-full max-w-[420px] mx-auto rounded-lg shadow-md lg:p-10 p-4"
         style={{
           backgroundImage: `url(${bgImg})`,
         }}
