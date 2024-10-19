@@ -39,7 +39,7 @@ const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
           {ticketPrice} BDT
         </span>
       </div>
-      <div className="mt-[30px]">
+      <div className="my-[30px]">
         <p className="text_para mt-0 font-semibold text-headingColor">
           Available Time Slots:
         </p>
@@ -56,10 +56,7 @@ const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
           ))}
         </ul>
       </div>
-      <button
-        onClick={bookingHandler}
-        className="btn px-2 w-full rounded-md hover:bg-slate-700 hover:border-none"
-      >
+      <button onClick={bookingHandler} className="customBtn w-full">
         Book Appointment
       </button>
     </div>

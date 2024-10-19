@@ -5,7 +5,7 @@ import DoctorAbout from "../../components/DoctorDetails/DoctorAbout";
 import Feedback from "../../components/DoctorDetails/Feedback";
 import SidePanel from "../../components/DoctorDetails/SidePanel";
 import Error from "../../components/Shared/Error";
-import Loader from "../../components/Shared/Loading";
+import Loading from "../../components/Shared/Loading";
 import { BASE_URL } from "../../config";
 import useFetchData from "../../hooks/useFetchData";
 
@@ -36,8 +36,8 @@ const DoctorDetails = () => {
 
   return (
     <section>
-      <div className="max-w-[1170px] px-5 mx-auto">
-        {loading && <Loader />}
+      <div className="max-w-[1170px] px-5 mx-auto my-5">
+        {loading && <Loading />}
         {error && <Error />}
 
         {!loading && !error && (
@@ -48,12 +48,15 @@ const DoctorDetails = () => {
                   <img src={photo} alt="" className="w-full" />
                 </figure>
                 <div className="">
-                  <span className="bg-[#CCF0F3] text-irisBlueColor py-1 px-6 lg:py-2 lg:px-6 text-[12px] lg:text-[16px]  leading-4 lg:leading-7 font-semibold rounded">
-                    {specialization}
-                  </span>
-                  <h3 className="text-headingColor text-[22px] leading-9 mt-3 font-bold">
+                  {/* ================ */}
+                  <h3 className="font-bold text-[22px] text-headingColor">
                     {name}
                   </h3>
+                  <p className="text-textColor font-semibold text-[12px] lg:text-[14px]">
+                    {specialization}
+                  </p>
+                  {/* ================ */}
+
                   <div className="flex items-center gap-[6px]">
                     <span className="flex items-center gap-[6px] text-[14px] lg:text-[16px]  leading-5 lg:leading-7 font-semibold text-headingColor">
                       <img src={starIcon} alt="" /> {averageRating}

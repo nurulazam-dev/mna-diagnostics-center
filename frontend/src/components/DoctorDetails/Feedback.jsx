@@ -43,9 +43,9 @@ const Feedback = ({ reviews, totalRating }) => {
       </div>
 
       {!showFeedbackForm && (
-        <div className="text-center">
+        <div className="">
           <button
-            className="btn hover:bg-slate-700 hover:border-none"
+            className="customBtn"
             onClick={() => setShowFeedbackForm(true)}
           >
             Give Feedback
