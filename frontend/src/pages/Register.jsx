@@ -78,7 +78,7 @@ const Register = () => {
             </figure>
           </div>
           {/* ===register card=== */}
-          <div className="lg:px-10 lg:pb-4 p-2">
+          <div className="lg:px-10 lg:pb-4 p-4">
             <h3 className="lg:text-[32px] text-[25px] text-headingColor font-serif text-center font-bold mb-3">
               Create An Account
             </h3>
@@ -199,7 +199,7 @@ const Register = () => {
                   )}
                 </button>
               </div>
-              <p className="mt-5 text-textColor text-center font-serif lg:text-[14px] text-[12px]">
+              <p className="mt-5 text-textColor text-center lg:text-[14px] text-[12px]">
                 Already have an account?{" "}
                 <Link
                   to="/login"
