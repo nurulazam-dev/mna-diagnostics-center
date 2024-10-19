@@ -47,8 +47,8 @@ const MyAccount = () => {
               </p>
               <p className="text-[15px] leading-6 text-textColor font-medium">
                 Blood Group:{" "}
-                <span className="text-[22px] leading-8 text-headingColor ml-2">
-                  {userData.bloodGroup}
+                <span className="text-red-700 font-bold ml-2">
+                  {userData.bloodGroup ? userData.bloodGroup : "Not updated"}
                 </span>
               </p>
             </div>

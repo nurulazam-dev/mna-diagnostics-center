@@ -8,8 +8,8 @@ const Feedback = ({ reviews, totalRating }) => {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
 
   return (
-    <section>
-      <div className="mb-[50px]">
+    <section className="mb-7">
+      <div className="mb-[10px]">
         <h4 className="text-[20px] leading-[30px] font-bold text-headingColor mb-[30px]">
           All reviews ({totalRating})
         </h4>

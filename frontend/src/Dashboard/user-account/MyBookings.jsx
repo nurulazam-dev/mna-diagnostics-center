@@ -12,8 +12,8 @@ const MyBookings = () => {
   } = useFetchData(`${BASE_URL}/users/appointment/my-appointments`);
 
   return (
-    <div>
-      {loading && !error && <Loading />}
+    <section>
+      <div className="mt-10">{loading && !error && <Loading />}</div>
 
       {error && !loading && <Error errMessage={error} />}
 
@@ -30,7 +30,7 @@ const MyBookings = () => {
           You did not book any doctor appointment.
         </h2>
       )}
-    </div>
+    </section>
   );
 };
 

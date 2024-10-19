@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
+import { GrUpdate } from "react-icons/gr";
 import { MdCloudUpload } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -78,7 +79,10 @@ const Profile = ({ user }) => {
 
   const inputClass = `w-full p-3 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[18px] leading-6 text-headingColor placeholder:text-textColor`;
   return (
-    <div className="mt-10">
+    <div className="mt-4">
+      <h1 className="text-[28px] font-serif text-center text-black font-bold mb-2">
+        Profile Information
+      </h1>
       {/* =======================
              profile form
       ========================== */}
@@ -122,7 +126,7 @@ const Profile = ({ user }) => {
 
         <div className="mb-5 flex justify-center items-center w-full">
           {/* ===Blood_Group=== */}
-          <div className="lg:flex items-center justify-between lg:w-[35%] w-full border">
+          <div className="lg:flex items-center justify-between lg:w-[34%] w-full">
             {/* Blood group select part */}
             <label className="font-bold text-headingColor text-[16px] leading-7">
               Blood Group:
@@ -147,7 +151,7 @@ const Profile = ({ user }) => {
             </label>
           </div>
           {/* ===Gender=== */}
-          <div className="lg:flex items-center justify-between lg:w-[30%] w-full border">
+          <div className="lg:flex items-center justify-between lg:w-[30%] w-full">
             {/* ===gender select part=== */}
             <label className="font-bold text-headingColor text-[16px] leading-7">
               Gender:
@@ -166,9 +170,9 @@ const Profile = ({ user }) => {
           </div>
 
           {/* ===img input=== */}
-          <div className="lg:flex items-center lg:w-[35%] w-full gap-5 border">
+          <div className="lg:flex items-center lg:w-[36%] w-full gap-3">
             {/* ===upload img part=== */}
-            <div className="relative w-[130px] h-[50px]">
+            <div className="relative w-[160px] h-[44px]">
               <input
                 type="file"
                 name="photo"
@@ -180,9 +184,9 @@ const Profile = ({ user }) => {
 
               <label
                 htmlFor="customFile"
-                className="absolute top-0 left-0 w-full h-full flex justify-center items-center px-[8px] py-[3px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded truncate cursor-pointer font-serif"
+                className="absolute top-0 left-0 w-full h-full flex justify-center items-center px-[3px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded truncate cursor-pointer font-serif"
               >
-                <MdCloudUpload className="w-8 h-8 mr-[5px]" /> Upload Photo
+                <MdCloudUpload className="w-9 h-9 pr-2" /> Upload Photo
               </label>
             </div>
             {/* display img part */}
@@ -198,14 +202,21 @@ const Profile = ({ user }) => {
           </div>
         </div>
 
-        {/* ==register btn part== */}
+        {/* ==update btn part== */}
         <div className="mt-7">
           <button
             disabled={loading && true}
             type="submit"
             className="w-full customBtn"
           >
-            {loading ? <Loading /> : "Update Profile"}
+            {loading ? (
+              <Loading />
+            ) : (
+              <div className="flex items-center font-bold justify-center">
+                Update Profile
+                <GrUpdate className="ml-2 w-4 h-4" />
+              </div>
+            )}
           </button>
         </div>
 

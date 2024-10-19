@@ -1,13 +1,17 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
+import { GrUpdate } from "react-icons/gr";
 import { MdCloudUpload } from "react-icons/md";
 import { toast } from "react-toastify";
 import avatarImg from "../../assets/images/icons/avatar-icon.png";
+import Loading from "../../components/Shared/Loading";
 import { BASE_URL, token } from "../../config";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary";
 
 const Profile = ({ doctorData }) => {
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -54,6 +58,7 @@ const Profile = ({ doctorData }) => {
 
   const updateProfileHandler = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await fetch(`${BASE_URL}/doctors/${doctorData._id}`, {
@@ -587,10 +592,18 @@ const Profile = ({ doctorData }) => {
         <div className="mt-6">
           <button
             type="submit"
+            disabled={loading && true}
             onClick={updateProfileHandler}
             className="customBtn w-full rounded-none"
           >
-            Update Profile
+            {loading ? (
+              <Loading />
+            ) : (
+              <div className="flex items-center font-bold justify-center">
+                Update Profile
+                <GrUpdate className="ml-2 w-4 h-4" />
+              </div>
+            )}
           </button>
         </div>
       </form>

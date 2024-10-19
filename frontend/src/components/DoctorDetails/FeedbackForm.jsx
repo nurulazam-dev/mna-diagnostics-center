@@ -83,7 +83,7 @@ const FeedbackForm = () => {
       </div>
 
       {/* feedback form part */}
-      <div className="mb-[30px]">
+      <div className="mb-[10px]">
         <h3 className="text-[16px] text-headingColor leading-6 font-semibold mb-4 mt-0">
           Share your feedback or suggestions.
         </h3>
@@ -96,11 +96,7 @@ const FeedbackForm = () => {
         ></textarea>
       </div>
 
-      <button
-        className="btn hover:bg-slate-700 hover:border-none"
-        type="submit"
-        onClick={handleSubmitReview}
-      >
+      <button className="customBtn" type="submit" onClick={handleSubmitReview}>
         {loading ? <Loading /> : "Submit Feedback"}
       </button>
     </form>
