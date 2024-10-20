@@ -12,16 +12,17 @@ const MyBookings = () => {
     error,
   } = useFetchData(`${BASE_URL}/users/appointment/my-appointments`);
 
-  console.log(appointments[0]);
-
   return (
-    <section>
+    <section className="mt-4">
+      <h1 className="text-[28px] font-serif text-center text-black font-bold mb-2">
+        My Bookings
+      </h1>
       <div className="mt-10">{loading && !error && <Loading />}</div>
 
       {error && !loading && <Error errMessage={error} />}
 
       {!loading && !error && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="">
           {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-5"> */}
           {/* {appointments.map((doctor) => (
             <DoctorCard doctor={doctor} key={doctor._id} />

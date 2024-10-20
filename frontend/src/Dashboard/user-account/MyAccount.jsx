@@ -15,7 +15,6 @@ const MyAccount = () => {
     loading,
     error,
   } = useGetProfile(`${BASE_URL}/users/profile/me`);
-  console.log("userData : ", userData);
 
   return (
     <section className="max-w-[1170px] px-5 mx-auto my-6">
@@ -30,7 +29,7 @@ const MyAccount = () => {
             <div className="flex items-center justify-center">
               <figure className="w-[100px] h-[100px] rounded-full border-2 border-solid border-violet-700">
                 <img
-                  src={userData.photo ? userData.photo : userAvatar}
+                  src={userData?.photo ? userData?.photo : userAvatar}
                   alt=""
                   className="w-full h-full rounded-full"
                 />
@@ -39,16 +38,20 @@ const MyAccount = () => {
 
             <div className="text-center mt-4">
               <h3 className="text-[18px] leading-[30px] text-headingColor font-bold">
-                {userData.name}
+                {userData?.name}
               </h3>
               <p className="text-[15px] leading-6 text-textColor font-medium">
-                {userData.email}
+                {userData?.email}
               </p>
+
               <p className="text-[15px] leading-6 text-textColor font-medium">
                 Blood Group:{" "}
                 <span className="text-red-700 font-bold ml-2">
-                  {userData.bloodGroup ? userData.bloodGroup : "Not updated"}
+                  {userData?.bloodGroup ? userData.bloodGroup : "Not updated"}
                 </span>
+              </p>
+              <p className="text-[15px] leading-6 text-textColor font-medium">
+                Gender: {userData?.gender}
               </p>
             </div>
 

@@ -22,6 +22,10 @@ const bookingSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    createdAt: {
+      type: Date,
+      ref: "Doctor",
+    },
   },
   { timestamps: true }
 );
