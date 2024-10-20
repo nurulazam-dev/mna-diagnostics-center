@@ -16,8 +16,6 @@ const MyAccount = () => {
     error,
   } = useGetProfile(`${BASE_URL}/users/profile/me`);
 
-  console.log(userData);
-
   return (
     <section className="max-w-[1170px] px-5 mx-auto my-6">
       {loading && !error && <Loading />}

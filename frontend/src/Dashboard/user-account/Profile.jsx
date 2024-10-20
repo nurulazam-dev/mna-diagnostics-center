@@ -124,49 +124,51 @@ const Profile = ({ user }) => {
           />
         </div>
 
-        <div className="mb-5 flex justify-center items-center w-full">
-          {/* ===Blood_Group=== */}
-          <div className="lg:flex items-center justify-between lg:w-[34%] w-full">
-            {/* Blood group select part */}
-            <label className="font-bold text-headingColor text-[16px] leading-7">
-              Blood Group:
-              <select
-                name="bloodGroup"
-                value={formData.bloodGroup}
-                onChange={handleInputChange}
-                required
-                className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
-              >
-                <option value="">Select</option>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-                <option value="other">Other</option>
-              </select>
-            </label>
-          </div>
-          {/* ===Gender=== */}
-          <div className="lg:flex items-center justify-between lg:w-[30%] w-full">
-            {/* ===gender select part=== */}
-            <label className="font-bold text-headingColor text-[16px] leading-7">
-              Gender:
-              <select
-                name="gender"
-                value={formData.gender}
-                onChange={handleInputChange}
-                className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
-              >
-                <option value="">Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-              </select>
-            </label>
+        <div className="mb-5 lg:flex justify-center items-center w-full">
+          <div className="flex justify-center items-center lg:w-[64%] w-full">
+            {/* ===Blood_Group=== */}
+            <div className="flex items-center justify-between lg:w-[54%] w-full">
+              {/* Blood group select part */}
+              <label className="font-bold text-headingColor text-[16px] leading-7">
+                Blood Group:
+                <select
+                  name="bloodGroup"
+                  value={formData.bloodGroup}
+                  onChange={handleInputChange}
+                  required
+                  className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
+                >
+                  <option value="">Select</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+            </div>
+            {/* ===Gender=== */}
+            <div className="flex items-center justify-between lg:w-[46%] w-full">
+              {/* ===gender select part=== */}
+              <label className="font-bold text-headingColor text-[16px] leading-7">
+                Gender:
+                <select
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleInputChange}
+                  className="font-semibold text-textColor text-[15px] leading-7 px-4 py-3 focus:outline-none "
+                >
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+            </div>
           </div>
 
           {/* ===img input=== */}
