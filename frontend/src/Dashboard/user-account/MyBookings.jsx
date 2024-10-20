@@ -12,6 +12,8 @@ const MyBookings = () => {
     error,
   } = useFetchData(`${BASE_URL}/users/appointment/my-appointments`);
 
+  console.log("Bookings : ", appointments[0]);
+
   return (
     <section className="mt-4">
       <h1 className="text-[28px] font-serif text-center text-black font-bold mb-2">
