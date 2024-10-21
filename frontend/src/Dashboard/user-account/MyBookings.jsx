@@ -12,48 +12,45 @@ const MyBookings = () => {
     error,
   } = useFetchData(`${BASE_URL}/users/appointment/my-appointments`);
 
-  console.log("Bookings : ", appointments[0]);
-
   return (
     <section className="mt-4">
       <h1 className="text-[28px] font-serif text-center text-black font-bold mb-2">
         My Bookings
       </h1>
-      <div className="mt-10">{loading && !error && <Loading />}</div>
+      {loading && !error && (
+        <div className="mt-10">
+          <Loading />
+        </div>
+      )}
 
       {error && !loading && <Error errMessage={error} />}
 
       {!loading && !error && (
         <div className="">
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-5"> */}
-          {/* {appointments.map((doctor) => (
-            <DoctorCard doctor={doctor} key={doctor._id} />
-          ))} */}
-
           {/* ===Table start=== */}
           {appointments?.map((appointment) => (
             <table
               className="w-full text-left text-sm text-green-500"
               key={appointment?._id}
             >
-              <thead className="text-sm text-violet-600 text-center uppercase bg-gray-50">
+              <thead className="text-sm text-violet-600 text-center uppercase bg-gray-100">
                 <tr>
-                  <th scope="col" className="px-6 py-1">
+                  <th scope="col" className="px-6 py-3">
                     Doctor
                   </th>
-                  <th scope="col" className="px-6 py-1">
+                  <th scope="col" className="px-6 py-3">
                     Specialization
                   </th>
-                  <th scope="col" className="px-6 py-1">
+                  <th scope="col" className="px-6 py-3">
                     Dr. Phone
                   </th>
-                  <th scope="col" className="px-6 py-1">
+                  <th scope="col" className="px-6 py-3">
                     Payment
                   </th>
-                  <th scope="col" className="px-6 py-1">
+                  <th scope="col" className="px-6 py-3">
                     Price
                   </th>
-                  <th scope="col" className="px-6 py-1 text-[12px]">
+                  <th scope="col" className="px-6 py-3 text-[12px]">
                     Booked on
                   </th>
                 </tr>
@@ -69,7 +66,7 @@ const MyBookings = () => {
                       <img
                         src={appointment?.photo}
                         alt=""
-                        className="w-10 h-10 rounded-full"
+                        className="w-10 h-10 rounded-full ml-1"
                       />
                       <div className="text-base font-semibold pl-3">
                         {appointment?.name}{" "}
@@ -81,13 +78,13 @@ const MyBookings = () => {
                     <td className="px-6 py-2">{appointment?.phone}</td>
                     <td className="px-6 py-2">
                       {appointment?.isPaid && (
-                        <div className="flex items-center">
+                        <div className="flex items-center bg-green-200 text-green-600 py-1 px-[9px] rounded-full text-[12px]">
                           <div className="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>{" "}
                           Paid
                         </div>
                       )}
                       {!appointment?.isPaid && (
-                        <div className="flex items-center">
+                        <div className="flex items-center bg-red-200 text-red-600 py-1 px-[9px] rounded-full text-[12px]">
                           <div className="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div>{" "}
                           Unpaid
                         </div>
@@ -100,13 +97,9 @@ const MyBookings = () => {
                   </tr>
                 ))}
               </tbody>
-              {appointments.length == 0 && (
-                <h2 className="text-red-600 animate-pulse text-[16px] my-3">
-                  Not booked any appointment.
-                </h2>
-              )}
             </table>
           ))}
+
           {/* ===Table end=== */}
         </div>
       )}

@@ -17,15 +17,17 @@ const MyAccount = () => {
   } = useGetProfile(`${BASE_URL}/users/profile/me`);
 
   return (
-    <section className="max-w-[1170px] px-5 mx-auto my-6">
+    <section className="max-w-[1220px] px-5 mx-auto my-6">
       {loading && !error && <Loading />}
 
       {error && !loading && <Error errMessage={error} />}
 
       {!loading && !error && (
-        <div className="grid md:grid-cols-3 gap-10">
+        // <div className="grid md:grid-cols-3 gap-5">
+        <div className="flex w-full mx-auto">
           {/* ===left-side part=== */}
-          <div className="pb-[50px] px-[30px] rounded-md shadow-md">
+          {/* <div className="pb-[50px] px-[20px] rounded-md shadow-md border border-green-700"> */}
+          <div className="w-full lg:w-[25%] px-[20px] pb-3 rounded-md shadow-md border border-green-700">
             <div className="flex items-center justify-center">
               <figure className="w-[100px] h-[100px] rounded-full border-2 border-solid border-violet-700">
                 <img
@@ -42,6 +44,9 @@ const MyAccount = () => {
               </h3>
               <p className="text-[15px] leading-6 text-textColor font-medium">
                 {userData?.email}
+              </p>
+              <p className="text-[15px] leading-6 text-textColor font-medium">
+                {userData?.phone}
               </p>
 
               <p className="text-[15px] leading-6 text-textColor font-medium">
@@ -63,7 +68,8 @@ const MyAccount = () => {
           </div>
 
           {/* ===Right-side part=== */}
-          <div className="md:col-span-2 md:px-[30px]">
+          {/* <div className="md:col-span-2 md:px-[10px] border border-red-700"> */}
+          <div className="w-full lg:w-[75%] px-[10px] lg:ml-8 border border-red-700">
             <div>
               <button
                 onClick={() => setTab("bookings")}

@@ -19,6 +19,7 @@ const Profile = ({ user }) => {
     password: "",
     photo: null,
     gender: "",
+    phone: "",
     bloodGroup: "",
   });
 
@@ -28,6 +29,7 @@ const Profile = ({ user }) => {
     setFormData({
       name: user.name,
       email: user.email,
+      phone: user.phone,
       photo: user.photo,
       gender: user.gender,
       bloodGroup: user.bloodGroup,
