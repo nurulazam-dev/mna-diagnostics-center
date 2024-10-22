@@ -89,41 +89,59 @@ const Profile = ({ user }) => {
              profile form
       ========================== */}
       <form onSubmit={submitHandler}>
-        {/* ===name input=== */}
-        <div className="mb-5">
-          <input
-            type="text"
-            placeholder="Full Name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            className={inputClass}
-            required
-          />
+        {/* ===1st line=== */}
+        <div className="lg:flex w-full justify-center items-center lg:gap-4">
+          {/* ===name input=== */}
+          <div className="mb-5 w-full lg:w-[50%]">
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              className={inputClass}
+              required
+            />
+          </div>
+          {/* ===phone input=== */}
+          <div className="mb-5 w-full lg:w-[50%]">
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+              className={inputClass}
+              required
+            />
+          </div>
         </div>
-        {/* ===email input=== */}
-        <div className="mb-5">
-          <input
-            type="email"
-            placeholder="Enter your Email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            className={inputClass}
-            aria-readonly
-            readOnly
-          />
-        </div>
-        {/* ===password input=== */}
-        <div className="mb-5">
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={formData.password}
-            onChange={handleInputChange}
-            className={inputClass}
-          />
+        {/* ===2nd line=== */}
+        <div className="lg:flex w-full justify-center items-center lg:gap-4">
+          {/* ===email input=== */}
+          <div className="mb-5 w-full lg:w-[50%]">
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              className={inputClass}
+              aria-readonly
+              readOnly
+            />
+          </div>
+          {/* ===password input=== */}
+          <div className="mb-5 w-full lg:w-[50%]">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              className={inputClass}
+            />
+          </div>
         </div>
 
         <div className="mb-5 lg:flex justify-center items-center w-full">
@@ -207,7 +225,7 @@ const Profile = ({ user }) => {
         </div>
 
         {/* ==update btn part== */}
-        <div className="mt-7">
+        <div className="mt-7 w-full mx-auto animate-bounce">
           <button
             disabled={loading && true}
             type="submit"

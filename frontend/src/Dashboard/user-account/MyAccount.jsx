@@ -24,7 +24,7 @@ const MyAccount = () => {
 
       {!loading && !error && (
         // <div className="grid md:grid-cols-3 gap-5">
-        <div className="flex w-full mx-auto">
+        <div className="lg:flex w-full mx-auto">
           {/* ===left-side part=== */}
           {/* <div className="pb-[50px] px-[20px] rounded-md shadow-md border border-green-700"> */}
           <div className="w-full lg:w-[25%] px-[20px] pb-3 rounded-md shadow-md border border-green-700">
