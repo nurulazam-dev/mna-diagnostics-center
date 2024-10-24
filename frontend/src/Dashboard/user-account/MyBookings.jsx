@@ -56,9 +56,9 @@ const MyBookings = () => {
                 </tr>
               </thead>
 
-              <tbody className="text-textColor border-b">
+              <tbody className="text-textColor">
                 {appointments?.map((appointment) => (
-                  <tr key={appointment._id}>
+                  <tr key={appointment._id} className="border-b">
                     <th
                       scope="row"
                       className="flex items-center pr-6 py-2 text-gray-900 whitespace-nowrap"
@@ -68,8 +68,13 @@ const MyBookings = () => {
                         alt=""
                         className="w-10 h-10 rounded-full ml-1"
                       />
-                      <div className="text-base font-semibold pl-3">
-                        {appointment?.name}{" "}
+                      <div className="pl-3">
+                        <div className="text-base font-semibold">
+                          {appointment?.name}{" "}
+                        </div>
+                        <div className="text-normal text-gray-500">
+                          {appointment?.email}{" "}
+                        </div>
                       </div>
                     </th>
                     <td className="text-center py-2">
@@ -78,13 +83,13 @@ const MyBookings = () => {
                     <td className="px-6 py-2">{appointment?.phone}</td>
                     <td className="px-6 py-2">
                       {appointment?.isPaid && (
-                        <div className="flex items-center bg-green-200 text-green-600 py-1 px-[9px] rounded-full text-[12px]">
+                        <div className="flex justify-center items-center bg-green-200 text-green-600 py-1 px-[9px] rounded-full text-[12px]">
                           <div className="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>{" "}
                           Paid
                         </div>
                       )}
                       {!appointment?.isPaid && (
-                        <div className="flex items-center bg-red-200 text-red-600 py-1 px-[9px] rounded-full text-[12px]">
+                        <div className="flex justify-center items-center bg-red-200 text-red-600 py-1 px-[9px] rounded-full text-[12px]">
                           <div className="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div>{" "}
                           Unpaid
                         </div>

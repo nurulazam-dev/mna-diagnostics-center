@@ -4,7 +4,7 @@ import { formatDate } from "../../utils/formatDate";
 const Appointments = ({ appointments }) => {
   return (
     <table className="w-full text-left text-sm text-green-500">
-      <thead className="text-sm text-gray-700 uppercase bg-gray-50">
+      <thead className="text-sm text-violet-600 text-center uppercase bg-gray-100">
         <tr>
           <th scope="col" className="px-6 py-3">
             Name
@@ -24,9 +24,9 @@ const Appointments = ({ appointments }) => {
         </tr>
       </thead>
 
-      <tbody className="">
+      <tbody className="text-textColor">
         {appointments?.map((item) => (
-          <tr key={item._id}>
+          <tr key={item._id} className="border-b">
             <th
               scope="row"
               className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap"
@@ -46,13 +46,13 @@ const Appointments = ({ appointments }) => {
             <td className="px-6 py-4">{item.user.gender}</td>
             <td className="px-6 py-4">
               {item.isPaid && (
-                <div className="flex items-center">
+                <div className="flex justify-center items-center bg-green-200 text-green-600 py-1 px-[9px] rounded-full text-[12px]">
                   <div className="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>{" "}
                   Paid
                 </div>
               )}
               {!item.isPaid && (
-                <div className="flex items-center">
+                <div className="flex justify-center items-center bg-red-200 text-red-600 py-1 px-[9px] rounded-full text-[12px]">
                   <div className="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div>{" "}
                   Unpaid
                 </div>

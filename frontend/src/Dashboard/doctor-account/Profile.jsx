@@ -418,7 +418,7 @@ const Profile = ({ doctorData }) => {
 
           <button
             onClick={addQualification}
-            className="customBtn h-fit cursor-pointer bg-green-600 text-black"
+            className="customBtn h-fit cursor-pointer bg-green-600 text-white"
           >
             Add Qualification
           </button>
@@ -484,7 +484,7 @@ const Profile = ({ doctorData }) => {
 
                 <button
                   onClick={(e) => deleteExperience(e, index)}
-                  className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-2 cursor-pointer mb-[30px]"
+                  className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-2 cursor-pointer hover:animate-spin mb-[30px]"
                 >
                   <AiOutlineDelete />
                 </button>
@@ -494,7 +494,7 @@ const Profile = ({ doctorData }) => {
 
           <button
             onClick={addExperience}
-            className="customBtn h-fit cursor-pointer bg-green-600 text-black"
+            className="customBtn h-fit cursor-pointer bg-green-600 text-white"
           >
             Add Experience
           </button>
@@ -555,7 +555,7 @@ const Profile = ({ doctorData }) => {
                   <div className="flex items-center">
                     <button
                       onClick={(e) => deleteTimeSlot(e, index)}
-                      className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-6 cursor-pointer mb-[30px]"
+                      className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-6 hover:animate-spin cursor-pointer mb-[30px]"
                     >
                       <AiOutlineDelete />
                     </button>
@@ -567,7 +567,7 @@ const Profile = ({ doctorData }) => {
 
           <button
             onClick={addTimeSlot}
-            className="customBtn bg-green-600 text-black h-fit cursor-pointer"
+            className="customBtn bg-green-600 text-white h-fit cursor-pointer"
           >
             Add TimeSlot
           </button>
