@@ -202,9 +202,9 @@ const Profile = ({ doctorData }) => {
 
       <form>
         {/* first line */}
-        <div className="lg:flex justify-center items-center lg:mb-5 w-full">
+        <div className="lg:flex justify-center items-end lg:mb-5 w-full lg:gap-4">
           {/* name part */}
-          <div className="lg:mb-0 mb-5 lg:mr-5 lg:w-1/2">
+          <div className="lg:mb-0 mb-5 lg:w-[34%] w-full">
             <p className="form_label">Name*</p>
             <input
               type="text"
@@ -216,7 +216,7 @@ const Profile = ({ doctorData }) => {
             />
           </div>
           {/* phone part */}
-          <div className="lg:mb-0 mb-5 lg:w-1/2">
+          <div className="lg:mb-0 mb-5 lg:w-[34%] w-full">
             <p className="form_label">Phone*</p>
             <input
               type="number"
@@ -227,7 +227,42 @@ const Profile = ({ doctorData }) => {
               className="form_input"
             />
           </div>
+
+          {/* img/file upload part */}
+          <div className="lg:w-[32%] w-full lg:mb-0 mb-5 flex items-center">
+            {/* ===upload img part=== */}
+            <div className="relative w-[150px] h-[52px]">
+              <input
+                type="file"
+                name="photo"
+                id="customFile"
+                onChange={handleFileInputChange}
+                accept=".jpg, .png, .jpeg"
+                className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+              />
+
+              <label
+                htmlFor="customFile"
+                className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[3px] text-[15px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded font-serif truncate cursor-pointer"
+              >
+                {" "}
+                <MdCloudUpload className="w-8 h-8 mr-[5px]" />
+                Upload Photo
+              </label>
+            </div>
+            {/* ===display avatar=== */}
+            {formData.photo && (
+              <figure className="w-[50px] h-[50px] rounded-full border-2 border-solid border-violet-700 flex items-center justify-center ml-3">
+                <img
+                  src={formData.photo ? formData.photo : avatarImg}
+                  alt=""
+                  className="w-full rounded-full"
+                />
+              </figure>
+            )}
+          </div>
         </div>
+
         {/* 2nd line */}
         <div className="lg:flex justify-center items-center lg:mb-5 w-full">
           {/* email part */}
@@ -553,48 +588,12 @@ const Profile = ({ doctorData }) => {
           ></textarea>
         </div>
 
-        {/* ===================================
-                 img/file upload part
-        ==================================== */}
-        <div className="mb-2 flex items-center gap-3">
-          {/* ===upload img part=== */}
-          <div className="relative w-[150px] h-[40px]">
-            <input
-              type="file"
-              name="photo"
-              id="customFile"
-              onChange={handleFileInputChange}
-              accept=".jpg, .png, .jpeg"
-              className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
-            />
-
-            <label
-              htmlFor="customFile"
-              className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[3px] text-[15px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded font-serif truncate cursor-pointer"
-            >
-              {" "}
-              <MdCloudUpload className="w-8 h-8 mr-[5px]" />
-              Upload Photo
-            </label>
-          </div>
-          {/* ===display avatar=== */}
-          {formData.photo && (
-            <figure className="w-[50px] h-[50px] rounded-full border-2 border-solid border-violet-700 flex items-center justify-center ml-3">
-              <img
-                src={formData.photo ? formData.photo : avatarImg}
-                alt=""
-                className="w-full rounded-full"
-              />
-            </figure>
-          )}
-        </div>
-
         <div className="mt-6">
           <button
             type="submit"
             disabled={loading && true}
             onClick={updateProfileHandler}
-            className="customBtn w-full rounded-none"
+            className="customBtn w-full rounded-none animate-bounce"
           >
             {loading ? (
               <Loading />

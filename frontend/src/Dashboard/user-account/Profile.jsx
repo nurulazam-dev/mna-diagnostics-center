@@ -192,7 +192,7 @@ const Profile = ({ user }) => {
           </div>
 
           {/* ===img input=== */}
-          <div className="lg:flex items-center lg:w-[36%] w-full gap-3">
+          <div className="flex items-center justify-center lg:w-[36%] w-full gap-3">
             {/* ===upload img part=== */}
             <div className="relative w-[160px] h-[44px]">
               <input

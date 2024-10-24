@@ -27,7 +27,7 @@ const MyAccount = () => {
         <div className="lg:flex w-full mx-auto">
           {/* ===left-side part=== */}
           {/* <div className="pb-[50px] px-[20px] rounded-md shadow-md border border-green-700"> */}
-          <div className="w-full lg:w-[25%] px-[20px] pb-3 rounded-md shadow-md border border-green-700">
+          <div className="w-full lg:w-[25%] px-[20px] pb-3 rounded-md shadow-md">
             <div className="flex items-center justify-center">
               <figure className="w-[100px] h-[100px] rounded-full border-2 border-solid border-violet-700">
                 <img
@@ -69,7 +69,7 @@ const MyAccount = () => {
 
           {/* ===Right-side part=== */}
           {/* <div className="md:col-span-2 md:px-[10px] border border-red-700"> */}
-          <div className="w-full lg:w-[75%] px-[10px] lg:ml-8 border border-red-700">
+          <div className="w-full lg:w-[75%] lg:px-[10px] px-3 lg:py-0 py-3 lg:ml-8 lg:mt-0 mt-5 rounded-md lg:rounded-none shadow-md lg:shadow-none">
             <div>
               <button
                 onClick={() => setTab("bookings")}
