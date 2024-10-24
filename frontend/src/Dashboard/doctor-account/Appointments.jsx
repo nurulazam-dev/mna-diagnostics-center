@@ -4,33 +4,23 @@ import { formatDate } from "../../utils/formatDate";
 const Appointments = ({ appointments }) => {
   return (
     <table className="w-full text-left text-sm text-green-500">
-      <thead className="text-sm text-violet-600 text-center uppercase bg-gray-100">
-        <tr>
-          <th scope="col" className="px-6 py-3">
-            Name
-          </th>
-          <th scope="col" className="px-6 py-3">
-            Gender
-          </th>
-          <th scope="col" className="px-6 py-3">
-            Payment
-          </th>
-          <th scope="col" className="px-6 py-3">
-            Price
-          </th>
-          <th scope="col" className="px-6 py-3">
-            Booked on
-          </th>
+      <thead>
+        <tr className="text-sm text-violet-600 text-center uppercase hidden md:table-row bg-gray-100">
+          <th className="px-6 py-3">Patient</th>
+          <th className="px-6 py-3">Gender</th>
+          <th className="px-6 py-3">Payment</th>
+          <th className="px-6 py-3">Price</th>
+          <th className="px-6 py-3">Booked on</th>
         </tr>
       </thead>
 
       <tbody className="text-textColor">
         {appointments?.map((item) => (
-          <tr key={item._id} className="border-b">
-            <th
-              scope="row"
-              className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap"
-            >
+          <tr
+            key={item._id}
+            className="md:table-row border-b border-gray-200 hover:bg-gray-100 block mb-4 lg:mb-0"
+          >
+            <td className="flex items-center  lg:px-6 px-2 lg:py-4 text-gray-900 whitespace-nowrap mb-2 lg:mb-0">
               <img
                 src={item.user.photo}
                 alt=""
@@ -42,24 +32,36 @@ const Appointments = ({ appointments }) => {
                   {item.user.email}{" "}
                 </div>
               </div>
-            </th>
-            <td className="px-6 py-4">{item.user.gender}</td>
-            <td className="px-6 py-4">
+            </td>
+
+            <td className="lg:px-6 px-2 lg:py-4 md:table-cell block">
+              <span className="font-bold md:hidden">Gender: </span>
+              {item.user.gender}
+            </td>
+
+            <td className="lg:px-6 px-2 lg:py-4 md:table-cell flex  items-center">
+              <span className="font-bold md:hidden mr-1">Payment: </span>
               {item.isPaid && (
-                <div className="flex justify-center items-center bg-green-200 text-green-600 py-1 px-[9px] rounded-full text-[12px]">
+                <div className="flex justify-center items-center lg:bg-green-200 text-green-600 py-1 px-[9px] rounded-full text-[12px]">
                   <div className="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div>{" "}
                   Paid
                 </div>
               )}
               {!item.isPaid && (
-                <div className="flex justify-center items-center bg-red-200 text-red-600 py-1 px-[9px] rounded-full text-[12px]">
+                <div className="flex justify-center items-center lg:bg-red-200 text-red-600 py-1 px-[9px] rounded-full text-[12px]">
                   <div className="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div>{" "}
                   Unpaid
                 </div>
               )}
             </td>
-            <td className="px-6 py-4">{item.ticketPrice}</td>
-            <td className="px-6 py-4">{formatDate(item.createdAt)}</td>
+            <td className="lg:px-6 px-2 lg:py-4 md:table-cell block">
+              <span className="font-bold md:hidden">Price: </span>
+              {item.ticketPrice}
+            </td>
+            <td className="lg:px-6 px-2 lg:py-4 md:table-cell block">
+              <span className="font-bold md:hidden">Booked On: </span>
+              {formatDate(item.createdAt)}
+            </td>
           </tr>
         ))}
       </tbody>
