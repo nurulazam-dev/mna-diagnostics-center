@@ -229,7 +229,7 @@ const Profile = ({ user }) => {
           <button
             disabled={loading && true}
             type="submit"
-            className="w-full customBtn"
+            className="w-full customBtn rounded-none"
           >
             {loading ? (
               <Loading />
