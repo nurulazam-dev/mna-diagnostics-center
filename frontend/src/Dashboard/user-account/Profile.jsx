@@ -10,7 +10,6 @@ import { BASE_URL, token } from "../../config.js";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary.js";
 
 const Profile = ({ user }) => {
-  // const [selectFile, setSelectFile] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
