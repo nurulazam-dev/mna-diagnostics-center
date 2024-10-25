@@ -27,7 +27,7 @@ const MyBookings = () => {
 
       {!loading && !error && (
         <div className="">
-          {/* ===Table start=== */}
+          {/* ====Table start==== */}
           {appointments?.map((appointment) => (
             <table
               className="w-full text-left text-sm text-green-500"
