@@ -1,15 +1,8 @@
 import { useState } from "react";
-import { CgDanger } from "react-icons/cg";
-import starIcon from "../../assets/images/icons/Star.png";
-import doctorAvatar from "../../assets/images/icons/avatar-icon.png";
-import DoctorAbout from "../../components/DoctorDetails/DoctorAbout";
 import Error from "../../components/Shared/Error";
 import Loading from "../../components/Shared/Loading";
 import { BASE_URL } from "../../config";
 import useGetProfile from "../../hooks/useFetchData";
-import Appointments from "./Appointments";
-import Profile from "./Profile";
-import Tabs from "./Tabs";
 
 const Dashboard = () => {
   const [tab, setTab] = useState("overview");
@@ -27,8 +20,12 @@ const Dashboard = () => {
 
         {!loading && !error && (
           <div className="grid lg:grid-cols-3 gap-[30px] lg:gap-[50px]">
-            <Tabs tab={tab} setTab={setTab} />
-            <div className="lg:col-span-2">
+            {/* <Tabs
+              className="w-full lg:w-[25%] px-[20px] pb-3 rounded-md shadow-md"
+              tab={tab}
+              setTab={setTab}
+            />
+            <div className="lg:w-[">
               {data.isApproved == "pending" && (
                 <div className="flex justify-center items-center py-3 my-4 text-white bg-red-400 rounded-lg animate-bounce">
                   <CgDanger className="w-5 h-5" />
@@ -100,7 +97,7 @@ const Dashboard = () => {
                 )}
                 {tab == "settings" && <Profile doctorData={data} />}
               </div>
-            </div>
+            </div> */}
           </div>
         )}
       </div>

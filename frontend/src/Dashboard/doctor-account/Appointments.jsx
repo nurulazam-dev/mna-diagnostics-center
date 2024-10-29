@@ -4,6 +4,9 @@ import { formatDate } from "../../utils/formatDate";
 const Appointments = ({ appointments }) => {
   return (
     <table className="w-full text-left text-sm text-green-500">
+      <h1 className="text-[28px] font-serif text-center text-black font-bold mb-2">
+        Appointments
+      </h1>
       <thead>
         <tr className="text-sm text-violet-600 text-center uppercase hidden md:table-row bg-gray-100">
           <th className="px-6 py-3">Patient</th>
