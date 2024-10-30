@@ -35,12 +35,12 @@ const Dashboard = () => {
           {/* =======================
                  left side/Tabs
           =========================== */}
-          <div className="w-[13%] lg:w-[25%] lg:px-[20px] px-1 pb-3 rounded-md shadow-md bg-white h-max lg:mr-0 mr-[6px]">
+          <div className="w-[13%] lg:w-[25%] lg:pt-6 lg:px-[20px] px-1 pb-3 rounded-md shadow-md bg-white h-max lg:mr-0 mr-[6px]">
             <button
               onClick={() => setTab("overview")}
               className={`${
                 tab == "overview" ? activeTabClass : inactiveTabClass
-              } w-full mt-0 rounded-md flex items-center justify-center lg:px-0 px-1`}
+              } w-full mt-0 rounded-md flex items-center lg:justify-start justify-center lg:px-5 lg:py-2 px-1`}
             >
               <BiSolidUserDetail className="w-7 h-7" />
               <p className="ml-3 hidden lg:block">Overview</p>
@@ -49,16 +49,16 @@ const Dashboard = () => {
               onClick={() => setTab("appointments")}
               className={`${
                 tab == "appointments" ? activeTabClass : inactiveTabClass
-              } w-full lg:mt-0 mt-2 rounded-md flex items-center justify-center lg:px-0 px-1`}
+              } w-full mt-2 rounded-md flex items-center lg:justify-start justify-center lg:px-5 lg:py-2 px-1`}
             >
-              <RiPlayListAddFill className="w-7 h-7" />
+              <RiPlayListAddFill className="w-6 h-6" />
               <p className="ml-3 hidden lg:block">Appointments</p>
             </button>
             <button
               onClick={() => setTab("settings")}
               className={`${
                 tab == "settings" ? activeTabClass : inactiveTabClass
-              } w-full lg:mt-0 mt-2 rounded-md flex items-center justify-center lg:px-0 px-1`}
+              } w-full mt-2 rounded-md flex items-center lg:justify-start justify-center lg:px-5 lg:py-2 px-1`}
             >
               <FaUserEdit className="w-7 h-7" />
               <p className="ml-3 hidden lg:block">Profile</p>
