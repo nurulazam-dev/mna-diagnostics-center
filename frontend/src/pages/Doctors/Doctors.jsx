@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import DoctorCard from "../../components/Home/Doctors/DoctorCard";
 import Error from "../../components/Shared/Error";
 import Loader from "../../components/Shared/Loading";
 import { BASE_URL } from "../../config";
 import useFetchData from "../../hooks/useFetchData";
+import DoctorCard from "./DoctorCard";
 
 const Doctors = () => {
   const [query, setQuery] = useState("");

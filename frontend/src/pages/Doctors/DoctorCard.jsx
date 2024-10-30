@@ -7,7 +7,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import starIcon from "../../../assets/images/icons/Star.png";
+import starIcon from "../../assets/images/icons/Star.png";
 
 const DoctorCard = ({ doctor }) => {
   const { name, specialization, avgRating, totalRating, photo, experiences } =
