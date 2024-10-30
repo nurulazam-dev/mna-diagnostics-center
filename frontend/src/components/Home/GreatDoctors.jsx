@@ -28,7 +28,7 @@ const GreatDoctors = () => {
       </div>
       <Link to="/doctors" className="flex justify-center animate-bounce">
         <button className="customBtn bg-green-600 flex items-center text-white mt-8">
-          All Experts Doctors{" "}
+          All Expert Doctors{" "}
           <BsArrowRight className="group-hover:text-white w-6 h-6 ml-2" />
         </button>
       </Link>
