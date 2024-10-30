@@ -4,7 +4,7 @@ import { formatDate } from "../../utils/formatDate";
 const Appointments = ({ appointments }) => {
   return (
     <section className="">
-      <h1 className="text-[28px] font-serif text-center text-black font-bold mb-3">
+      <h1 className="lg:text-[28px] text-[22px] font-serif bg-green-600 text-center text-white font-bold mb-2 py-2">
         Appointments
       </h1>
       <table className="w-full text-left text-sm text-green-500">

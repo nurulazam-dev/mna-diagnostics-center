@@ -18,7 +18,7 @@
     @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
   }
   .heading {
-    @apply text-[44px] leading-[54px] font-[700] text-headingColor;
+    @apply text-[35px]  font-serif font-bold mb-2 py-2 leading-[54px] text-headingColor;
   }
   .text_para {
     @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
@@ -45,7 +45,7 @@
 }
 @media only screen and (max-width: 768px) {
   .heading {
-    @apply text-[26px] leading-[36px];
+    @apply text-[28px] leading-[36px];
   }
   .text_para {
     @apply text-[16px] leading-7 mt-3;

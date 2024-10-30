@@ -90,12 +90,12 @@ const Dashboard = () => {
             <div className="lg:px-0 px-[10px]">
               {tab == "overview" && (
                 <div>
-                  <h3 className="lg:text-[22px] text-[15px] leading-[30px] text-headingColor font-bold flex items-center gap-2 justify-center mb-2">
+                  <h1 className="font-serif bg-green-600 text-center text-white font-bold py-2 lg:text-[22px] text-[15px] leading-[30px] flex items-center gap-2 justify-center mb-2">
                     About of
-                    <span className="font-extrabold text-violet-700 lg:text-[26px] text-[18px] leading-9">
+                    <span className="font-extrabold text-black lg:text-[26px] text-[18px] leading-9">
                       {data?.name}
                     </span>
-                  </h3>
+                  </h1>
                   <div
                     className="flex items-center justify-center lg:text-start text-center"
                     style={{
