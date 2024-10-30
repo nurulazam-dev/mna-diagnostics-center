@@ -196,7 +196,7 @@ const Profile = ({ doctorData }) => {
 
   return (
     <section className="mb-10">
-      <h1 className="text-[28px] font-serif bg-green-600 text-center text-white font-bold mb-2">
+      <h1 className="lg:text-[28px] text-[20px] font-serif bg-green-600 text-center text-white font-bold mb-2">
         Profile Information
       </h1>
 
@@ -300,7 +300,7 @@ const Profile = ({ doctorData }) => {
         gender,Specialization,Ticket_Price grid
         ==================================== */}
         <div className="mb-5">
-          <div className="grid grid-cols-3 gap-5 mb-[30px]">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 mb-[30px]">
             {/* ===gender input part=== */}
             <div>
               <p className="form_label">Gender*</p>
@@ -357,7 +357,7 @@ const Profile = ({ doctorData }) => {
             <div key={index}>
               <div>
                 {/* ===Starting & ending Date part=== */}
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                   <div>
                     <p className="form_label">Starting Date*</p>
                     <input
@@ -381,7 +381,7 @@ const Profile = ({ doctorData }) => {
                 </div>
 
                 {/* ===Degree & University part=== */}
-                <div className="grid grid-cols-2 gap-5 mt-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
                   <div>
                     <p className="form_label">Degree*</p>
                     <input
@@ -433,7 +433,7 @@ const Profile = ({ doctorData }) => {
             <div key={index}>
               <div>
                 {/* ===Starting & ending Date part=== */}
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                   <div>
                     <p className="form_label">Starting Date*</p>
                     <input
@@ -457,7 +457,7 @@ const Profile = ({ doctorData }) => {
                 </div>
 
                 {/* ===Position & Hospital part=== */}
-                <div className="grid grid-cols-2 gap-5 mt-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
                   <div>
                     <p className="form_label">Position*</p>
                     <input
@@ -509,7 +509,7 @@ const Profile = ({ doctorData }) => {
             <div key={index}>
               <div>
                 {/* ===day, starting_time, part=== */}
-                <div className="grid grid-cols-2 md:grid-cols-4 mb-[30px] gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-4 mb-[30px] gap-5">
                   {/* ===Selected Day part=== */}
                   <div>
                     <p className="form_label">Day*</p>
