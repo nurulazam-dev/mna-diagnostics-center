@@ -22,9 +22,9 @@ const Appointments = ({ appointments }) => {
           {appointments?.map((item) => (
             <tr
               key={item._id}
-              className="md:table-row border-b border-gray-200 hover:bg-gray-100 block mb-4 lg:mb-0"
+              className="md:table-row border-b lg:py-0 py-3 border-gray-200 hover:bg-gray-100 block mb-2 lg:mb-0"
             >
-              <td className="flex items-center  lg:px-6 px-2 lg:py-4 text-gray-900 whitespace-nowrap mb-2 lg:mb-0">
+              <td className="flex items-center lg:justify-start justify-center lg:px-6 px-2 lg:py-4 text-gray-900 whitespace-nowrap mb-2 lg:mb-0">
                 <img
                   src={item.user.photo}
                   alt=""

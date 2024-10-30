@@ -196,7 +196,7 @@ const Profile = ({ doctorData }) => {
 
   return (
     <section className="mb-10">
-      <h1 className="lg:text-[28px] text-[20px] font-serif bg-green-600 text-center text-white font-bold mb-2">
+      <h1 className="lg:text-[28px] text-[22px] font-serif bg-green-600 text-center text-white font-bold mb-2 py-2">
         Profile Information
       </h1>
 
@@ -231,7 +231,7 @@ const Profile = ({ doctorData }) => {
           {/* img/file upload part */}
           <div className="lg:w-[32%] w-full lg:mb-0 mb-5 flex items-center">
             {/* ===upload img part=== */}
-            <div className="relative w-[150px] h-[52px]">
+            <div className="relative lg:w-[150px] w-[200px] lg:h-[52px] h-[45px]">
               <input
                 type="file"
                 name="photo"
@@ -243,10 +243,10 @@ const Profile = ({ doctorData }) => {
 
               <label
                 htmlFor="customFile"
-                className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem] py-[3px] text-[15px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded font-serif truncate cursor-pointer"
+                className="absolute top-0 left-0 w-full h-full flex items-center justify-center px-[0.75rem] py-[3px] text-[15px] overflow-hidden bg-violet-700 hover:bg-green-700 text-white rounded font-serif truncate cursor-pointer"
               >
                 {" "}
-                <MdCloudUpload className="w-8 h-8 mr-[5px]" />
+                <MdCloudUpload className="lg:w-8 h-8 w-9 mr-[5px]" />
                 Upload Photo
               </label>
             </div>

@@ -1,16 +1,10 @@
 /* eslint-disable react/prop-types */
 import { formatDate } from "../../utils/formatDate";
 
-const DoctorAbout = ({ name, about, qualifications, experiences }) => {
+const DoctorAbout = ({ about, qualifications, experiences }) => {
   return (
     <section className="mb-10">
       <div className="">
-        <h3 className="text-[18px] leading-[30px] text-headingColor font-semibold flex items-center gap-2">
-          About of
-          <span className="font-bold text-violet-700 text-[20px] leading-9">
-            {name}
-          </span>
-        </h3>
         <p className="text_para text-[14px] lg:text-[16px]">
           {about ? (
             about
