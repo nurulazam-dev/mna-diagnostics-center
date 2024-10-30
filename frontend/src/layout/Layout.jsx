@@ -1,13 +1,11 @@
 import Footer from "../components/Footer/Footer";
-// import Header from "../components/Header/Header";
-import HeaderCopy from "../components/Header/HeaderCopy";
+import Header from "../components/Header/Header";
 import Routers from "../routes/Routers";
 
 const Layout = () => {
   return (
     <>
-      {/* <Header /> */}
-      <HeaderCopy />
+      <Header />
       <main>
         <Routers />
       </main>
