@@ -4,6 +4,7 @@ import BestCard from "../components/Home/BestCard";
 import ContactSection from "../components/Home/ContactSection";
 import Countdown from "../components/Home/Countdown";
 import FaqSection from "../components/Home/FaqSection";
+import Gallery from "../components/Home/Gallery";
 import GreatDoctors from "../components/Home/GreatDoctors";
 import HeroSection from "../components/Home/HeroSection";
 import LatestNews from "../components/Home/LatestNews";
@@ -31,6 +32,7 @@ const Home = () => {
       <LatestNews />
       <OurLocation />
       <ContactSection />
+      <Gallery />
       {/* ========== */}
       <ProvidingBestMedical />
       <GreatDoctors />
