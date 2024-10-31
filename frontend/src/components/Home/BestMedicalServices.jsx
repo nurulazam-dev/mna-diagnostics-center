@@ -4,7 +4,7 @@ import icon01 from "../../assets/images/icons/icon01.png";
 import icon02 from "../../assets/images/icons/icon02.png";
 import icon03 from "../../assets/images/icons/icon03.png";
 
-const ProvidingBestMedical = () => {
+const BestMedicalServices = () => {
   const providingData = [
     {
       id: "pD1",
@@ -32,9 +32,7 @@ const ProvidingBestMedical = () => {
   return (
     <section>
       <div className="container">
-        <h2 className="heading text-center">
-          Providing the best medical services
-        </h2>
+        <h2 className="heading text-center">Best Medical Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {providingData.map((item) => (
             <div key={item.id} className="py-[15px] px-5">
@@ -68,4 +66,4 @@ const ProvidingBestMedical = () => {
   );
 };
 
-export default ProvidingBestMedical;
+export default BestMedicalServices;
