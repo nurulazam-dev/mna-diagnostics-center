@@ -11,6 +11,7 @@ import LatestNews from "../components/Home/LatestNews";
 import ManagementTeamSlide from "../components/Home/ManagementTeam/ManagementTeamSlide";
 import OurLocation from "../components/Home/OurLocation";
 import ProvidingBestMedical from "../components/Home/ProvidingBestMedical";
+import ReviewSlider from "../components/Home/ReviewSlider";
 import OurServices from "../components/Home/Services/OurServices";
 import Testimonial from "../components/Home/Testimonial/Testimonial";
 import VirtualTreatment from "../components/Home/VirtualTreatment";
@@ -21,6 +22,7 @@ const Home = () => {
     <>
       <HeroSection />
       <BestCard />
+      <ReviewSlider />
       <OurServices />
       <Awards />
       <AdsBanner />
