@@ -20,7 +20,7 @@ const HeroSection = () => {
                 MNA Diagnostics Center
               </h1>
             </div>
-            <div className="text_para text-justify">
+            <div className="text_para text-justify lg:pr-4">
               <p>
                 Your trusted partner in health. Book appointments with top
                 doctors and access a wide range of diagnostic services, all in

@@ -9,7 +9,7 @@ import { testimonials } from "../../assets/data/testimonialData";
 const Testimonial = () => {
   return (
     <section className="container py-5">
-      <h2 className="heading text-center ">Patient Reviews</h2>
+      <h2 className="heading text-center">Patient Reviews</h2>
 
       <Swiper
         modules={[Pagination]}
