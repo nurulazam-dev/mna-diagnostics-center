@@ -35,7 +35,7 @@ const ChooseUsCopy = () => {
       icon: "🗺️",
     },
     {
-      title: "Comprehensive Diagnostics",
+      title: "Comprehensive Diag.",
       description:
         "We offer a wide range of tests and services for comprehensive healthcare.",
       icon: "🧪",
@@ -75,7 +75,7 @@ const ChooseUsCopy = () => {
           </div>
           <div className="lg:w-[65%] w-full">
             {/* ==options=== */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -85,7 +85,7 @@ const ChooseUsCopy = () => {
                   <h3 className="lg:text-[18px] text-[16px] font-bold text-gray-800">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 mt-2 text-justify leading-5 text-[15px]">
+                  <p className="text-gray-600 mt-2 text-justify leading-5 text-[13px]">
                     {feature.description}
                   </p>
                 </div>
