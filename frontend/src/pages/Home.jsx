@@ -2,7 +2,6 @@ import AdsBanner from "../components/Home/AdsBanner";
 import Awards from "../components/Home/Awards";
 import BestCard from "../components/Home/BestCard";
 import BestMedicalServices from "../components/Home/BestMedicalServices";
-import ChooseUsCopy from "../components/Home/ChooseUsCopy";
 import ContactSection from "../components/Home/ContactSection";
 import Countdown from "../components/Home/Countdown";
 import FaqSection from "../components/Home/FaqSection";
@@ -21,7 +20,6 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <ChooseUsCopy />
       <BestCard />
       <OurServices />
       <Awards />

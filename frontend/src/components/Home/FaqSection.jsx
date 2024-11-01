@@ -7,14 +7,14 @@ const FaqSection = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section
-      className="p-4 lg:py-0 my-5 lg:px-10"
-      style={{
-        backgroundImage: `url(${faqBg})`,
-      }}
-    >
+    <section>
       <h1 className="heading text-center">Frequently Asked Questions</h1>
-      <div className="flex items-center justify-center ">
+      <div
+        style={{
+          backgroundImage: `url(${faqBg})`,
+        }}
+        className="flex items-center justify-center "
+      >
         {/* Image Section */}
         <div className="hidden lg:block md:block lg:w-2/5 w-full">
           <img
@@ -25,7 +25,7 @@ const FaqSection = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="lg:w-3/5 w-full space-y-4">
+        <div className="lg:w-3/5 w-full space-y-4 lg:px-0 px-3 lg:mr-12">
           {faqs.map((faq) => (
             <div key={faq.id} className="bg-white shadow-md p-4 rounded-lg">
               <div className="flex items-center justify-between text-[15px] lg:text-[18px]">
