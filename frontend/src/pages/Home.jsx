@@ -8,6 +8,7 @@ import FaqSection from "../components/Home/FaqSection";
 import Gallery from "../components/Home/Gallery";
 import GreatDoctors from "../components/Home/GreatDoctors";
 import HeroSection from "../components/Home/HeroSection";
+import InfiniteScrollBar from "../components/Home/InfiniteScrollBar";
 import LatestNews from "../components/Home/LatestNews";
 import ManagementTeamSlide from "../components/Home/ManagementTeam/ManagementTeamSlide";
 import OurLocation from "../components/Home/OurLocation";
@@ -20,6 +21,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
+      <InfiniteScrollBar />
       <BestCard />
       <OurServices />
       <Awards />
