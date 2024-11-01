@@ -33,7 +33,9 @@ const Gallery = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className={`overflow-hidden ${index % 5 === 0 ? "row-span-2" : ""}`}
+            className={`overflow-hidden border-2 border-violet-600 ${
+              index % 5 === 0 ? "row-span-2" : ""
+            }`}
           >
             <img
               src={img.src}
