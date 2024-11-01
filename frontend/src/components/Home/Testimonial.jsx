@@ -34,7 +34,7 @@ const Testimonial = () => {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="bg-white border-t-4 border-violet-600 rounded shadow-md py-3 px-6 text-center">
+            <div className="bg-white border-t-4 border-violet-600 rounded-b-md shadow-md py-3 px-6 text-center">
               <div className="flex justify-around">
                 <div>
                   <img
