@@ -1,30 +1,40 @@
-import { chooseData } from "../../assets/data/chooseListData";
+import { whyChooseUsData } from "../../assets/data/whyChooseUsData";
+import BGImg from "../../assets/images/bgImg.png";
+import WCUImg from "../../assets/images/others/whyChooseUs.png";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-green-500 container py-6 text-white">
-      <h2 className="lg:text-[44px] text-[35px] leading-[54px] font-[700] text-center">
-        Why Choose US?
-      </h2>
-
-      <div className="container mt-[15px] lg:mt-[35px]">
-        <div className="grid grid-cols-1 mg:grid-cols-3 lg:grid-cols-4 gap-[2px] lg:gap-[3px] lg:mx-2">
-          {chooseData.map((data, index) => (
-            <div
-              key={index}
-              className="border rounded lg:border-none mb-3 lg:mb-0 px-2"
-            >
-              <div className="flex justify-center">
-                <img src={data?.img} alt="" className="h-[120px] w-[120px]" />
-              </div>
-              <div className="text-center pt-[5px] px-1 lg:px-2">
-                <h2 className="text-[23px] leading-5 font-semibold text-black">
-                  {data?.title}
-                </h2>
-                <p className="text-[12px] leading-5 mt-3">{data?.desc}</p>
-              </div>
+    <section>
+      <h2 className="heading text-center">Why Choose Us</h2>
+      <div
+        className="py-1"
+        style={{
+          backgroundImage: `url(${BGImg})`,
+        }}
+      >
+        <div className="w-full lg:flex justify-center items-center container">
+          <div className="lg:w-[35%] w-full">
+            <img src={WCUImg} alt="" />
+          </div>
+          <div className="lg:w-[65%] w-full">
+            {/* ==options=== */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {whyChooseUsData.map((feature, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center border-t-4 border-slate-400 p-3 bg-white shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+                >
+                  <div className="text-5xl mb-2">{feature.icon}</div>
+                  <h3 className="lg:text-[18px] text-[16px] font-bold text-gray-800">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 mt-2 text-justify leading-5 text-[13px]">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
