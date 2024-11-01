@@ -34,13 +34,37 @@ const ChooseUsCopy = () => {
         "Located in the heart of Raozan, making it easy for everyone to reach us.",
       icon: "🗺️",
     },
+    {
+      title: "Comprehensive Diagnostics",
+      description:
+        "We offer a wide range of tests and services for comprehensive healthcare.",
+      icon: "🧪",
+    },
+    {
+      title: "Online Appointment",
+      description:
+        "Book your appointments easily through our user-friendly website.",
+      icon: "🖥️",
+    },
+    {
+      title: "Personalized Care",
+      description:
+        "Every patient receives personalized and attentive care tailored to their needs.",
+      icon: "❤️",
+    },
+    {
+      title: "Fast and Accurate Reports",
+      description:
+        "Get your test results quickly and accurately to minimize waiting times.",
+      icon: "📄",
+    },
   ];
 
   return (
     <section>
       <h2 className="heading text-center">Why Choose Us</h2>
       <div
-        className="py-5"
+        className="py-1"
         style={{
           backgroundImage: `url(${BGImg})`,
         }}
