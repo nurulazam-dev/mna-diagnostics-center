@@ -6,7 +6,7 @@ import heroImg01 from "../../assets/images/home/heroImg.png";
 const HeroSection = () => {
   return (
     <section
-      className="container pt-[15px] 2xl:h-[800px] lg:px-10"
+      className="container pt-[10px] 2xl:h-[800px] lg:px-10"
       style={{
         background: `url(${heroBg})`,
       }}

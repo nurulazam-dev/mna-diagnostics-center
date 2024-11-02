@@ -20,8 +20,8 @@ import WhyChooseUs from "../components/Home/WhyChooseUs";
 const Home = () => {
   return (
     <>
-      <HeroSection />
       <InfiniteScrollBar />
+      <HeroSection />
       <BestCard />
       <OurServices />
       <Awards />
