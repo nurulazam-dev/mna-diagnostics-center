@@ -7,6 +7,7 @@ import Countdown from "../components/Home/Countdown";
 import FaqSection from "../components/Home/FaqSection";
 import Gallery from "../components/Home/Gallery";
 import GreatDoctors from "../components/Home/GreatDoctors";
+import HealthPackages from "../components/Home/HealthPackages";
 import HeroSection from "../components/Home/HeroSection";
 import InfiniteScrollBar from "../components/Home/InfiniteScrollBar";
 import LatestNews from "../components/Home/LatestNews";
@@ -23,6 +24,9 @@ const Home = () => {
       <InfiniteScrollBar />
       <HeroSection />
       <BestCard />
+      {/* =============== */}
+      <HealthPackages />
+      {/* =============== */}
       <OurServices />
       <Awards />
       <AdsBanner />
