@@ -1,50 +1,7 @@
 import { IoMdCheckmarkCircle } from "react-icons/io";
+import { packages } from "../../assets/data/packagesData";
 
 const HealthPackages = () => {
-  const packages = [
-    {
-      name: "Basic Health Check",
-      description:
-        "Comprehensive screening covering essen-tial tests for overall health.",
-      price: "$70",
-      facilities: [
-        "Blood pressure check",
-        "Cholesterol and glucose tests",
-        "BMI analysis",
-        "Basic vision screening",
-        "General physician consultation",
-      ],
-      image: "https://via.placeholder.com/300x200", // Replace with actual image URLs
-    },
-    {
-      name: "Senior Health Package",
-      description:
-        "Designed for individuals over 60, covering key health checks for aging.",
-      price: "$120",
-      facilities: [
-        "Heart function test (ECG)",
-        "Bone density scan",
-        "Kidney function test",
-        "Eye and hearing assessment",
-        "General health consultation",
-      ],
-      image: "https://via.placeholder.com/300x200",
-    },
-    {
-      name: "Full Body Checkup",
-      description:
-        "Complete examination covering all major systems for a thorough health.",
-      price: "$150",
-      facilities: [
-        "Complete blood profile",
-        "Liver and kidney function tests",
-        "Heart health assessment (ECG)",
-        "Comprehensive vision & hearing check",
-        "Consultation with specialist doctors",
-      ],
-      image: "https://via.placeholder.com/300x200",
-    },
-  ];
   return (
     <section className="px-6 lg:px-24">
       <h2 className="heading text-center">Our Health Packages</h2>
@@ -58,13 +15,9 @@ const HealthPackages = () => {
               {pkg.price}
             </div>
 
-            <img
-              src={pkg.image}
-              alt={pkg.name}
-              className="w-full h-48 object-cover"
-            />
+            <img src={pkg.image} alt={pkg.name} className="w-full" />
 
-            <div className="p-6 py-2 flex flex-col justify-between">
+            <div className="px-6 pb-2 flex flex-col justify-between">
               <h3 className="text-[20px] lg:text-[25px] font-bold text-indigo-800 mb-1 text-center">
                 {pkg.name}
               </h3>
