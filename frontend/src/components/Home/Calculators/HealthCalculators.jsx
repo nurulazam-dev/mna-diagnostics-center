@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BMICalculator from "./BMICalculator";
 
 const HealthCalculators = () => {
   const [selectedCalculator, setSelectedCalculator] = useState("BMI");
