@@ -62,16 +62,16 @@ const HealthPackages = () => {
               className="w-full h-48 object-cover"
             />
             <div className="p-6 pt-2 flex flex-col justify-between">
-              <h3 className="text-[20px] lg:text-[24px] font-bold text-indigo-800 mb-2 text-center">
+              <h3 className="text-[20px] lg:text-[24px] font-bold text-indigo-800 mb-1 text-center">
                 {pkg.name}
               </h3>
               <p className="text-[16px] text-gray-600 mb-3 text-justify">
                 {pkg.description}
               </p>
-              <ul className="text-gray-500 pl-5 mb-4 space-y-1 text-[14px]">
+              <ul className="text-gray-500 pl-2 mb-4 space-y-1 text-[14px]">
                 {pkg.facilities.map((facility, idx) => (
-                  <li key={idx}>
-                    <IoMdCheckmarkCircle />
+                  <li key={idx} className="flex items-center">
+                    <IoMdCheckmarkCircle className="w-4 h-4 text-green-600 mr-1" />
                     {facility}
                   </li>
                 ))}
