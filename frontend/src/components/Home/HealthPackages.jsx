@@ -24,7 +24,7 @@ const HealthPackages = () => {
               <p className="text-[16px] text-gray-600 mb-3 text-justify">
                 {pkg.description}
               </p>
-              <ul className="text-gray-500 pl-2 mb-2 space-y-1 text-[14px]">
+              <ul className="text-gray-500 pl-1 mb-2 space-y-1 text-[14px]">
                 {pkg.facilities.map((facility, idx) => (
                   <li key={idx} className="flex items-center">
                     <IoMdCheckmarkCircle className="w-4 h-4 text-green-600 mr-1" />
