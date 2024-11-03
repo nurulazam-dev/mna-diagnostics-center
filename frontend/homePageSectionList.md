@@ -28,15 +28,15 @@ Detailed list of essential sections for home page:
 
    - A section with a step-by-step guide on how to book an appointment, possibly with an embedded form for quick access.
 
-8. **Health Packages**
+8. **Health Packages**===
 
    - Promote health or wellness packages (e.g., basic health check, diabetes screening) with prices and brief descriptions.
 
-9. **Patient Reviews / Testimonials**
+9. **Patient Reviews / Testimonials**=====
 
    - Display testimonials from past patients to build trust, showing their photos, ratings, and review comments.
 
-10. **Gallery**
+10. **Gallery**=====
 
     - A photo gallery of the center’s facilities, events, or equipment, providing a sense of the atmosphere and environment.
 
@@ -48,7 +48,7 @@ Detailed list of essential sections for home page:
 
     - A section for articles on health and wellness tips, preventive care, and common health issues, providing value to visitors.
 
-13. **FAQs**
+13. **FAQs**====
 
     - Address common questions about booking procedures, service availability, and policies to help users.
 
@@ -56,7 +56,7 @@ Detailed list of essential sections for home page:
 
     - An encouraging banner for appointment booking or inquiries, possibly including contact details and a quick link.
 
-15. **Contact Information / Location Map**
+15. **Contact Information / Location Map**=====
 
     - Contact details (phone, email, address) along with an interactive map showing the center’s location.
 
@@ -64,15 +64,15 @@ Detailed list of essential sections for home page:
 
     - Section for the latest news, updates, or special offers, such as upcoming free health camps or discount days.
 
-17. **Our Management Team**
+17. **Our Management Team**=====
 
     - Brief introduction to the management team members with photos and designations to build credibility.
 
-18. **Accreditations & Certifications**
+18. **Accreditations & Certifications**=========
 
     - Display certifications, awards, and accreditations to boost reliability and trustworthiness.
 
-19. **Footer with Quick Links**
+19. **Footer with Quick Links**====
 
     - A comprehensive footer with links to important pages like privacy policy, terms, social media, and quick navigation links.
 
@@ -80,7 +80,7 @@ Detailed list of essential sections for home page:
 
     - Real-life stories or detailed case studies of patient experiences, with a focus on successful treatments or diagnoses.
 
-21. **Virtual Tour**
+21. **Virtual Tour**=====
 
     - A 360-degree virtual tour of the diagnostics center, allowing patients to explore the facilities online.
 

@@ -25,13 +25,13 @@ const Home = () => {
       <HeroSection />
       <BestCard />
       {/* =============== */}
-      <HealthPackages />
       {/* =============== */}
       <OurServices />
       <Awards />
       <AdsBanner />
       <VirtualTreatment />
       <Countdown />
+      <HealthPackages />
       <ManagementTeamSlide />
       <WhyChooseUs />
       <FaqSection />
