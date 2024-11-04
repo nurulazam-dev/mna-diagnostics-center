@@ -88,7 +88,7 @@ Detailed list of essential sections for home page:
 
     - Section explaining automated reminders and follow-up options available to patients after their appointments.
 
-23. **Health Calculators**
+23. **Health Calculators**===
 
     - Interactive tools like BMI calculators, heart health assessments, or calorie counters for user engagement.
 
