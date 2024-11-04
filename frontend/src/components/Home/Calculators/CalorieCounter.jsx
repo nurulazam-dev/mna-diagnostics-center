@@ -99,6 +99,7 @@ const CalorieCounter = () => {
           </option>
         </select>
       </div>
+
       <button
         onClick={calculateCalories}
         className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg"
