@@ -15,7 +15,7 @@ const HealthPackages = () => {
               {pkg.price}
             </div>
 
-            <img src={pkg.image} alt={pkg.name} className="w-full" />
+            <img src={pkg.image} alt={pkg.name} className="w-full h-[160px]" />
 
             <div className="px-6 pb-2 flex flex-col justify-between">
               <h3 className="text-[20px] lg:text-[25px] font-bold text-indigo-800 mb-1 text-center">
@@ -33,7 +33,7 @@ const HealthPackages = () => {
                 ))}
               </ul>
             </div>
-            <div className="bg-violet-700 text-white font-medium hover:bg-green-700 transition-colors text-center py-3 text-xl">
+            <div className="bg-violet-700 text-white font-medium hover:bg-green-700 transition-colors text-center py-2 text-lg">
               Book Now
             </div>
           </div>
