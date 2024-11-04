@@ -52,7 +52,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div>
+        <div className="lg:block hidden">
           <img src={heroImg01} alt="" className="h-full" />
         </div>
       </div>

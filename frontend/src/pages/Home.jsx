@@ -5,6 +5,7 @@ import BestMedicalServices from "../components/Home/BestMedicalServices";
 import HealthCalculators from "../components/Home/Calculators/HealthCalculators";
 import ContactSection from "../components/Home/ContactSection";
 import Countdown from "../components/Home/Countdown";
+import DownloadApp from "../components/Home/DownloadApp";
 import FaqSection from "../components/Home/FaqSection";
 import Gallery from "../components/Home/Gallery";
 import GreatDoctors from "../components/Home/GreatDoctors";
@@ -32,19 +33,20 @@ const Home = () => {
       <AdsBanner />
       <VirtualTreatment />
       <Countdown />
+      <GreatDoctors />
       <HealthPackages />
       <ManagementTeamSlide />
       <WhyChooseUs />
       <FaqSection />
+      <BestMedicalServices />
       <HealthCalculators />
       <LatestNews />
+      <DownloadApp />
+      <Gallery />
+      <Testimonial />
       <OurLocation />
       <ContactSection />
-      <Gallery />
       {/* ========== */}
-      <BestMedicalServices />
-      <GreatDoctors />
-      <Testimonial />
     </>
   );
 };
