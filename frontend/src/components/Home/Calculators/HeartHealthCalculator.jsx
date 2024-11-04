@@ -30,6 +30,8 @@ const HeartHealthCalculator = () => {
     setIsModalOpen(false);
   };
 
+  const inputClass = `w-full p-2 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[16px] text-headingColor placeholder:text-gray-400`;
+
   return (
     <div className="space-y-4">
       <div>
@@ -38,7 +40,7 @@ const HeartHealthCalculator = () => {
           type="number"
           value={age}
           onChange={(e) => setAge(e.target.value)}
-          className="w-full p-2 border rounded-lg"
+          className={inputClass}
           placeholder="Enter your age"
         />
       </div>
@@ -50,13 +52,13 @@ const HeartHealthCalculator = () => {
           type="number"
           value={restingHeartRate}
           onChange={(e) => setRestingHeartRate(e.target.value)}
-          className="w-full p-2 border rounded-lg"
+          className={inputClass}
           placeholder="Enter your resting heart rate"
         />
       </div>
       <button
         onClick={calculateHeartRateZones}
-        className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg"
+        className="customBtn animate-bounce"
       >
         Calculate Heart Rate Zones
       </button>

@@ -20,6 +20,8 @@ const BMICalculator = () => {
     setIsModalOpen(false);
   };
 
+  const inputClass = `w-full p-2 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[16px] text-headingColor placeholder:text-gray-400`;
+
   return (
     <div className="space-y-4">
       <div>
@@ -28,7 +30,7 @@ const BMICalculator = () => {
           type="number"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
-          className="w-full p-2 border rounded-lg"
+          className={inputClass}
           placeholder="Enter your weight"
         />
       </div>
@@ -38,14 +40,11 @@ const BMICalculator = () => {
           type="number"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
-          className="w-full p-2 border rounded-lg"
+          className={inputClass}
           placeholder="Enter your height"
         />
       </div>
-      <button
-        onClick={calculateBMI}
-        className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg"
-      >
+      <button onClick={calculateBMI} className="customBtn animate-bounce">
         Calculate BMI
       </button>
 

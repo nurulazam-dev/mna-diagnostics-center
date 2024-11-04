@@ -15,7 +15,11 @@ const HealthPackages = () => {
               {pkg.price}
             </div>
 
-            <img src={pkg.image} alt={pkg.name} className="w-full h-[160px]" />
+            <img
+              src={pkg.image}
+              alt={pkg.name}
+              className="w-full lg:h-[160px] h-[190px]"
+            />
 
             <div className="px-6 pb-2 flex flex-col justify-between">
               <h3 className="text-[20px] lg:text-[25px] font-bold text-indigo-800 mb-1 text-center">

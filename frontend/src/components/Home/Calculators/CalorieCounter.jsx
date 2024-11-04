@@ -31,6 +31,8 @@ const CalorieCounter = () => {
     setIsModalOpen(false);
   };
 
+  const inputClass = `w-full p-2 border border-[#0066ff61] focus:outline-none focus:border-violet-700 text-[16px] text-headingColor placeholder:text-gray-400`;
+
   return (
     <div className="space-y-4">
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
@@ -40,7 +42,7 @@ const CalorieCounter = () => {
             type="number"
             value={age}
             onChange={(e) => setAge(e.target.value)}
-            className="w-full p-2 border rounded-lg"
+            className={inputClass}
             placeholder="Enter your age"
           />
         </div>
@@ -50,7 +52,7 @@ const CalorieCounter = () => {
             type="number"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
-            className="w-full p-2 border rounded-lg"
+            className={inputClass}
             placeholder="Enter your weight"
           />
         </div>
@@ -60,7 +62,7 @@ const CalorieCounter = () => {
             type="number"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
-            className="w-full p-2 border rounded-lg"
+            className={inputClass}
             placeholder="Enter your height"
           />
         </div>
@@ -69,7 +71,7 @@ const CalorieCounter = () => {
           <select
             value={gender}
             onChange={(e) => setGender(e.target.value)}
-            className="w-full p-2 border rounded-lg"
+            className={inputClass}
           >
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -82,7 +84,7 @@ const CalorieCounter = () => {
         <select
           value={activityLevel}
           onChange={(e) => setActivityLevel(e.target.value)}
-          className="w-full p-2 border rounded-lg"
+          className={inputClass}
         >
           <option value="1.2">Sedentary (little to no exercise)</option>
           <option value="1.375">
@@ -100,10 +102,7 @@ const CalorieCounter = () => {
         </select>
       </div>
 
-      <button
-        onClick={calculateCalories}
-        className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg"
-      >
+      <button onClick={calculateCalories} className="customBtn animate-bounce">
         Calculate Daily Calories
       </button>
 
