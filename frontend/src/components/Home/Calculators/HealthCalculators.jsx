@@ -7,11 +7,9 @@ const HealthCalculators = () => {
   const [selectedCalculator, setSelectedCalculator] = useState("BMI");
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6">
-      <h2 className="text-2xl font-bold text-center mb-6">
-        Health Calculators
-      </h2>
-      <div className="flex justify-around mb-4">
+    <div className="w-full max-w-4xl mx-auto px-6 bg-green-500">
+      <h2 className="heading text-center">Health Calculators</h2>
+      <div className="flex justify-around mb-2">
         {["BMI", "Heart Health", "Calorie Counter"].map((tool) => (
           <button
             key={tool}
