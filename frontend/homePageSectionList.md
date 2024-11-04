@@ -144,7 +144,7 @@ Detailed list of essential sections for home page:
 
     - Outline patient rights and responsibilities, fostering transparency and setting expectations for care standards.
 
-37. **Download Mobile App**
+37. **Download Mobile App**===
 
     - Encourage users to download the center's app (if available) with links to app stores and a summary of app features.
 
