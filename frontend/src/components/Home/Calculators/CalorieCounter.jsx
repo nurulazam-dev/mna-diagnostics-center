@@ -123,19 +123,16 @@ const CalorieCounter = () => {
               backgroundImage: `url(${bgImg})`,
             }}
           >
-            <h3 className="text-[24px] text-violet-700 font-bold mb-4">
+            <h3 className="text-[24px] text-violet-700 font-bold mb-4 bg-white">
               Calculate Daily Calories
             </h3>
-            <p className="text-lg">
-              Your daily calorie needs are:{" "}
-              <strong className="text-blue-600 text-2xl font-bold">
-                {calories} kcal
-              </strong>{" "}
-            </p>
-
+            <p className="text-lg">Your daily calorie needs are: </p>
+            <h3 className="text-red-600 text-2xl font-bold">
+              {calories} kcal
+            </h3>{" "}
             <button
               onClick={closeModal}
-              className="mt-6 w-full bg-blue-500 text-white font-bold py-2 rounded-lg"
+              className="mt-6 w-full bg-violet-600 text-white font-bold py-2 animate-bounce hover:bg-red-600"
             >
               Close
             </button>
