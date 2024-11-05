@@ -116,7 +116,7 @@ Detailed list of essential sections for home page:
 
     - A tool where users can input symptoms and get insights on potential health issues before booking an appointment.
 
-30. **Corporate Partnerships**
+30. **Corporate Partnerships**===
 
     - Section offering information on corporate health programs or partnerships for employee health checkups.
 
@@ -152,7 +152,7 @@ Detailed list of essential sections for home page:
 
     - A form for visitors to subscribe to a monthly newsletter featuring health tips, updates, and promotions.
 
-39. **Educational Videos / Webinars**
+39. **Educational Videos / Webinars**===
 
     - Links to educational videos or recorded webinars on health topics, medical tests, and preventive care.
 

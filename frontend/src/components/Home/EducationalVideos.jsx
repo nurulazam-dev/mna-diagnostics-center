@@ -4,19 +4,19 @@ const EducationalVideos = () => {
       id: 1,
       title: "Understanding Diabetes: Prevention and Management",
       videoLink:
-        "https://www.youtube.com/embed/RZHDuzQHksM?si=KQo9DtyDe1dCswaf",
+        "https://www.youtube.com/embed/zJnZXInr83k?si=vnY9U-hK9aOAcdjz",
     },
     {
       id: 2,
       title: "Importance of Regular Health Checkups",
       videoLink:
-        "https://www.youtube.com/embed/-c8rDuCEpCU?si=q6s9SMmxTRQHD865",
+        "https://www.youtube.com/embed/lT4Z2ZjBnkc?si=IKQ-HJ7A6EEObRrR",
     },
     {
       id: 3,
       title: "Heart Health: Tips for a Healthy Lifestyle",
       videoLink:
-        "https://www.youtube.com/embed/NmJ70_O-ARY?si=kEVIfIATeptsH8mB",
+        "https://www.youtube.com/embed/guHFpjaFSgY?si=yGfzSCHn6TJJRVpP",
     },
   ];
 
@@ -31,8 +31,6 @@ const EducationalVideos = () => {
               className="relative group rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
             >
               <iframe
-                // width="560"
-                // height="315"
                 className="w-full h-48 object-cover"
                 src={video.videoLink}
                 title="YouTube video player"
