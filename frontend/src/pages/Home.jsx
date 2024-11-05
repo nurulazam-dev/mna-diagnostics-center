@@ -7,6 +7,7 @@ import ContactSection from "../components/Home/ContactSection";
 import CorporatePartnerships from "../components/Home/CorporatePartnerships";
 import Countdown from "../components/Home/Countdown";
 import DownloadApp from "../components/Home/DownloadApp";
+import EducationalVideos from "../components/Home/EducationalVideos";
 import FaqSection from "../components/Home/FaqSection";
 import Gallery from "../components/Home/Gallery";
 import GreatDoctors from "../components/Home/GreatDoctors";
@@ -28,7 +29,7 @@ const Home = () => {
       <HeroSection />
       <BestCard />
       {/* =============== */}
-      <CorporatePartnerships />
+      <EducationalVideos />
       {/* =============== */}
       <OurServices />
       <Awards />
@@ -45,6 +46,7 @@ const Home = () => {
       <LatestNews />
       <DownloadApp />
       <Gallery />
+      <CorporatePartnerships />
       <Testimonial />
       <OurLocation />
       <ContactSection />
