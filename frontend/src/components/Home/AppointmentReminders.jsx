@@ -1,54 +1,77 @@
+import { FaBell, FaHeartbeat, FaUserCheck } from "react-icons/fa";
+
 const AppointmentReminders = () => {
   return (
-    <section className="bg-gray-100 p-8 rounded-lg shadow-lg max-w-3xl mx-auto my-12">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4 text-center">
+    <section className="px-6">
+      <h2 className="heading text-center">
         Appointment Reminders & Follow-ups
       </h2>
-      <p className="text-gray-700 text-center mb-6">
-        At MNA Diagnostics Center, we ensure that you stay updated and supported
-        even after your appointments. Our automated reminder system and
-        follow-up services are designed to keep you on track with your health.
+      <p className="text-center text-gray-600 text-[16px] mb-3 max-w-2xl mx-auto">
+        MNA Diagnostics Center is dedicated to helping you manage your health
+        with ease and consistency. Explore our automated reminders, personalized
+        follow-ups, and health tracking tools.
       </p>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 text-center">
-        {/* Reminder Card */}
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 className="text-lg font-semibold text-blue-600 mb-2">
-            Automated Reminders
-          </h3>
-          <p className="text-gray-600">
-            Get timely reminders for upcoming appointments via SMS, email, or
-            app notifications. Never miss an appointment again.
-          </p>
+      <div className="relative max-w-5xl mx-auto">
+        {/* Vertical timeline line */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-violet-600"></div>
+
+        {/* Timeline Item 1: Automated Reminders */}
+        <div className="mb-3 flex items-center w-full">
+          <div className="w-1/2 pr-8 flex justify-end">
+            <div className="bg-white rounded-lg shadow-lg p-6 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
+              <div className="absolute -right-14 top-2 flex items-center justify-center bg-violet-600 text-white rounded-full w-10 h-10">
+                <FaBell className="text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-violet-600 mb-2">
+                Automated Reminders
+              </h3>
+              <p className="text-gray-600">
+                Receive timely reminders for upcoming appointments via SMS,
+                email, or mobile notifications to stay on track.
+              </p>
+            </div>
+          </div>
+          <div className="w-1/2"></div>
         </div>
 
-        {/* Follow-up Options Card */}
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 className="text-lg font-semibold text-blue-600 mb-2">
-            Follow-up Support
-          </h3>
-          <p className="text-gray-600">
-            Receive follow-up notifications after your appointment for
-            personalized health advice and recommendations.
-          </p>
+        {/* Timeline Item 2: Personalized Follow-ups */}
+        <div className="mb-3 flex items-center w-full">
+          <div className="w-1/2"></div>
+          <div className="w-1/2 pl-8 flex justify-start">
+            <div className="bg-white rounded-lg shadow-lg p-6 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
+              <div className="absolute -left-14 top-2 flex items-center justify-center bg-violet-600 text-white rounded-full w-10 h-10">
+                <FaUserCheck className="text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-violet-600 mb-2">
+                Personalized Follow-ups
+              </h3>
+              <p className="text-gray-600">
+                Post-appointment follow-ups tailored to your health needs, with
+                guidance from our health experts.
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Health Tracking Card */}
-        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 className="text-lg font-semibold text-blue-600 mb-2">
-            Health Tracking
-          </h3>
-          <p className="text-gray-600">
-            Track your health progress and receive updates through our app,
-            keeping you engaged and informed.
-          </p>
+        {/* Timeline Item 3: Health Tracking */}
+        <div className="flex items-center w-full">
+          <div className="w-1/2 pr-8 flex justify-end">
+            <div className="bg-white rounded-lg shadow-lg p-6 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
+              <div className="absolute -right-14 top-2 flex items-center justify-center bg-violet-600 text-white rounded-full w-10 h-10">
+                <FaHeartbeat className="text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-violet-600 mb-2">
+                Health Tracking
+              </h3>
+              <p className="text-gray-600">
+                Track your health progress and receive insights to help you stay
+                engaged and informed.
+              </p>
+            </div>
+          </div>
+          <div className="w-1/2"></div>
         </div>
-      </div>
-
-      <div className="mt-8 flex justify-center">
-        <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition-colors duration-300">
-          Learn More
-        </button>
       </div>
     </section>
   );
