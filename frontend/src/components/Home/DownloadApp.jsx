@@ -8,7 +8,7 @@ const DownloadApp = () => {
       <h1 className="heading text-center">Our Mobile App</h1>
       <div className="lg:flex items-center justify-center px-8 w-full">
         {/* =====Mobile Phone Image===== */}
-        <div className="lg:w-[40%] w-full flex justify-end mb-6 md:mb-0">
+        <div className="lg:w-[40%] w-full flex justify-center lg:justify-end mb-6 md:mb-0">
           <img
             src={mobileFrame}
             alt="Mobile App"
