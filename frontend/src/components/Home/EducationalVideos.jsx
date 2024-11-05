@@ -45,8 +45,7 @@ const EducationalVideos = () => {
                   {video.title}
                 </h3>
                 <button
-                  href={video.videoLink}
-                  target="_blank"
+                  to={video.videoLink}
                   rel="noopener noreferrer"
                   className="inline-block px-4 py-2 mt-2 text-sm font-medium text-white bg-green-600 rounded hover:bg-violet-600 hover:text-white transition duration-300"
                 >
