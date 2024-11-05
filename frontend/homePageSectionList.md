@@ -52,7 +52,7 @@ Detailed list of essential sections for home page:
 
     - Address common questions about booking procedures, service availability, and policies to help users.
 
-14. **Call-to-Action Banner**
+14. **Call-to-Action Banner**===
 
     - An encouraging banner for appointment booking or inquiries, possibly including contact details and a quick link.
 
@@ -84,7 +84,7 @@ Detailed list of essential sections for home page:
 
     - A 360-degree virtual tour of the diagnostics center, allowing patients to explore the facilities online.
 
-22. **Appointment Reminders & Follow-ups**
+22. **Appointment Reminders & Follow-ups**===
 
     - Section explaining automated reminders and follow-up options available to patients after their appointments.
 

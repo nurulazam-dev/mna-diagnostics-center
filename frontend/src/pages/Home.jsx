@@ -31,7 +31,6 @@ const Home = () => {
       <HeroSection />
       <BestCard />
       {/* =============== */}
-      <CallToActionBanner />
       {/* =============== */}
       <OurServices />
       <Awards />
@@ -50,8 +49,9 @@ const Home = () => {
       <LatestNews />
       <DownloadApp />
       <Gallery />
-      <CorporatePartnerships />
+      <CallToActionBanner />
       <Testimonial />
+      <CorporatePartnerships />
       <OurLocation />
       <ContactSection />
       {/* ========== */}
