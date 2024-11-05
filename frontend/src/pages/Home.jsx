@@ -30,7 +30,6 @@ const Home = () => {
       <HeroSection />
       <BestCard />
       {/* =============== */}
-      <AppointmentReminders />
       {/* =============== */}
       <OurServices />
       <Awards />
@@ -43,6 +42,7 @@ const Home = () => {
       <WhyChooseUs />
       <FaqSection />
       <BestMedicalServices />
+      <AppointmentReminders />
       <HealthCalculators />
       <EducationalVideos />
       <LatestNews />
