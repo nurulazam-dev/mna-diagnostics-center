@@ -4,6 +4,7 @@ import Awards from "../components/Home/Awards";
 import BestCard from "../components/Home/BestCard";
 import BestMedicalServices from "../components/Home/BestMedicalServices";
 import HealthCalculators from "../components/Home/Calculators/HealthCalculators";
+import CallToActionBanner from "../components/Home/CallToActionBanner";
 import ContactSection from "../components/Home/ContactSection";
 import CorporatePartnerships from "../components/Home/CorporatePartnerships";
 import Countdown from "../components/Home/Countdown";
@@ -30,6 +31,7 @@ const Home = () => {
       <HeroSection />
       <BestCard />
       {/* =============== */}
+      <CallToActionBanner />
       {/* =============== */}
       <OurServices />
       <Awards />
