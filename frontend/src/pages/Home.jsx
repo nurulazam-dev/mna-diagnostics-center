@@ -1,4 +1,5 @@
 import AdsBanner from "../components/Home/AdsBanner";
+import AppointmentReminders from "../components/Home/AppointmentReminders";
 import Awards from "../components/Home/Awards";
 import BestCard from "../components/Home/BestCard";
 import BestMedicalServices from "../components/Home/BestMedicalServices";
@@ -29,6 +30,7 @@ const Home = () => {
       <HeroSection />
       <BestCard />
       {/* =============== */}
+      <AppointmentReminders />
       {/* =============== */}
       <OurServices />
       <Awards />

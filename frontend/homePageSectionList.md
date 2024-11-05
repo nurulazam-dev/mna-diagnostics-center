@@ -162,5 +162,3 @@ Detailed list of essential sections for home page:
 
 41. **Specialty Clinics / Centers of Excellence**
     - Highlight specialty clinics, like a dedicated diabetes center or cardiac care unit, that offer expert services.
-
-These additional sections enhance the website’s content, addressing various patient needs, building credibility, and promoting engagement with additional interactive and informational options.
