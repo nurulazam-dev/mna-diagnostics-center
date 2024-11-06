@@ -30,8 +30,6 @@ const Home = () => {
       <InfiniteScrollBar />
       <HeroSection />
       <BestCard />
-      {/* =============== */}
-      {/* =============== */}
       <OurServices />
       <Awards />
       <AdsBanner />
