@@ -7,11 +7,11 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const quickLinks = [
-  { path: "/home", display: "Home" },
-  { path: "/", display: "About Us" },
+  { path: "/", display: "Home" },
+  { path: "/about", display: "About Us" },
   { path: "/services", display: "Services" },
-  { path: "/", display: "Blog" },
-  { path: "/find-a-doctor", display: "Find a Doctor" },
+  { path: "/doctors", display: "Find a Doctor" },
+  { path: "/contact", display: "Contact" },
 ];
 
 export const socialLinks = [
@@ -82,7 +82,7 @@ const Footer = () => {
               <li>
                 Phone:{" "}
                 <a href="tel:+8801234567890" className="hover:text-blue-400">
-                  +880 1234 567 890
+                  +8801234-567890
                 </a>
               </li>
               <li>

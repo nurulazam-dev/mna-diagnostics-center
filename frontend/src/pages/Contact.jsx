@@ -28,9 +28,9 @@ const Contact = () => {
                 Contact Information:
               </h2>
               <p className="mt-[3px] text-gray-600">
-                <strong>Phone:</strong> +88 01234 567890
+                <strong>Phone:</strong> +8801234-567890
                 <br />
-                <strong>Email:</strong> contact@mnadiagnostics.com
+                <strong>Email:</strong> info@mnadiagnostics.com
                 <br />
                 <strong>Fax:</strong> +88 09876 543210
               </p>
