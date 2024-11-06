@@ -34,10 +34,9 @@ const EducationalVideos = () => {
                 className="w-full h-48 object-cover"
                 src={video.videoLink}
                 title="YouTube video player"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
 
               <div className="p-4 pt-0">

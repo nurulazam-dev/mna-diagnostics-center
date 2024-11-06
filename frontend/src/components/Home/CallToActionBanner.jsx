@@ -3,7 +3,7 @@ import { FaCalendarAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 const CallToActionBanner = () => {
   return (
     <div className="bg-gradient-to-r from-cyan-500 to-blue-600 py-10 text-center text-white">
-      <h2 className="text-3xl md:text-4xl font-bold mb-2 animate-pulse">
+      <h2 className="text-3xl md:text-4xl font-bold mb-2 animate-pulse text-black">
         Your Health is Our Priority
       </h2>
       <p className="text-[15px] lg:text-xl lg:mb-5 mb-2">
