@@ -5,7 +5,7 @@ const HealthPackages = () => {
   return (
     <section className="px-6 lg:px-24">
       <h2 className="heading text-center">Our Health Packages</h2>
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid lg:gap-10 gap-3 md:grid-cols-2 lg:grid-cols-3">
         {packages.map((pkg, index) => (
           <div
             key={index}

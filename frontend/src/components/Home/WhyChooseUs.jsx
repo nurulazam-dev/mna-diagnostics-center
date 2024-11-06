@@ -13,12 +13,12 @@ const WhyChooseUs = () => {
         }}
       >
         <div className="w-full lg:flex justify-center items-center container">
-          <div className="lg:w-[35%] w-full">
+          <div className="lg:w-[35%] w-full lg:block hidden">
             <img src={WCUImg} alt="" />
           </div>
           <div className="lg:w-[65%] w-full">
             {/* ==options=== */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-3 lg:my-0">
               {whyChooseUsData.map((feature, index) => (
                 <div
                   key={index}

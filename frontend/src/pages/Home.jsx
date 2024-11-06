@@ -39,8 +39,8 @@ const Home = () => {
       <HealthPackages />
       <ManagementTeamSlide />
       <WhyChooseUs />
-      <FaqSection />
       <BestMedicalServices />
+      <FaqSection />
       <AppointmentReminders />
       <HealthCalculators />
       <EducationalVideos />

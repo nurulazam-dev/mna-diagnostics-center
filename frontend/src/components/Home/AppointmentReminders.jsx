@@ -19,14 +19,14 @@ const AppointmentReminders = () => {
         {/* Timeline Item 1: Automated Reminders */}
         <div className="mb-3 flex items-center w-full">
           <div className="w-1/2 pr-8 flex justify-end">
-            <div className="bg-white rounded-lg shadow-lg p-6 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
+            <div className="bg-white rounded-lg shadow-lg lg:p-6 p-2 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
               <div className="absolute -right-14 top-2 flex items-center justify-center bg-violet-600 text-white rounded-full w-10 h-10">
                 <FaBell className="text-2xl" />
               </div>
               <h3 className="text-xl font-semibold text-violet-600 mb-2">
                 Automated Reminders
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-[14px]">
                 Receive timely reminders for upcoming appointments via SMS,
                 email, or mobile notifications to stay on track.
               </p>
@@ -39,14 +39,14 @@ const AppointmentReminders = () => {
         <div className="mb-3 flex items-center w-full">
           <div className="w-1/2"></div>
           <div className="w-1/2 pl-8 flex justify-start">
-            <div className="bg-white rounded-lg shadow-lg p-6 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
+            <div className="bg-white rounded-lg shadow-lg lg:p-6 p-2 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
               <div className="absolute -left-14 top-2 flex items-center justify-center bg-violet-600 text-white rounded-full w-10 h-10">
                 <FaUserCheck className="text-2xl" />
               </div>
               <h3 className="text-xl font-semibold text-violet-600 mb-2">
                 Personalized Follow-ups
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-[14px]">
                 Post-appointment follow-ups tailored to your health needs, with
                 guidance from our health experts.
               </p>
@@ -57,14 +57,14 @@ const AppointmentReminders = () => {
         {/* Timeline Item 3: Health Tracking */}
         <div className="flex items-center w-full">
           <div className="w-1/2 pr-8 flex justify-end">
-            <div className="bg-white rounded-lg shadow-lg p-6 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
+            <div className="bg-white rounded-lg shadow-lg lg:p-6 p-2 max-w-md transform hover:-translate-y-2 transition duration-300 relative">
               <div className="absolute -right-14 top-2 flex items-center justify-center bg-violet-600 text-white rounded-full w-10 h-10">
                 <FaHeartbeat className="text-2xl" />
               </div>
               <h3 className="text-xl font-semibold text-violet-600 mb-2">
                 Health Tracking
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-[14px]">
                 Track your health progress and receive insights to help you stay
                 engaged and informed.
               </p>
