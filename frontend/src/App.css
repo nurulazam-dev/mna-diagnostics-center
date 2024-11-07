@@ -11,6 +11,24 @@ body {
 }
 
 /* this css for swiper slide */
+
+.swiper {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1023px) {
+  .swiper-slide {
+    width: 320px;
+    height: 320px;
+  }
+}
+
 .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;

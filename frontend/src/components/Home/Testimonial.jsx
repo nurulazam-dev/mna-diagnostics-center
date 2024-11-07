@@ -31,6 +31,7 @@ const Testimonial = () => {
           },
         }}
         loop={true}
+        className="pb-10"
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>

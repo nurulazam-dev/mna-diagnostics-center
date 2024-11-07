@@ -8,9 +8,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Custom Styles
-import "./ManagementTeamSlide.css";
-
 // import required modules
 import {
   Autoplay,
@@ -52,10 +49,13 @@ const ManagementTeamSlide = () => {
           disableOnInteraction: false,
         }}
         modules={[EffectCoverflow, Autoplay, Pagination, Keyboard, Navigation]}
-        className="mySwiper"
+        className="mySwiper pb-10"
       >
         {managementTeams.map((member) => (
-          <SwiperSlide key={member.id}>
+          <SwiperSlide
+            key={member.id}
+            className="w-[320px] lg:w-[400px] lg:h-[375px] h-[320px]"
+          >
             <MemberCard member={member} />
           </SwiperSlide>
         ))}
