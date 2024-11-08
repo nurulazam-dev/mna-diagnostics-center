@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AdsBanner = () => {
   return (
-    <section className="container bg-green-500 py-6 text-white">
+    <section className="container bg-green-500 py-6 text-white mb-10">
       <div className="lg:flex block justify-around items-center">
         <div className="lg:mb-1 mb-2">
           <h2 className="lg:text-[44px] text-[35px] leading-[54px] font-[700]">
