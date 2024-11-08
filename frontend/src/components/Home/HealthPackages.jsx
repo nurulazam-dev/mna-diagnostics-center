@@ -3,9 +3,9 @@ import { packages } from "../../assets/data/packagesData";
 
 const HealthPackages = () => {
   return (
-    <section className="px-6 lg:px-24">
+    <section className="container mb-10">
       <h2 className="heading text-center">Our Health Packages</h2>
-      <div className="grid lg:gap-10 gap-3 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {packages.map((pkg, index) => (
           <div
             key={index}
@@ -15,11 +15,7 @@ const HealthPackages = () => {
               {pkg.price}
             </div>
 
-            <img
-              src={pkg.image}
-              alt={pkg.name}
-              className="w-full lg:h-[160px] h-[190px]"
-            />
+            <img src={pkg.image} alt={pkg.name} className="w-full h-[190px]" />
 
             <div className="px-6 pb-2 flex flex-col justify-between">
               <h3 className="text-[20px] lg:text-[25px] font-bold text-indigo-800 mb-1 text-center">
