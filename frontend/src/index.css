@@ -9,7 +9,7 @@
 } */
 @layer components {
   .container {
-    @apply max-w-full w-[1440px] px-10 py-3 mx-auto;
+    @apply max-w-full w-[1440px] px-10 mb-10 mx-auto;
   }
   .customBtn {
     @apply border border-green-700 text-green-700 font-[500] px-[26px] py-[11px] rounded-md hover:bg-violet-700  hover:text-white transition duration-300;
