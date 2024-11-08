@@ -4,7 +4,7 @@ import VTImg from "../../assets/images/home/virtualTreatment.png";
 
 const VirtualTreatment = () => {
   return (
-    <section className="">
+    <section className="container mb-10">
       <h2 className="heading text-center">Get Virtual Treatment</h2>
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center px-6 w-full">
         {/* Text Section */}
