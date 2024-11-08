@@ -10,22 +10,20 @@ const GreatDoctors = () => {
   const { data: doctors, loading, error } = useFetchData(`${BASE_URL}/doctors`);
 
   return (
-    <section className="my-7">
+    <section className="container mb-10">
       <h2 className="heading text-center">Our Experts Doctors</h2>
-      <div className="container">
-        {loading && <Loader />}
-        {error && <Error />}
-        {!loading && !error && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {/* {doctors.map((doctor) => (
+      {loading && <Loader />}
+      {error && <Error />}
+      {!loading && !error && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {/* {doctors.map((doctor) => (
               <DoctorDetails doctor={doctor} key={doctor?._id} />
             ))} */}
-            {doctors.map((doctor) => (
-              <DoctorCard doctor={doctor} key={doctor?._id} />
-            ))}
-          </div>
-        )}
-      </div>
+          {doctors.map((doctor) => (
+            <DoctorCard doctor={doctor} key={doctor?._id} />
+          ))}
+        </div>
+      )}
       <Link to="/doctors" className="flex justify-center animate-bounce">
         <button className="customBtn bg-green-600 flex items-center text-white mt-8">
           All Expert Doctors{" "}
