@@ -9,7 +9,7 @@
 } */
 @layer components {
   .container {
-    @apply max-w-full w-[1440px] px-5 mx-auto;
+    @apply max-w-full w-[1440px] px-10 py-3 mx-auto;
   }
   .customBtn {
     @apply border border-green-700 text-green-700 font-[500] px-[26px] py-[11px] rounded-md hover:bg-violet-700  hover:text-white transition duration-300;
@@ -23,10 +23,7 @@
   .text_para {
     @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
   }
-  .header {
-    @apply bg-[url('./assets/images/home/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[70px] leading-[100px];
-    /* @apply bg-violet-600 w-full h-[70px] leading-[100px]; */
-  }
+
   .form_label {
     @apply text-[16px] font-semibold leading-7 text-textColor mb-2;
   }
