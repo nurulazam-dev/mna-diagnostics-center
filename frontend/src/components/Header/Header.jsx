@@ -46,8 +46,8 @@ const Header = () => {
     navigate("/");
   };
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center py-2">
+    <header className="container bg-white shadow-md sticky top-0 z-50">
+      <div className="mx-auto flex justify-between items-center py-2">
         {/* ========Logo========= */}
         <div className="">
           <NavLink to="/">
