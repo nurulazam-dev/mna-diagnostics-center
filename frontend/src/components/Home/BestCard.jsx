@@ -28,7 +28,7 @@ const BestCard = () => {
     },
   ];
   return (
-    <section className="container my-5 px-10 w-full md:w-[90%] lg:w-[85%]">
+    <section className="container mb-10 w-full md:w-[90%] lg:w-[85%]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {cardData.map((data, id) => (
           <div
