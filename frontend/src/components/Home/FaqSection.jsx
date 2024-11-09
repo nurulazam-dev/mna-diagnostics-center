@@ -7,7 +7,7 @@ const FaqSection = () => {
   const [active, setActive] = useState(1);
 
   return (
-    <section>
+    <section className="container mb-10">
       <h1 className="heading text-center">Frequently Asked Questions</h1>
       <div
         style={{
