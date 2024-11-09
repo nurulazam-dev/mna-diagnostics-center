@@ -21,8 +21,8 @@ import MemberCard from "./MemberCard";
 
 const ManagementTeamSlide = () => {
   return (
-    <section className="max-w-6xl mx-auto">
-      <h2 className="heading text-center mb-0">Management Team</h2>
+    <section className="container mb-10">
+      <h2 className="heading text-center">Management Team</h2>
       {/* ====slide start==== */}
 
       <Swiper
