@@ -26,7 +26,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="container mb-10">
+    <section className="container mb-10">
       <h2 className="heading text-center">Our Programs & Activities</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -46,7 +46,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
