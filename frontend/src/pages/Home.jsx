@@ -44,8 +44,8 @@ const Home = () => {
       <AppointmentReminders />
       <HealthCalculators />
       <EducationalVideos />
-      <Articles />
       <DownloadApp />
+      <Articles />
       <Gallery />
       <CallToActionBanner />
       <Testimonial />

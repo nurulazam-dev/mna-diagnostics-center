@@ -4,7 +4,7 @@ import mobileFrame from "../../assets/images/home/mobileApp.png";
 
 const DownloadApp = () => {
   return (
-    <section className="container mb-10">
+    <section className="container mb-5">
       <h1 className="heading text-center">Our Mobile App</h1>
       <div className="lg:flex items-center justify-center w-full">
         {/* =====Mobile Phone Image===== */}
