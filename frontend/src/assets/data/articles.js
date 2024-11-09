@@ -2,7 +2,7 @@ import newsImg3 from "../images/news/AsthmaControl.png";
 import newsImg1 from "../images/news/Hypertension.png";
 import newsImg2 from "../images/news/ManagingDiabetes.png";
 
-export const latestNewsData = [
+export const articlesData = [
   {
     id: 1,
     title: "Understanding Hypertension: Causes and Treatment",

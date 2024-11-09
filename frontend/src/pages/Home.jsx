@@ -16,13 +16,13 @@ import GreatDoctors from "../components/Home/GreatDoctors";
 import HealthPackages from "../components/Home/HealthPackages";
 import HeroSection from "../components/Home/HeroSection";
 import InfiniteScrollBar from "../components/Home/InfiniteScrollBar";
-import LatestNews from "../components/Home/LatestNews";
 import ManagementTeamSlide from "../components/Home/ManagementTeam/ManagementTeamSlide";
 import OurLocation from "../components/Home/OurLocation";
 import OurServices from "../components/Home/Services/OurServices";
 import Testimonial from "../components/Home/Testimonial";
 import VirtualTreatment from "../components/Home/VirtualTreatment";
 import WhyChooseUs from "../components/Home/WhyChooseUs";
+import Articles from "../components/Home/Articles";
 
 const Home = () => {
   return (
@@ -44,7 +44,7 @@ const Home = () => {
       <AppointmentReminders />
       <HealthCalculators />
       <EducationalVideos />
-      <LatestNews />
+      <Articles />
       <DownloadApp />
       <Gallery />
       <CallToActionBanner />
