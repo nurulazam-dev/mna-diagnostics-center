@@ -28,8 +28,8 @@ const Doctors = () => {
   } = useFetchData(`${BASE_URL}/doctors?query=${debounceQuery}`);
 
   return (
-    <>
-      <section className="mt-3">
+    <section className="container mb-10">
+      <div className="mt-3">
         <div className="container text-center">
           <h2 className="heading">Search a Doctor</h2>
 
@@ -49,21 +49,19 @@ const Doctors = () => {
             </button>
           </div>
         </div>
-      </section>
-      <section className="my-7">
-        <div className="container">
-          {loading && <Loader />}
-          {error && <Error />}
-          {!loading && !error && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-              {doctors.map((doctor) => (
-                <DoctorCard doctor={doctor} key={doctor?._id} />
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
-    </>
+      </div>
+      <div className="my-7">
+        {loading && <Loader />}
+        {error && <Error />}
+        {!loading && !error && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {doctors.map((doctor) => (
+              <DoctorCard doctor={doctor} key={doctor?._id} />
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
   );
 };
 
