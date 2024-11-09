@@ -30,11 +30,11 @@ const BestMedicalServices = () => {
   ];
 
   return (
-    <section className="container">
+    <section className="container mb-10">
       <h2 className="heading text-center">Best Medical Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
         {providingData.map((item) => (
-          <div key={item.id} className="px-5">
+          <div key={item.id} className="px-5 hover:shadow-xl">
             <div className="flex items-center justify-center">
               <img src={item.icon} alt="" />
             </div>
