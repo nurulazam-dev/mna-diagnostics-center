@@ -6,7 +6,6 @@ import BestMedicalServices from "../components/Home/BestMedicalServices";
 import HealthCalculators from "../components/Home/Calculators/HealthCalculators";
 import CallToActionBanner from "../components/Home/CallToActionBanner";
 import ContactSection from "../components/Home/ContactSection";
-import CorporatePartnerships from "../components/Home/CorporatePartnerships";
 import Countdown from "../components/Home/Countdown";
 import DownloadApp from "../components/Home/DownloadApp";
 import EducationalVideos from "../components/Home/EducationalVideos";
@@ -23,6 +22,7 @@ import Testimonial from "../components/Home/Testimonial";
 import VirtualTreatment from "../components/Home/VirtualTreatment";
 import WhyChooseUs from "../components/Home/WhyChooseUs";
 import Articles from "../components/Home/Articles";
+import InsurancePartners from "../components/Home/InsurancePartners";
 
 const Home = () => {
   return (
@@ -49,7 +49,7 @@ const Home = () => {
       <Gallery />
       <CallToActionBanner />
       <Testimonial />
-      <CorporatePartnerships />
+      <InsurancePartners />
       <OurLocation />
       <ContactSection />
     </>

@@ -16,7 +16,7 @@ const HealthCalculators = () => {
         <div className="">
           <img src={calculatorImg} alt="" />
         </div>
-        <div className="col-span-2 lg:mt-0 mt-3">
+        <div className="col-span-2 lg:mt-0 mt-3 lg:ml-3">
           <div className="flex gap-2 lg:gap-6 mb-2">
             {["BMI", "Heart Health", "Calorie Counter"].map((tool) => (
               <button

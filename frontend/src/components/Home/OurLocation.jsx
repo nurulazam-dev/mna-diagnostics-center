@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const OurLocation = () => {
   return (
-    <section className="w-full flex flex-col lg:flex-row items-center justify-center p-6 bg-gray-50">
+    <section className="w-full flex flex-col lg:flex-row items-center justify-center py-6 bg-gray-50 container mb-10">
       <div className="text-center lg:text-left lg:w-3/12 mb-4 lg:mb-0">
         <h2 className="heading mb-2">Our Location</h2>
         <div className="text-gray-700">
