@@ -2,11 +2,11 @@ import { FaBell, FaHeartbeat, FaUserCheck } from "react-icons/fa";
 
 const AppointmentReminders = () => {
   return (
-    <section className="px-6">
+    <section className="container mb-10">
       <h2 className="heading text-center">
         Appointment Reminders & Follow-ups
       </h2>
-      <p className="text-center text-gray-600 text-[16px] mb-3 max-w-2xl mx-auto">
+      <p className="text-center text-gray-600 text-[16px] mb-3 lg:max-w-[70%] max-w-[90%] mx-auto">
         MNA Diagnostics Center is dedicated to helping you manage your health
         with ease and consistency. Explore our automated reminders, personalized
         follow-ups, and health tracking tools.
