@@ -8,8 +8,8 @@ import { testimonials } from "../../assets/data/testimonialData";
 
 const Testimonial = () => {
   return (
-    <section className="container py-5">
-      <h2 className="heading text-center">Patient Reviews</h2>
+    <section className="container mb-10">
+      <h2 className="heading text-center">What Our Patients Say</h2>
 
       <Swiper
         modules={[Pagination]}
@@ -37,7 +37,7 @@ const Testimonial = () => {
           <SwiperSlide key={testimonial.id}>
             <div className="bg-white border-t-4 border-violet-600 rounded-b-md shadow-md py-3 px-6 text-center">
               <div className="flex justify-around">
-                <div>
+                <div className="flex flex-col justify-center items-center">
                   <img
                     src={testimonial.image}
                     alt={`${testimonial.patient}'s photo`}
