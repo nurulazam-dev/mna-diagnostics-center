@@ -9,7 +9,7 @@ const HealthCalculators = () => {
   const [selectedCalculator, setSelectedCalculator] = useState("BMI");
 
   return (
-    <div className="w-full mx-auto px-6">
+    <section className="container mb-10">
       <h2 className="heading text-center">Health Calculators</h2>
 
       <div className="grid grid-flow-row-dense lg:grid-cols-3 grid-cols-1">
@@ -45,7 +45,7 @@ const HealthCalculators = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
