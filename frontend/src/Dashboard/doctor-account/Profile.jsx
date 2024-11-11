@@ -87,6 +87,9 @@ const Profile = ({ doctorData }) => {
     setFormData((prevFormData) => ({
       ...prevFormData,
       [key]: [...prevFormData[key], item],
+      /* [key]: Array.isArray(prevFormData[key])
+        ? [...prevFormData[key], item]
+        : [item], */
     }));
   };
 
