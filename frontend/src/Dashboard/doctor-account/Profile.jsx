@@ -115,7 +115,7 @@ const Profile = ({ doctorData }) => {
   };
 
   /*================================
-    logic for qualification=start
+    logic for qualification
   ================================*/
   const addQualification = (e) => {
     e.preventDefault();
@@ -137,9 +137,6 @@ const Profile = ({ doctorData }) => {
 
     deleteItem("qualifications", index);
   };
-  /*================================
-    logic for qualification=end
-  ================================*/
 
   /*================================
     logic for Experience=start
