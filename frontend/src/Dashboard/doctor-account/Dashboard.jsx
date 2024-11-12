@@ -102,12 +102,12 @@ const Dashboard = () => {
                       backgroundImage: `url(${bgImg})`,
                     }}
                   >
-                    <div className="lg:flex items-center gap-4 py-3">
+                    <div className="lg:flex items-center gap-4 pt-3">
                       <figure className="lg:max-w-[200px] max-w-[150px] lg:max-h-[200px] max-h-[150px] ">
                         <img
                           src={data?.photo ? data?.photo : doctorAvatar}
                           alt=""
-                          className="w-full rounded-full"
+                          className="w-full"
                         />
                       </figure>
 

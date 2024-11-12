@@ -22,7 +22,7 @@ const DoctorAbout = ({ about, qualifications, experiences }) => {
           Education
         </h3>
 
-        <ul className="pt-4 md:p-5">
+        <ul className="grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5">
           {/* {qualifications?.length == 0 && (
             <h2 className="text-red-600 animate-pulse">
               Education profile isn&apos;t updated. Please update your Education
@@ -30,22 +30,16 @@ const DoctorAbout = ({ about, qualifications, experiences }) => {
             </h2>
           )} */}
           {qualifications?.map((item, index) => (
-            <li
-              key={index}
-              className="flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]"
-            >
-              <div>
-                <span className="text-irisBlueColor text-[15px] leading-6 font-semibold">
-                  {formatDate(item.startingDate)} -{" "}
-                  {formatDate(item.endingDate)}
-                </span>
-                <p className="text-[16px] leading-6 font-medium text-textColor">
-                  {item.degree}
-                </p>
-              </div>
-              <p className="text-[14px] leading-5 font-medium text-textColor">
+            <li key={index} className="p-4 rounded shadow-md bg-slate-50">
+              <h5 className="text-[16px] leading-6 font-medium text-violet-800">
+                {item.degree}
+              </h5>
+              <h5 className="text-[16px] leading-5 font-bold text-green-800">
                 {item.university}
-              </p>
+              </h5>
+              <span className="text-[14px] text-textColor leading-6 font-semibold">
+                {formatDate(item.startingDate)} - {formatDate(item.endingDate)}
+              </span>
             </li>
           ))}
         </ul>
@@ -63,16 +57,16 @@ const DoctorAbout = ({ about, qualifications, experiences }) => {
         )} */}
         <ul className="grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5">
           {experiences?.map((item, index) => (
-            <li key={index} className="p-4 rounded bg-[#fff9ea]">
-              <span className="text-[15px] text-yellowColor leading-6 font-semibold">
-                {formatDate(item.startingDate)} - {formatDate(item.endingDate)}
-              </span>
-              <p className="text-[16px] leading-6 font-medium text-textColor">
+            <li key={index} className="p-4 rounded shadow-md bg-slate-50">
+              <p className="text-[16px] leading-6 font-medium text-violet-800">
                 {item.position}
               </p>
-              <p className="text-[14px] leading-5 font-medium text-textColor">
+              <p className="text-[16px] leading-5 font-bold text-green-800">
                 {item.hospital}
               </p>
+              <span className="text-[14px] text-textColor leading-6 font-semibold">
+                {formatDate(item.startingDate)} - {formatDate(item.endingDate)}
+              </span>
             </li>
           ))}
         </ul>

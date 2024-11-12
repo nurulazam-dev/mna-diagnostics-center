@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import { GrUpdate } from "react-icons/gr";
-import { MdCloudUpload, MdOutlineAddToPhotos } from "react-icons/md";
+import {
+  MdCloudUpload,
+  MdMoreTime,
+  MdOutlineAddToPhotos,
+} from "react-icons/md";
 import { toast } from "react-toastify";
 import avatarImg from "../../assets/images/icons/avatar-icon.png";
 import Loading from "../../components/Shared/Loading";
@@ -206,19 +210,19 @@ const Profile = ({ doctorData }) => {
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Full Name"
-              className="form_input"
+              className="form_input cursor-text"
             />
           </div>
           {/* phone part */}
           <div className="lg:mb-0 mb-5 lg:w-[34%] w-full">
             <p className="form_label">Phone*</p>
             <input
-              type="number"
+              type="tel"
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
               placeholder="Phone number"
-              className="form_input"
+              className="form_input cursor-text"
             />
           </div>
 
@@ -268,10 +272,10 @@ const Profile = ({ doctorData }) => {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Email"
-              className="form_input"
+              className="form_input cursor-not-allowed"
               readOnly
               aria-readonly
-              disabled="true"
+              disabled={true}
             />
           </div>
 
@@ -284,7 +288,7 @@ const Profile = ({ doctorData }) => {
               value={formData.bio}
               onChange={handleInputChange}
               placeholder="Bio"
-              className="form_input"
+              className="form_input cursor-text"
               maxLength={100}
             />
           </div>
@@ -336,7 +340,7 @@ const Profile = ({ doctorData }) => {
                 value={formData.ticketPrice}
                 onChange={handleInputChange}
                 placeholder="100"
-                className="form_input"
+                className="form_input cursor-text"
               />
             </div>
           </div>
@@ -462,7 +466,7 @@ const Profile = ({ doctorData }) => {
                       name="position"
                       value={item.position}
                       placeholder="Position Name"
-                      className="form_input"
+                      className="form_input cursor-text"
                       onChange={(e) => handleExperienceChange(e, index)}
                     />
                   </div>
@@ -473,7 +477,7 @@ const Profile = ({ doctorData }) => {
                       name="hospital"
                       value={item.hospital}
                       placeholder="Hospital Name"
-                      className="form_input"
+                      className="form_input cursor-text"
                       onChange={(e) => handleExperienceChange(e, index)}
                     />
                   </div>
@@ -490,12 +494,15 @@ const Profile = ({ doctorData }) => {
             </div>
           ))}
 
-          <button
-            onClick={addExperience}
-            className="customBtn h-fit cursor-pointer bg-green-600 text-white"
-          >
-            Add Experience
-          </button>
+          <div className="flex justify-center items-center">
+            <button
+              onClick={addExperience}
+              className="customBtn h-fit cursor-pointer bg-green-600 text-white text-[16px] p-3 rounded mb-[15px] flex justify-between items-center hover:bg-slate-900"
+            >
+              Add Experience
+              <MdOutlineAddToPhotos className="h-6 w-6 ml-1" />
+            </button>
+          </div>
         </div>
 
         {/* ===================================
@@ -564,12 +571,15 @@ const Profile = ({ doctorData }) => {
             </div>
           ))}
 
-          <button
-            onClick={addTimeSlot}
-            className="customBtn bg-green-600 text-white h-fit cursor-pointer"
-          >
-            Add TimeSlot
-          </button>
+          <div className="flex justify-center items-center">
+            <button
+              onClick={addTimeSlot}
+              className="customBtn h-fit cursor-pointer bg-green-600 text-white text-[16px] p-3 rounded mb-[10px] flex justify-between items-center hover:bg-slate-900"
+            >
+              Add TimeSlot
+              <MdMoreTime className="h-6 w-6 ml-1" />
+            </button>
+          </div>
         </div>
 
         {/* ===================================
@@ -583,7 +593,7 @@ const Profile = ({ doctorData }) => {
             value={formData.about}
             placeholder="Write about you"
             onChange={handleInputChange}
-            className="form_input"
+            className="form_input cursor-text"
           ></textarea>
         </div>
 
