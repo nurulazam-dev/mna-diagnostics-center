@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import { AiOutlineDelete } from "react-icons/ai";
 import { GrUpdate } from "react-icons/gr";
-import { MdCloudUpload } from "react-icons/md";
+import { MdCloudUpload, MdOutlineAddToPhotos } from "react-icons/md";
 import { toast } from "react-toastify";
 import avatarImg from "../../assets/images/icons/avatar-icon.png";
 import Loading from "../../components/Shared/Loading";
 import { BASE_URL, token } from "../../config";
 import uploadImageToCloudinary from "../../utils/uploadCloudinary";
+import { RiDeleteBin2Fill } from "react-icons/ri";
 
 const Profile = ({ doctorData }) => {
   const [loading, setLoading] = useState(false);
@@ -346,7 +346,7 @@ const Profile = ({ doctorData }) => {
                  Qualification details
         ==================================== */}
         <div className="mb-5">
-          <p className="form_label">Qualification*</p>
+          <p className="form_label font-bold text-slate-800">Qualification*</p>
           {formData.qualifications?.map((item, index) => (
             <div key={index}>
               <div>
@@ -402,28 +402,30 @@ const Profile = ({ doctorData }) => {
 
                 <button
                   onClick={(e) => deleteQualification(e, index)}
-                  className="text-[16px] bg-red-600 p-3 rounded text-white mt-3 cursor-pointer mb-[30px] flex justify-between items-center hover:bg-slate-900"
+                  className="text-[16px] bg-red-600 py-[10px] px-4 rounded text-white mt-3 cursor-pointer mb-[20px] flex justify-between items-center hover:bg-slate-900"
                 >
-                  Delete Qualification
-                  <AiOutlineDelete className="h-6 w-6 ml-1" />
+                  Delete
+                  <RiDeleteBin2Fill className="h-6 w-6 ml-1" />
                 </button>
               </div>
             </div>
           ))}
-
-          <button
-            onClick={addQualification}
-            className="customBtn h-fit cursor-pointer bg-green-600 text-white"
-          >
-            Add Qualification
-          </button>
+          <div className="flex justify-center items-center">
+            <button
+              onClick={addQualification}
+              className="customBtn h-fit cursor-pointer bg-green-600 text-white text-[16px] p-3 rounded mb-[20px] flex justify-between items-center hover:bg-slate-900"
+            >
+              Add Qualification
+              <MdOutlineAddToPhotos className="h-6 w-6 ml-1" />
+            </button>
+          </div>
         </div>
 
         {/* ===================================
                  Experiences details
         ==================================== */}
         <div className="mb-5">
-          <p className="form_label">Experiences*</p>
+          <p className="form_label font-bold text-slate-800">Experiences*</p>
           {formData.experiences?.map((item, index) => (
             <div key={index}>
               <div>
@@ -479,9 +481,10 @@ const Profile = ({ doctorData }) => {
 
                 <button
                   onClick={(e) => deleteExperience(e, index)}
-                  className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-2 cursor-pointer hover:animate-spin mb-[30px]"
+                  className="text-[16px] bg-red-600 py-[10px] px-4 rounded text-white mt-3 cursor-pointer mb-[20px] flex justify-between items-center hover:bg-slate-900"
                 >
-                  <AiOutlineDelete />
+                  Delete
+                  <RiDeleteBin2Fill className="h-6 w-6 ml-1" />
                 </button>
               </div>
             </div>
@@ -499,7 +502,7 @@ const Profile = ({ doctorData }) => {
                  Time_Slots details
         ==================================== */}
         <div className="mb-5">
-          <p className="form_label">Time Slots*</p>
+          <p className="form_label font-bold text-slate-800">Time Slots*</p>
           {formData.timeSlots?.map((item, index) => (
             <div key={index}>
               <div>
@@ -547,12 +550,13 @@ const Profile = ({ doctorData }) => {
                     />
                   </div>
 
-                  <div className="flex items-center">
+                  <div className="flex items-end">
                     <button
                       onClick={(e) => deleteTimeSlot(e, index)}
-                      className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-6 hover:animate-spin cursor-pointer mb-[30px]"
+                      className="text-[16px] bg-red-600 py-[10px] px-4 rounded text-white cursor-pointer flex justify-between items-center hover:bg-slate-900"
                     >
-                      <AiOutlineDelete />
+                      Delete
+                      <RiDeleteBin2Fill className="h-6 w-6 ml-1" />
                     </button>
                   </div>
                 </div>
