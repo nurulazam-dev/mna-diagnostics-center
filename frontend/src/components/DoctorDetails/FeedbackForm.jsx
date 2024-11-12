@@ -44,8 +44,6 @@ const FeedbackForm = () => {
     }
   };
 
-  console.log(reviewText);
-
   return (
     <form>
       {/* feedback rating part */}
