@@ -120,7 +120,7 @@ const Profile = ({ doctorData }) => {
   /*================================
     logic for qualification
   ================================*/
-  /* const addQualification = (e) => {
+  const addQualification = (e) => {
     e.preventDefault();
 
     addItem("qualifications", {
@@ -129,20 +129,20 @@ const Profile = ({ doctorData }) => {
       degree: "",
       university: "",
     });
-  }; */
-
-  /*   const handleQualificationChange = (event, index) => {
-    handleReusableInputChangeFunc("qualification", index, event);
   };
- */
-  /*   const deleteQualification = (e, index) => {
+
+  const handleQualificationChange = (event, index) => {
+    handleReusableInputChangeFunc("qualifications", index, event);
+  };
+
+  const deleteQualification = (e, index) => {
     e.preventDefault();
 
     deleteItem("qualifications", index);
-  }; */
+  };
 
   /*================================
-    logic for Experience=start
+       logic for Experience
   ================================*/
   const addExperience = (e) => {
     e.preventDefault();
@@ -164,12 +164,9 @@ const Profile = ({ doctorData }) => {
 
     deleteItem("experiences", index);
   };
-  /*================================
-    logic for Experience=end
-  ================================*/
 
   /*================================
-    logic for Time_slots=start
+       logic for Time_slots
   ================================*/
   const addTimeSlot = (e) => {
     e.preventDefault();
@@ -362,7 +359,7 @@ const Profile = ({ doctorData }) => {
                       name="startingDate"
                       value={item.startingDate}
                       className="form_input"
-                      // onChange={(e) => handleQualificationChange(e, index)}
+                      onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
                   <div>
@@ -372,7 +369,7 @@ const Profile = ({ doctorData }) => {
                       name="endingDate"
                       value={item.endingDate}
                       className="form_input"
-                      // onChange={(e) => handleQualificationChange(e, index)}
+                      onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
                 </div>
@@ -386,8 +383,8 @@ const Profile = ({ doctorData }) => {
                       name="degree"
                       value={item.degree}
                       placeholder="Degree Name"
-                      className="form_input"
-                      // onChange={(e) => handleQualificationChange(e, index)}
+                      className="form_input cursor-text"
+                      onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
                   <div>
@@ -397,24 +394,25 @@ const Profile = ({ doctorData }) => {
                       name="university"
                       value={item.university}
                       placeholder="University Name"
-                      className="form_input"
-                      // onChange={(e) => handleQualificationChange(e, index)}
+                      className="form_input cursor-text"
+                      onChange={(e) => handleQualificationChange(e, index)}
                     />
                   </div>
                 </div>
 
                 <button
-                  // onClick={(e) => deleteQualification(e, index)}
-                  className="text-[18px] bg-red-600 p-2 rounded-full text-white mt-2 cursor-pointer mb-[30px]"
+                  onClick={(e) => deleteQualification(e, index)}
+                  className="text-[16px] bg-red-600 p-3 rounded text-white mt-3 cursor-pointer mb-[30px] flex justify-between items-center hover:bg-slate-900"
                 >
-                  <AiOutlineDelete />
+                  Delete Qualification
+                  <AiOutlineDelete className="h-6 w-6 ml-1" />
                 </button>
               </div>
             </div>
           ))}
 
           <button
-            // onClick={addQualification}
+            onClick={addQualification}
             className="customBtn h-fit cursor-pointer bg-green-600 text-white"
           >
             Add Qualification
