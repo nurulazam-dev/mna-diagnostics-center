@@ -27,20 +27,32 @@ const DoctorCard = ({ doctor }) => {
         </div>
       </div>
       <div className="flex justify-center pt-3">
-        <img src={photo} alt="" className="w-[50%] rounded-full" />
+        <img src={photo} alt="" className="w-[50%]" />
       </div>
       <div className="text-center mb-2">
-        <h2 className="text-[18px] lg:text-[22px] text-violet-950 font-[800] mr-3">
+        <h2 className="text-[18px] lg:text-[22px] text-violet-950 font-[800]">
           {name}
         </h2>
 
         {/* specialist */}
         <span className="text-textColor text-[12px] font-semibold lg:text-[16px] font-mono">
-          {specialization}
+          {specialization ? (
+            specialization
+          ) : (
+            <p className="text-red-600 text-[10px] font-semibold lg:text-[13px] mt-[3px]">
+              Specialization Not Updated
+            </p>
+          )}
         </span>
         {/* hospital */}
         <p className="text-[14px] font-[400] text-textColor">
-          {experiences && experiences[0]?.hospital}
+          {experiences && experiences[0]?.hospital ? (
+            experiences[0]?.hospital
+          ) : (
+            <p className="text-red-600 text-[10px] font-semibold lg:text-[13px] mt-[3px]">
+              Experience Not Updated
+            </p>
+          )}
         </p>
       </div>
       {/* social icons */}

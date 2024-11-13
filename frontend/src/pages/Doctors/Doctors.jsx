@@ -43,7 +43,7 @@ const Doctors = () => {
             />
             <button
               onClick={handleSearch}
-              className="btn bg-violet-600 hover:bg-green-600 mt-0 rounded-[0px] rounded-r-md"
+              className="py-[15px] px-[35px] text-white font-[600] bg-violet-600 hover:bg-green-600 mt-0 rounded-[0px] rounded-r-md"
             >
               Search
             </button>
