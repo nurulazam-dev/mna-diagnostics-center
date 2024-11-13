@@ -32,7 +32,7 @@ const BestCard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {cardData.map((data, id) => (
           <div
-            className={`flex justify-between px-4 items-center bg-gradient-to-r ${data.bgColor} rounded py-2`}
+            className={`flex flex-col md:flex-row items-center justify-center lg:gap-4 gap-2 bg-gradient-to-r ${data.bgColor} rounded py-2`}
             key={id}
           >
             <img src={data.icon} alt={data?.title} />

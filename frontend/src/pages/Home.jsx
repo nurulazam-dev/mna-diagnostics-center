@@ -30,12 +30,11 @@ const Home = () => {
       <InfiniteScrollBar />
       <HeroSection />
       <BestCard />
-      <OurServices />
       <Awards />
+      <OurServices />
       <AdsBanner />
-      <VirtualTreatment />
-      <Countdown />
       <GreatDoctors />
+      <Countdown />
       <HealthPackages />
       <ManagementTeamSlide />
       <WhyChooseUs />
@@ -44,6 +43,7 @@ const Home = () => {
       <AppointmentReminders />
       <HealthCalculators />
       <EducationalVideos />
+      <VirtualTreatment />
       <DownloadApp />
       <Articles />
       <Gallery />

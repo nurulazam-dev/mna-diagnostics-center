@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
               {whyChooseUsData.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center border-t-4 border-slate-400 p-3 bg-white shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+                  className="flex flex-col items-center text-center border-t-4 border-slate-400 p-3 bg-white shadow-lg transform hover:scale-105 transition duration-300 ease-in-out lg:mx-0 mx-1"
                 >
                   <div className="text-5xl mb-1">{feature.icon}</div>
                   <h3 className="lg:text-[18px] text-[16px] font-bold text-gray-800">

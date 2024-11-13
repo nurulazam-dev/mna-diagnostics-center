@@ -41,7 +41,14 @@ body {
   background: #8b00fc !important;
   border: none !important;
 }
+@media only screen and (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+}
 
+/* ====infinite scroller==== */
 @keyframes firstLineInfinite {
   from {
     transform: translateX(0);

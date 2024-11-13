@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  section {
-    @apply py-[75px];
-  }
-} */
 @layer components {
   .container {
     @apply max-w-full w-[1440px] px-10 mx-auto;

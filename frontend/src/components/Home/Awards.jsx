@@ -2,14 +2,14 @@ import { awards } from "../../assets/data/awards";
 
 const Awards = () => {
   return (
-    <section className="container mb-10">
+    <section className="container mb-5 lg:mb-10">
       <h1 className="heading text-center">Winning Awards</h1>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
         {awards.map((award) => (
           <div
             key={award.id}
-            className="flex justify-between items-center border rounded px-3 mx-3 shadow-md"
+            className="flex justify-between items-center border rounded px-3 mx-3 shadow-md mb-4 lg:mb-0"
           >
             <img
               src={award.photo}
