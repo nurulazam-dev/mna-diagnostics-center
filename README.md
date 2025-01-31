@@ -1,4 +1,4 @@
-# [MNA Diagnostics Center
+# [MNA Diagnostics Center]
 
 ### (Digital Diagnostics Lab)
 
