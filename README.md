@@ -1,6 +1,6 @@
 # [MNA Diagnostics Center](https://mna-diagnostics-center.onrender.com)
 
-### (Digital Diagnostics Lab)
+#### (Digital Diagnostics Lab)
 
 **Website**: [MNA Diagnostics Center](https://mna-diagnostics-center.onrender.com)
 
