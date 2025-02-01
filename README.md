@@ -14,7 +14,7 @@ The **MNA Diagnostics Center** website is a comprehensive platform designed to e
 
 ## Features
 
-### General Features
+#### General Features
 
 - **Doctor Booking System**: Easily book appointments with specialists.
 - **Online Payment**: Pay securely via Stripe for all services.
