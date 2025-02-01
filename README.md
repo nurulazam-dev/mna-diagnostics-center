@@ -1,4 +1,4 @@
-# [MNA Diagnostics Center](https://mna-diagnostics-center.onrender.com)
+## [MNA Diagnostics Center](https://mna-diagnostics-center.onrender.com)
 
 #### (Digital Diagnostics Lab)
 
